@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanchonete FATEC</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Lanchonete FATEC</h1>
+        <nav>
+            <button onclick="mostrarCarrinho()">Ver carrinho</button>
+            <button onclick="limparCarrinho()">Limpar carrinho</button>
+        </nav>
+    </header>
+    <main>
+        <section class="produtos">
+            <div class="prod">
+                <img src="IMG/download.jpg">
+                <h2>Lanchão do Fagnão</h2>
+                <p> R$ 35,00</p>
+                <button onclick="adicionarProduto()">Adicionar</button>
+            </div>
+             <div class="prod">
+                <img src="IMG/cachorro quante.jpg">
+                <h2>Cachorro Quente</h2>
+                <p> R$ 20,00</p>
+                <button onclick="adicionarProduto()">Adicionar</button>
+            </div>
+             <div class="prod">
+                <img src="IMG/Batata Frita.jpg">
+                <h2>Batata Frita</h2>
+                <p> R$ 30,00</p>
+                <button onclick="adicionarProduto()">Adicionar</button>
+            </div>
+             <div class="prod">
+                <img src="IMG/Mini pastel.jpg">
+                <h2>Porção de mini pastel</h2>
+                <p> R$ 15,00</p>
+                <button onclick="adicionarProduto()">Adicionar</button>
+            </div>
+             <div class="prod">
+                <img src="IMG/lanche de pernil.jpg">
+                <h2>Lanchão De Pernil</h2>
+                <p> R$ 35,00</p>
+                <button onclick="adicionarProduto()">Adicionar</button>
+            </div>
+             <div class="prod">
+                <img src="IMG/suco de laranja.jpg">
+                <h2>Suco de lartanja</h2>
+                <p> R$ 25,00</p>
+                <button onclick="adicionarProduto()">Adicionar</button>
+            </div>
+        </section>
+        <section id="carrinho">
+            <h3 id="total"></h3>
+        </section>
+    </main>
+    <scrip src="js/script.js"></scrip>
+</body>
+</html>

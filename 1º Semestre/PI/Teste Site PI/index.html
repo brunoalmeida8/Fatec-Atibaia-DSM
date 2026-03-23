@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Negra Visão | Identidade e Cultura</title>
+    <!-- Importando uma fonte elegante -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    
+    <style>
+        :root {
+            --marrom-escuro: #321B13;  /* Cor do Header/Rodapé (ID_BR style) */
+            --bege-pele: #EFE1D1;      /* Cor do Fundo principal */
+            --laranja-terra: #D47A3B;  /* Cor do Botão de Destaque */
+            --texto-corpo: #4A3B33;    /* Marrom suave para textos longos */
+            --branco-puro: #FFFFFF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            background-color: var(--bege-pele); 
+            font-family: 'Poppins', sans-serif; 
+            color: var(--texto-corpo);
+            overflow-x: hidden;
+        }
+
+        /* --- CABEÇALHO --- */
+        header {
+            background-color: var(--marrom-escuro);
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 { color: var(--bege-pele); font-family: 'Playfair Display', serif; font-size: 1.5rem; }
+
+        nav a {
+            color: var(--bege-pele);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--laranja-terra); }
+
+        .btn-contato {
+            background-color: var(--laranja-terra);
+            color: white !important;
+            padding: 10px 25px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        /* --- HERO SECTION (O estilo do ID_BR) --- */
+        .hero {
+            display: flex;
+            align-items: center;
+            padding: 80px 8%;
+            min-height: 80vh;
+            gap: 40px;
+        }
+
+        .hero-content { flex: 1; }
+        .hero-content h2 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 3.5rem; 
+            color: var(--marrom-escuro);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p { font-size: 1.1rem; margin-bottom: 30px; max-width: 500px; }
+
+        .hero-image { flex: 1; text-align: right; }
+        .hero-image img { 
+            width: 100%; 
+            max-width: 500px; 
+            border-radius: 20px; 
+            /* Efeito de sombra leve */
+            box-shadow: 20px 20px 0px var(--laranja-terra);
+        }
+
+        /* --- SEÇÕES DE CONTEÚDO --- */
+        .sessao { padding: 80px 8%; }
+        .sessao-titulo { 
+            text-align: center; 
+            font-family: 'Playfair Display', serif; 
+            font-size: 2.5rem; 
+            margin-bottom: 50px;
+            color: var(--marrom-escuro);
+        }
+
+        .grid-projetos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--branco-puro);
+            padding: 30px;
+            border-radius: 15px;
+            transition: 0.3s;
+            border-bottom: 5px solid var(--laranja-terra);
+        }
+
+        .card:hover { transform: translateY(-10px); }
+        .card h3 { margin-bottom: 15px; color: var(--marrom-escuro); }
+
+        /* --- RODAPÉ --- */
+        footer {
+            background-color: var(--marrom-escuro);
+            color: var(--bege-pele);
+            padding: 60px 8% 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-logo h2 { font-family: 'Playfair Display', serif; margin-bottom: 15px; }
+        .footer-links h4 { margin-bottom: 20px; color: var(--laranja-terra); }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 10px; font-size: 0.9rem; opacity: 0.8; }
+        
+        .redes-sociais img { width: 24px; margin-right: 15px; filter: invert(1); }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(239, 225, 209, 0.1);
+            padding-top: 20px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+
+        /* Responsividade para celular */
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; }
+            .hero-content h2 { font-size: 2.5rem; }
+            header nav { display: none; } /* Esconde menu no mobile para simplificar */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Negra Visão</h1>
+        <nav>
+            <a href="#">O Instituto</a>
+            <a href="#">Projetos</a>
+            <a href="#">Podcast</a>
+            <a href="#" class="btn-contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Conheça a <br>Negra Visão</h2>
+            <p>Um espaço dedicado à potência da cultura negra. Palestras, capoeira e acolhimento para fortalecer nossa identidade e transformar o futuro.</p>
+            <a href="#" class="btn-contato">Saiba Mais</a>
+        </div>
+        <div class="hero-image">
+            <!-- Imagem inspirada na que você mandou -->
+            <img src="https://images.unsplash.com" alt="Mulher Negra Sorrindo">
+        </div>
+    </section>
+
+    <section class="sessao">
+        <h2 class="sessao-titulo">Nossos Pilares</h2>
+        <div class="grid-projetos">
+            <div class="card">
+                <h3>Capoeira & Ancestralidade</h3>
+                <p>Rodas e ensinamentos que mantêm viva a tradição e a resistência física e cultural.</p>
+            </div>
+            <div class="card">
+                <h3>Coletivo de Mães</h3>
+                <p>Encontros de acolhimento e trocas de experiências entre mulheres negras mães.</p>
+            </div>
+            <div class="card">
+                <h3>Voz e Podcast</h3>
+                <p>Espaço para debates, entrevistas e divulgação de ideias que impulsionam a comunidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-logo">
+                <h2>Negra Visão</h2>
+                <p>Transformando olhares, construindo pontes.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegação</h4>
+                <ul>
+                    <li>Início</li>
+                    <li>Quem Somos</li>
+                    <li>Eventos</li>
+                    <li>Transparência</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contato</h4>
+                <ul>
+                    <li>📍 Rua da Cultura, 123</li>
+                    <li>📧 contato@negravisao.org</li>
+                    <li>📞 (11) 98765-4321</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Redes Sociais</h4>
+                <div class="redes-sociais">
+                    <p>Siga-nos no Instagram:</p>
+                    <p><strong>@ong_negravisao</strong></p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 ONG Negra Visão. Orgulhosamente criado para a comunidade.
+        </div>
+    </footer>
+
+</body>
+</html>

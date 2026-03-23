@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <locale.h>
+
+
+float calcular (float x, float y, int op)
+{
+    float resul;
+        switch(op){
+        case 1:
+            resul = x+y;
+            break;
+        case 2:
+            resul = x-y;
+            break;
+        case 3:
+            resul = x*y;
+            break;
+        case 4:
+            resul = x/y;
+            break;
+    }
+    return resul;
+
+}
+
+
+
+
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    float x, y, resul;
+    int op;
+
+    printf("Menu de opção \n");
+    printf("1 - soma\n");
+    printf("2 - subtração\n");
+    printf("3 - multiplicação\n");
+    printf("4 - divisão\n");
+    printf("Escolha uma opção: ");
+    scanf("%d", &op);
+
+    printf("Ditite um valor x: ");
+    scanf("%f", &x);
+    printf("Ditite um valor y:");
+    scanf("%f", &y);
+
+    resul = calcular (x, y, op);
+
+    printf("o resultado da operação é: %f", resul);
+
+
+
+    return 0;
+}

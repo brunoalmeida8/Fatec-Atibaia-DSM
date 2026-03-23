@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG Negra Visão | Identidade e Cultura</title>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    
+    <style>
+        :root {
+            --marrom-escuro: #321B13; 
+            --bege-pele: #EFE1D1;     
+            --laranja-terra: #D47A3B; 
+            --branco-puro: #FFFFFF;
+            --texto-corpo: #4A3B33;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--bege-pele); font-family: 'Poppins', sans-serif; color: var(--texto-corpo); overflow-x: hidden; }
+
+        /* --- HEADER --- */
+        header {
+            background-color: var(--marrom-escuro);
+            padding: 15px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0; z-index: 1000;
+        }
+        header h1 { color: var(--bege-pele); font-family: 'Playfair Display', serif; font-size: 1.4rem; }
+        nav a { color: var(--bege-pele); text-decoration: none; margin-left: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; }
+
+        /* --- CARROSSEL DE EVENTOS (O QUE VOCÊ PEDIU) --- */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            background: #000;
+        }
+        .carousel-slide {
+            display: none;
+            height: 100%;
+            position: relative;
+            animation: fade 1.5s;
+        }
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+        .carousel-caption {
+            position: absolute;
+            bottom: 20%;
+            left: 8%;
+            color: white;
+            max-width: 600px;
+        }
+        .carousel-caption h2 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-bottom: 10px; color: var(--laranja-terra); }
+        
+        @keyframes fade { from {opacity: .4} to {opacity: 1} }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            background: rgba(0,0,0,0.5);
+            user-select: none;
+        }
+        .next { right: 0; border-radius: 3px 0 0 3px; }
+
+        /* --- PILARES --- */
+        .pilares { padding: 80px 8%; background: var(--marrom-escuro); color: var(--bege-pele); text-align: center; }
+        .grid-pilares { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; }
+        .pilar-card { background: rgba(255,255,255,0.05); padding: 30px; border-bottom: 4px solid var(--laranja-terra); transition: 0.3s; }
+        .pilar-card:hover { background: var(--laranja-terra); color: white; transform: translateY(-5px); }
+
+        /* --- PARCEIROS (O QUE VOCÊ PEDIU) --- */
+        .parceiros { padding: 60px 8%; background: var(--branco-puro); text-align: center; }
+        .parceiros h3 { margin-bottom: 40px; font-family: 'Playfair Display'; font-size: 2rem; color: var(--marrom-escuro); }
+        .grid-parceiros { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); /* 4 por linha para dar 8 no total */
+            gap: 30px; 
+            align-items: center;
+        }
+        .parceiro-logo { 
+            background: #f9f9f9; 
+            height: 100px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            filter: grayscale(100%); 
+            opacity: 0.6;
+            transition: 0.3s;
+            border: 1px dashed #ccc;
+        }
+        .parceiro-logo:hover { filter: grayscale(0%); opacity: 1; border-color: var(--laranja-terra); }
+
+        /* --- FOOTER --- */
+        footer { background: var(--marrom-escuro); color: var(--bege-pele); padding: 60px 8% 20px; }
+        .footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .social-link { color: var(--laranja-terra); font-weight: bold; text-decoration: none; display: block; margin-top: 10px; }
+
+        @media (max-width: 768px) {
+            .grid-parceiros { grid-template-columns: repeat(2, 1fr); }
+            .carousel-caption h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NEGRA VISÃO</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#pilares">Pilares</a>
+            <a href="#parceiros">Parceiros</a>
+            <a href="#" style="background:var(--laranja-terra); padding: 8px 15px; border-radius: 4px;">Apoie</a>
+        </nav>
+    </header>
+
+    <!-- CARROSSEL DE EVENTOS -->
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="https://images.unsplash.com" alt="Capoeira">
+            <div class="carousel-caption">
+                <span style="background: var(--laranja-terra); padding: 5px 10px;">DESTAQUE</span>
+                <h2>Roda de Capoeira Ancestral</h2>
+                <p>Todo sábado às 16h na Praça Central. Venha sentir o axé.</p>
+            </div>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="https://images.unsplash.com" alt="Palestras">
+            <div class="carousel-caption">
+                <span style="background: var(--laranja-terra); padding: 5px 10px;">PALESTRA</span>
+                <h2>Maternidade Real e Negra</h2>
+                <p>Roda de conversa com o coletivo de mães nesta quarta.</p>
+            </div>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="https://images.unsplash.com" alt="Podcast">
+            <div class="carousel-caption">
+                <span style="background: var(--laranja-terra); padding: 5px 10px;">PODCAST</span>
+                <h2>Vozes da Periferia</h2>
+                <p>Episódio novo disponível sobre empreendedorismo cultural.</p>
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- PILARES -->
+    <section class="pilares" id="pilares">
+        <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem;">Nossos Pilares</h2>
+        <div class="grid-pilares">
+            <div class="pilar-card"><h3>Capoeira</h3><p>Preservação e movimento.</p></div>
+            <div class="pilar-card"><h3>Palestras</h3><p>Educação e debate.</p></div>
+            <div class="pilar-card"><h3>Mães</h3><p>Apoio e acolhimento.</p></div>
+            <div class="pilar-card"><h3>Podcast</h3><p>Nossas vozes no ar.</p></div>
+        </div>
+    </section>
+
+    <!-- PARCEIROS -->
+    <section class="parceiros" id="parceiros">
+        <h3>Nossos Parceiros</h3>
+        <div class="grid-parceiros">
+            <!-- Representação dos 8 parceiros -->
+            <div class="parceiro-logo">Logo 1</div>
+            <div class="parceiro-logo">Logo 2</div>
+            <div class="parceiro-logo">Logo 3</div>
+            <div class="parceiro-logo">Logo 4</div>
+            <div class="parceiro-logo">Logo 5</div>
+            <div class="parceiro-logo">Logo 6</div>
+            <div class="parceiro-logo">Logo 7</div>
+            <div class="parceiro-logo">Logo 8</div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2 style="font-family:'Playfair Display'">NEGRA VISÃO</h2>
+                <p style="margin-top: 15px; opacity: 0.7;">Fortalecendo a identidade negra através da cultura e da união comunitária.</p>
+            </div>
+            <div>
+                <h4>Redes Sociais</h4>
+                <a href="#" class="social-link">@negravisao_insta</a>
+                <a href="#" class="social-link">://facebook.com</a>
+            </div>
+            <div>
+                <h4>Endereço</h4>
+                <p style="opacity: 0.7;">Rua da Ancestralidade, 456<br>São Paulo - SP</p>
+            </div>
+        </div>
+        <p style="text-align:center; font-size: 0.8rem; opacity: 0.4; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
+            &copy; 2026 ONG Negra Visão.
+        </p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) { showSlides(slideIndex += n); }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("carousel-slide");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+        // Auto slide
+        setInterval(() => { plusSlides(1); }, 5000);
+    </script>
+</body>
+</html>

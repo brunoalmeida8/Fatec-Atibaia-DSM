@@ -1,0 +1,88 @@
+body{
+    background-color: #588157;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ecdee2;
+    margin: 0;
+}
+
+header{
+    background-color: #3a5a40;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    font-family: cursive;
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 10px;
+}
+
+img{
+    margin: auto;
+    display: block;
+    height: 200px;
+    width: auto;
+}
+
+.card-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card{
+    height: 250px;
+    width: 250px;
+    background-color: rgb(7, 79, 45);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.card p{
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.form-container label{
+    text-align: left;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.form-container input{
+    font-size: 18px;
+    border-radius: 8px;
+    border: 2px solid gray;
+}
+
+.form-container button{
+    background-color: rgb(7, 79, 45);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+    max-width: 100px;
+}

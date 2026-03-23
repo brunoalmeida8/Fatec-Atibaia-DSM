@@ -1,0 +1,37 @@
+create database unimed;
+use unimed;
+
+create table regiao (id_regiao int Primary Key AUTO_INCREMENT,
+                    ds_regiao varchar(50) not null);
+
+create table estado (id_estado int Primary Key AUTO_INCREMENT,
+                     sg_estado char(2) not null,
+                     ds_estado varchar(70) not null,
+                     id_regiao int);
+
+create table medico (id_medico int Primary Key AUTO_INCREMENT,
+                     ds_medico varchar(80),
+                     nr_crm int,
+                     id_estado_crm int,
+                     id_estado_natural int);
+
+-- Criando Foreign Key
+
+Alter table estado add constraint fk_estado_regiao foreign key(id_regiao)
+references regiao(id_regiao);
+
+alter table medico add constraint fk_medico_estado_crm foreign key(id_estado_crm)
+references estado(id_estado);
+
+alter table medico add constraint fk_medico_estado_natural foreign key(id_estado_natural) references estado(id_estado); 
+
+
+
+
+
+
+
+
+
+
+

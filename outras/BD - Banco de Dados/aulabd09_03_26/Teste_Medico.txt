@@ -1,0 +1,31 @@
+** Regiao
+
+(PK)
+id_regiao   ds_regiao
+---------   ---------------
+        1   Norte
+        2   Nordeste
+        3   Sul
+        4   Suldeste
+             
+** Estado
+
+(PK)
+id_estado   sg_estado     ds_estado       id_regiao (FK)
+---------   ---------     ---------       --------------
+        1          SP     São Paulo       4
+        2          RJ     Rio de Janeiro  4
+        3          PA     Para            1
+        4          CE     Ceara           2
+        5          MG     Minas Gerais    4
+      
+** Medico
+
+(PK)                                          (FK)               (FK)
+id_medico    ds_medico           nr_crm       id_estado_crm      id_estado_natural
+---------    -----------------   ---------    -------------      ------------------  
+1            Eduardo             12323        1                  3
+2            Maria               12323        2                  5
+
+
+  

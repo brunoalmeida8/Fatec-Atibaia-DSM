@@ -1,0 +1,23 @@
+body{
+    background-color: #ffc2d1;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: #ff87ab;
+    padding: 30px; /*largura da margem da nave*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none; /*tira o sublinhado*/
+    font-weight: bold; /*negrito*/  
+}
+nav a:hover {
+    background-color: #ffc2d1;
+    border-radius: 5px; /*efeito de transição de cor ao passar o mouse em cima*/  
+    transition: color o.3s;
+}

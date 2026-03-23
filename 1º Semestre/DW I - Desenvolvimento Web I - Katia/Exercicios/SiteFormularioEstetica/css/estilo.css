@@ -1,0 +1,92 @@
+body{
+    background-color: #eac9ff;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    background-color: #bf87ff;
+    padding: 30px; /*largura da margem da nave*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none; /*tira o sublinhado*/
+    font-weight: bold; /*negrito*/  
+}
+nav a:hover {
+    background-color: #ffc2d1;
+    border-radius: 5px; /*efeito de transição de cor ao passar o mouse em cima*/  
+    transition: color o.3s;
+}
+
+h2 {
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    background-color: white;
+    padding: 20px 40px 20px 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.campo {
+    min-width: 500px;
+    margin-top: 8px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(160, 208, 221);
+}
+
+button {
+    padding: 10px;
+    background-color: #bf87ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    max-width: 1000px;
+}
+
+th, td {
+    border: 1px solid #bf87ff;
+    padding: 8px;
+    text-align: center;
+    font-size: 16px;
+}
+
+h3 {
+    color: #bf87ff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.linha {
+    display: flex;
+    justify-content: center;
+}
