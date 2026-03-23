@@ -1,0 +1,131 @@
+📌 Trabalho: Sistema Operacional Windows
+
+👤 Carla – Visão Geral e Arquitetura
+
+🔹 O que é um Sistema Operacional?
+
+O sistema operacional é o software que faz a **mediação entre hardware e usuário**.
+No caso do **Microsoft Windows**, ele gerencia recursos e permite a execução de programas.
+
+🔹 Principais Funções:
+
+* Gerenciar CPU
+* Gerenciar memória
+* Controlar dispositivos
+* Organizar arquivos
+* Garantir segurança
+
+🔹 Arquitetura
+
+O Windows possui arquitetura **híbrida**.
+
+🔹 Modos de Operação:
+
+* **Modo Usuário** → Executa aplicativos
+* **Modo Kernel** → Controla hardware e núcleo do sistema
+
+Essa divisão aumenta segurança e estabilidade.
+
+---
+
+👤 Lucigogó – Evolução Histórica
+
+🔹 Sistemas Batch
+
+Execução por lotes, sem interação do usuário.
+
+🔹 Multiprogramação
+
+Vários programas na memória ao mesmo tempo.
+
+🔹 Tempo Compartilhado
+
+Permite múltiplos usuários simultâneos.
+
+🔹 Sistemas Modernos
+
+* Distribuídos
+* Tempo real
+
+O Windows evoluiu até o modelo NT, utilizado hoje no **Windows 11**.
+
+---
+
+👤 Lucas – Gerenciamento de Processos e Threads
+
+🔹 Processo
+
+Programa em execução.
+
+🔹 Estados do Processo:
+
+* Pronto
+* Executando
+* Bloqueado
+* Finalizado
+
+O Windows usa **multitarefa preemptiva**.
+
+🔹 Threads
+
+* Subdivisão do processo
+* Permitem paralelismo
+* Compartilham memória
+
+Essencial para desempenho em aplicações modernas.
+
+---
+
+👤 Gabriel – Gerenciamento de Memória
+🔹 Hierarquia de Memória:
+
+1. Registradores
+2. Cache
+3. RAM
+4. Disco (HD/SSD)
+
+Quanto mais rápida, menor e mais cara.
+
+🔹 Memória Virtual
+
+O Windows usa paginação:
+
+* Divide memória em páginas
+* Usa arquivo de paginação no disco
+* Permite usar mais memória do que a RAM disponível
+
+Isso melhora o uso de recursos e estabilidade.
+
+---
+
+👤 Enzox ALMOX – Sistema de Arquivos e E/S
+
+🔹 Sistema de Arquivos
+
+O Windows utiliza principalmente o **NTFS**.
+
+Características:
+
+* Organização em pastas
+* Controle de permissões
+* Suporte a arquivos grandes
+
+🔹 Journaling
+
+Registra alterações antes de executá-las, evitando corrupção de dados.
+
+🔹 Drivers
+
+Permitem comunicação entre sistema e hardware.
+
+
+🎯 Conclusão Geral (pode ser apresentada por todos)
+
+O Windows é um sistema operacional completo, que gerencia processos, memória e dispositivos de forma eficiente. Sua arquitetura e mecanismos de segurança garantem estabilidade e desempenho.
+
+
+Se quiser, posso:
+
+* Transformar em roteiro falado (com tempo estimado)
+* Criar versão em slides
+* Ajustar para apresentação de 10 ou 15 minutos
