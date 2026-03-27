@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C08C9458-D1C8-49FC-8E53-C88A5DD8C2E4}|SistemaBancario\\SistemaBancario.csproj|c:\\users\\aluno\\desktop\\sistemabancario\\sistemabancario\\views\\conta\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C08C9458-D1C8-49FC-8E53-C88A5DD8C2E4}|SistemaBancario\\SistemaBancario.csproj|solutionrelative:sistemabancario\\views\\conta\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C08C9458-D1C8-49FC-8E53-C88A5DD8C2E4}|SistemaBancario\\SistemaBancario.csproj|c:\\users\\aluno\\desktop\\sistemabancario\\sistemabancario\\models\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C08C9458-D1C8-49FC-8E53-C88A5DD8C2E4}|SistemaBancario\\SistemaBancario.csproj|solutionrelative:sistemabancario\\models\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C08C9458-D1C8-49FC-8E53-C88A5DD8C2E4}|SistemaBancario\\SistemaBancario.csproj|c:\\users\\aluno\\desktop\\sistemabancario\\sistemabancario\\controllers\\contacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C08C9458-D1C8-49FC-8E53-C88A5DD8C2E4}|SistemaBancario\\SistemaBancario.csproj|solutionrelative:sistemabancario\\controllers\\contacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C08C9458-D1C8-49FC-8E53-C88A5DD8C2E4}|SistemaBancario\\SistemaBancario.csproj|c:\\users\\aluno\\desktop\\sistemabancario\\sistemabancario\\views\\conta\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C08C9458-D1C8-49FC-8E53-C88A5DD8C2E4}|SistemaBancario\\SistemaBancario.csproj|solutionrelative:sistemabancario\\views\\conta\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C08C9458-D1C8-49FC-8E53-C88A5DD8C2E4}|SistemaBancario\\SistemaBancario.csproj|c:\\users\\aluno\\desktop\\sistemabancario\\sistemabancario\\views\\conta\\remover.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C08C9458-D1C8-49FC-8E53-C88A5DD8C2E4}|SistemaBancario\\SistemaBancario.csproj|solutionrelative:sistemabancario\\views\\conta\\remover.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\SistemaBancario\\Views\\Conta\\Editar.cshtml",
+              "RelativeDocumentMoniker": "SistemaBancario\\Views\\Conta\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\SistemaBancario\\Views\\Conta\\Editar.cshtml*",
+              "RelativeToolTip": "SistemaBancario\\Views\\Conta\\Editar.cshtml*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-10T00:41:35.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Conta.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\SistemaBancario\\Models\\Conta.cs",
+              "RelativeDocumentMoniker": "SistemaBancario\\Models\\Conta.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\SistemaBancario\\Models\\Conta.cs",
+              "RelativeToolTip": "SistemaBancario\\Models\\Conta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T23:57:02.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Remover.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\SistemaBancario\\Views\\Conta\\Remover.cshtml",
+              "RelativeDocumentMoniker": "SistemaBancario\\Views\\Conta\\Remover.cshtml",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\SistemaBancario\\Views\\Conta\\Remover.cshtml",
+              "RelativeToolTip": "SistemaBancario\\Views\\Conta\\Remover.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-09T23:35:56.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cadastrar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\SistemaBancario\\Views\\Conta\\Cadastrar.cshtml",
+              "RelativeDocumentMoniker": "SistemaBancario\\Views\\Conta\\Cadastrar.cshtml",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\SistemaBancario\\Views\\Conta\\Cadastrar.cshtml",
+              "RelativeToolTip": "SistemaBancario\\Views\\Conta\\Cadastrar.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-09T23:30:39.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContaController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\SistemaBancario\\Controllers\\ContaController.cs",
+              "RelativeDocumentMoniker": "SistemaBancario\\Controllers\\ContaController.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SistemaBancario\\SistemaBancario\\Controllers\\ContaController.cs",
+              "RelativeToolTip": "SistemaBancario\\Controllers\\ContaController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAkwGMAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T22:41:18.098Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

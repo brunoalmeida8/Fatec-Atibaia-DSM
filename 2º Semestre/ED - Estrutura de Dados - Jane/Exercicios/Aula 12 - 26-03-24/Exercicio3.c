@@ -6,7 +6,7 @@ struct fichaLivro
     int cod_livro;
     char titulo[50];
     char ano_lancamento[4];
-    int edicao
+    int edicao;
     char autor[50];
     char editora[50];
 };
@@ -15,7 +15,7 @@ int main()
 {
     setlocale(LC_ALL, "Portuguese");
 
-    struct fichaLivro livro[i];
+    struct fichaLivro livro[100];
     int i = 0, opcao;
 
     do
@@ -34,14 +34,25 @@ int main()
         case 1:
             printf("\n\nInsira o livro\n\n");
             printf("\nDigite o codigo do livro: ");
-            scanf("%d", &livro.cod_livro[i]);
+            scanf("%d", &livro[i].cod_livro);
+            printf("\nDigite o titulo do livro: ");
+            scanf(" %[^\n]s", livro[i].titulo);
+            printf("\nDigite o ano de lancamento do livro: ");
+            scanf("%s", livro[i].ano_lancamento);
+            printf("\nDigite a edicao do livro: ");
+            scanf("%d", &livro[i].edicao);
+            printf("\nDigite o autor do livro: ");
+            scanf("%s", livro[i].autor);
+            printf("\nDigite a editora do livro: ");
+            scanf("%s", livro[i].editora);
+            i = i + 1;
             break;
         
         default:
             break;
         }
-        i = i + 1;
-    } while (opcao <> 5);
+        
+    } while (opcao != 5);
     
 
 
