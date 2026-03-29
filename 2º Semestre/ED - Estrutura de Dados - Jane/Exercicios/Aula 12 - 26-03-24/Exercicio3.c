@@ -5,7 +5,7 @@ struct fichaLivro
 {
     int cod_livro;
     char titulo[50];
-    char ano_lancamento[4];
+    int ano_lancamento;
     int edicao;
     char autor[50];
     char editora[50];
@@ -16,7 +16,7 @@ int main()
     setlocale(LC_ALL, "Portuguese");
 
     struct fichaLivro livro[100];
-    int i = 0, opcao;
+    int i = 0, opcao, total = 0;
 
     do
     {
@@ -31,25 +31,43 @@ int main()
 
         switch (opcao)
         {
-        case 1:
-            printf("\n\nInsira o livro\n\n");
-            printf("\nDigite o codigo do livro: ");
-            scanf("%d", &livro[i].cod_livro);
-            printf("\nDigite o titulo do livro: ");
-            scanf(" %[^\n]s", livro[i].titulo);
-            printf("\nDigite o ano de lancamento do livro: ");
-            scanf("%s", livro[i].ano_lancamento);
-            printf("\nDigite a edicao do livro: ");
-            scanf("%d", &livro[i].edicao);
-            printf("\nDigite o autor do livro: ");
-            scanf("%s", livro[i].autor);
-            printf("\nDigite a editora do livro: ");
-            scanf("%s", livro[i].editora);
-            i = i + 1;
-            break;
-        
-        default:
-            break;
+            case 1:
+                printf("\n\nInsira o livro\n\n");
+                printf("Digite o codigo do livro: ");
+                scanf("%d", &livro[i].cod_livro);
+                printf("Digite o titulo do livro: ");
+                scanf(" %[^\n]s", livro[i].titulo);
+                printf("Digite o ano de lancamento do livro: ");
+                scanf(" %d", &livro[i].ano_lancamento);
+                printf("Digite a edicao do livro: ");
+                scanf("%d", &livro[i].edicao);
+                printf("Digite o autor do livro: ");
+                scanf(" %[^\n]s", livro[i].autor);
+                printf("Digite a editora do livro: ");
+                scanf(" %[^\n]s", livro[i].editora);
+                i = i + 1;
+                total = total + 1;
+                break;
+            
+            case 4:
+                printf("\n\nLista completa dos livros\n\n");
+                for (int i = 0; i < total; i++)
+                {
+                printf("\nLivro %d", i+1);
+                printf("\nCodigo do livro: %d", livro[i].cod_livro);
+                printf("\nTitulo do livro: %s", livro[i].titulo);
+                printf("\nAno de lancamento do livro: %d", livro[i].ano_lancamento);
+                printf("\nEdicao do livro: %d", livro[i].edicao);
+                printf("\nAutor do livro: %s", livro[i].autor);
+                printf("\nEditora do livro: %s", livro[i].editora);
+                }
+                break;
+                
+
+            
+            default:
+                printf("Selecione uma opção valida de 1 a 5");
+                break;
         }
         
     } while (opcao != 5);
