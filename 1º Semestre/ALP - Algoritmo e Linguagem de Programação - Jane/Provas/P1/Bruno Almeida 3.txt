@@ -1,0 +1,9 @@
+passo 1 - colocar o bode no barco e atravessar o rio
+passo 2 - deixar o bode do outro lado
+passo 3 - retornar sozinho com o bote
+passo 4 - colocar a alfafa no bote e atravessar o rio
+passo 5 - deixar a alfafa do outro lado mas trazer o bode com ele
+passo 6 - retornar com o bode e ele no bote
+passo 7 - deixar o bode e levar o lobo para o outro lado
+passo 8 - deixar o lobo junto com a alfafa do outro lado e retornar
+passo 9 - pegar o bode e atravessar com ele para o outro lado
