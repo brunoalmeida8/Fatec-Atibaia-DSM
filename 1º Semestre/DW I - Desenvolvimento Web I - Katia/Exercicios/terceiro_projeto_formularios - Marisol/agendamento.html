@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estética FATEC</title>
+    <link rel="stylesheet" href = "css/estilo.css">
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="cliente.html">Cadastro de clientes</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="agendamento.html">Agendamento</a>
+            </nav>
+        </header>
+      <h2>Agendamento de serviços com o cliente</h2>
+      <div class="formulario">
+        <form>
+            <div class="campo">
+                <label>Nome:</label>
+                <input type="texte" placeholder="digite o seu nome">
+            </div>
+            <div class="campo">
+                <label>email:</label>
+                <input type="email" placeholder="digite o e-mail">
+            </div>
+            <div class="campo">
+                <label>serviço:</label>
+                <input type="text" placeholder="digite o nome do serviço">
+            </div>
+            <div class="campo">
+                <label>data:</label>
+                <input type="date">
+            </div>
+            <div class="campo">
+                <label>hora:</label>
+                <input type="time" required>
+            </div>
+            <div class="campo">
+                <label>Serviço</label>
+                <select id="servico" required> <!-- erro caso não preencher o requisito -->
+                    <option value="">Selecione</option>
+                    <option value="Limpeza de Pele">Limpeza de Pele</option>
+                    <option value="Massagem Relaxante">Massagem Relaxante</option>
+                    <option value="Depilação">Depilação</option>
+                    <option value="Design de sombrancelha">Design de sombrancelha</option>
+                </select>
+            </div>
+            <div class="linha">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+        <div>
+            <h3>Agendamento de serviços com o ciente</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>email</th>
+                        <th>serviço</th>
+                        <th>data</th>
+                        <th>hora</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+      </div>
+    </main>
+</body>
+</html>
