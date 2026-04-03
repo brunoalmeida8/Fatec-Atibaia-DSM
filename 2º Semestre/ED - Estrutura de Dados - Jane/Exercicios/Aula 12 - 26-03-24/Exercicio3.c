@@ -16,7 +16,7 @@ int main()
     setlocale(LC_ALL, "Portuguese");
 
     struct fichaLivro livro[100];
-    int i = 0, opcao, total = 0, escolhaCodigo, achou = 0;
+    int i = 0, opcao, total = 0, escolhaCodigo, achou;
 
     do
     {
@@ -50,19 +50,23 @@ int main()
                 break;
             
             case 2:
+                achou = 0;
                 printf("Digite o cogido do livro para buscar: ");
                 scanf("%d", &escolhaCodigo);// variavel para defenir qual livro vai buscar
                 for (int i = 0; i < total; i++)
                 {
                     if (escolhaCodigo == livro[i].cod_livro)
                     {
+                        printf("\n\nLivro encontrado\n\n");
+                        printf("")
                         printf("O Codigo do livro e: %d", livro[i].cod_livro);
                         achou = 1; //verifica se encontrou esse codigo (1-vdd, 0-falso)
+                        break;
                     }
                 }
                 if (achou == 0)
                 {
-                    printf("O codigo digitado nao esta cadastrado");
+                    printf("\nO codigo digitado nao esta cadastrado\n");
                 }
                 break;
             
