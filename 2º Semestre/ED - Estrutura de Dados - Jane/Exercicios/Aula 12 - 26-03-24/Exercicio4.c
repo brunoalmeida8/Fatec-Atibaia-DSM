@@ -21,8 +21,8 @@ int main()
 {
     SetConsoleOutputCP(65001);
 
-    fichaAviao aviao[4];//até 4 frotas de aviao
-    fichaReserva reserva[10];//10 reservas por frota/aviao
+    fichaAviao aviao[4] = {0};//até 4 frotas de aviao e o "{0}" inicializa com 0
+    fichaReserva reserva[10] {0};//10 reservas por companhia - limite são 10 reservas no programa mesmo
     int opcao, total_reservas = 0;
 
 
@@ -67,7 +67,7 @@ int main()
             printf("\n--Cadastro de Vagas disponiveis--\n");
             for (int i = 0; i < 4; i++)
             {
-                printf("Vagas para o aviao %d", aviao[i].num_aviao);
+                printf("Vagas para o aviao %d: ", aviao[i].num_aviao);
                 scanf("%d", &aviao[i].vagas_disponiveis);
             }
             printf("\nVagas cadastradas com sucesso\n");
