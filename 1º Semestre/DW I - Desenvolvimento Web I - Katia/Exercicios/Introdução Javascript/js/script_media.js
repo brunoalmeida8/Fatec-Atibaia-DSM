@@ -14,10 +14,11 @@ function calcularMedia(){
     //selecionar os campos de entrada e converter os valores para numero
     const n1 = Number(document.getElementById("nota1").value);// como se fosse leia valor do input
     const n2 = Number(document.getElementById("nota2").value);// getelementbyid é o objeto do input
-    const n3 = Number(document.getElementById("nota3").value);
+    const n3 = Number(document.getElementById("nota3").value);//number converte para numero
     const media = (n1 + n2 + n3) / 3;
     
     //seleciona a div resultado
+    //essa div é como se fosse um nó
     const divResultado = document.getElementById("resultado");
 
     //remove o conteudo antigo antes de inserir um novo
@@ -43,3 +44,4 @@ function calcularMedia(){
     divResultado.appendChild(situacao);
 
 }
+//entao element é um nó .. e nó é o mesmo que element
