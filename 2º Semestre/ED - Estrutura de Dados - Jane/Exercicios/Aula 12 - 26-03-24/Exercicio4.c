@@ -1,3 +1,4 @@
+@ -1,84 +0,0 @@
 #include<stdio.h>
 //#include<locale.h>
 #include<windows.h>//Biblioteca acentos no Windows
