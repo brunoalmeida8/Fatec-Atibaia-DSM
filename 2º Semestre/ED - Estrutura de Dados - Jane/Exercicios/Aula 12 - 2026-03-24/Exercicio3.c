@@ -30,7 +30,7 @@ void exibirLivro (fichaLivro livrinho)//aqui fichaLivro é apelido do tipo struc
 int main()
 {
     //setlocale(LC_ALL, "Portuguese");//usar isso ou o de baixo pq da conflito
-    SetConsoleOutputCP(65001);// Força o terminal a usar UTF-8 (o mesmo do VS Code)
+    SetConsoleOutputCP(65001);// Força o terminal a usar UTF-8 (o mesmo do VS Code) -> <windows.h>
 
     //fichaLivro livro[100];//note que fichaLivro, aqui, é o apelido da struct
 

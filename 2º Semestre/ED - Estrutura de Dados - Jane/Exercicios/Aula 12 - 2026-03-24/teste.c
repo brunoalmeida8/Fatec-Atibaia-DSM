@@ -13,14 +13,13 @@ typedef struct fichaReserva {
 } fichaReserva;
 
 
-void cadastrarNumeroAviao(fichaAviao aviao[], fichaReserva reserva[10])
+void cadastrarNumeroAviao(fichaAviao aviao[], fichaReserva reserva[])
 {
     for (int i = 0; i < 4; i++)
     {
         printf("Digite o numero do %dº aviao: ", i+1);
         scanf("%d", &aviao[i].numero);
     }
-    for(int i = 0; i < 4; i++) printf("%d\n", aviao[i].numero);
 }
 
 void cadastrarQtd_reserva(fichaAviao aviao[], fichaReserva reserva[])
@@ -30,9 +29,7 @@ void cadastrarQtd_reserva(fichaAviao aviao[], fichaReserva reserva[])
         scanf("%d", &aviao[i].qtd_reserva);
     }
     
-    for(int i = 0; i < 4; i++){
-        printf("Aviao %d - %d vagas\n", aviao[i].numero, aviao[i].qtd_reserva);
-    }
+
 }
 
 
@@ -44,6 +41,9 @@ int main()
     cadastrarNumeroAviao(aviao, reserva);
     cadastrarQtd_reserva(aviao, reserva);
     
+    for(int i = 0; i < 4; i++){
+        printf("Aviao %d - %d vagas\n", aviao[i].numero, aviao[i].qtd_reserva);
+    }
     
     
     return 0;
