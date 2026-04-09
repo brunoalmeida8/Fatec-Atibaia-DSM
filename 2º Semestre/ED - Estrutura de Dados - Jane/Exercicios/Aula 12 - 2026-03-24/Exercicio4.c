@@ -42,7 +42,8 @@ void cadastrarVagas(fichaAviao aviao[])
     printf("\nVagas cadastradas com sucesso!\n");
 }
 
-//
+// Função de Reserva (Onde a mágica acontece)
+// Recebe o vetor de aviões (aviao), o de reservas (reserva) e o ENDEREÇO do contador(total_reservas)
 void reservarPassagem(fichaAviao aviao[], fichaReserva reserva[], int *total_reservas)
 {
     printf("\n--Reserva de Passagem--\n");
@@ -55,8 +56,37 @@ void reservarPassagem(fichaAviao aviao[], fichaReserva reserva[], int *total_res
     printf("Digite o numero do aviao que deseja reservar a passagem: ");
     scanf("%d", &num_digitado);
 
+    for (int i = 0; i < 4; i++)
+    {
+        if (aviao[i].num_aviao == num_digitado)
+        {
+            if (aviao[i].vagas_disponiveis > 0)
+            {
+                // EXPLICAÇÃO DA LINHA ABAIXO:
+                // reserva[*total] -> acessa a reserva atual
+                // .ptrAviao -> o campo ponteiro dessa reserva
+                // = &aviao[i] -> O '&' pega o ENDEREÇO do avião encontrado e guarda no ponteiro.
+                // Agora a reserva "sabe" onde o avião 'i' está na memória.
+                reserva[*total_reservas].ptrAviao = &aviao[i];
+                printf("Digite o nome do passageiro: ");
+                scanf(" %[^\n]s", reserva[*total_reservas].passageiro);
+                
+                // Diminuímos a vaga direto no avião original!
+                // Como ptrAviao aponta para aviao[i], mudar aqui muda lá.
+                reserva[*total_reservas].ptrAviao->vagas_disponiveis--;
 
-    
+                printf("Reserva confirmada\n");
+                printf("Aviao - %d\n", reserva[*total_reservas].ptrAviao->num_aviao);
+                printf("Passageiro - %s\n", reserva[*total_reservas].passageiro);
+                (*total_reservas)++;// (*total_reservas)++ -> Incrementa o contador que está lá na MAIN.
+                return;                
+            } else {
+                printf("Voo lotado\n");
+                return;
+            }            
+        }
+    }
+    printf("Aviao %d nao encontrado\n", num_digitado);   
 }
 
 int main()
