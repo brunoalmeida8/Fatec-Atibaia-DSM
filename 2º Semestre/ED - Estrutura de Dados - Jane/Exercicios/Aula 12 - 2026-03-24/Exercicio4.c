@@ -11,7 +11,7 @@ typedef struct fichaAviao
 
 typedef struct fichaReserva 
 {
-    // *ptrAviaoPonteiro que "aponta" para a ficha do avião original
+    // *ptrAviao Ponteiro que "aponta" para a ficha do avião original
     // Isso liga a reserva diretamente ao avião cadastrado
     // O seu link: ponteiro que aponta para a ficha de um avião específico
     fichaAviao *ptrAviao; // Guarda o endereço de uma struct fichaAviao //tentei fazer um ponteiro para linkar com o numero la da fichaAviao
@@ -43,15 +43,15 @@ void cadastrarVagas(fichaAviao aviao[])
 }
 
 //
-void reservarPassagem(int *total_reservas)
+void reservarPassagem(fichaAviao aviao[], fichaReserva reserva[], int *total_reservas)
 {
     printf("\n--Reserva de Passagem--\n");
-    if (total_reservas >= 10)//usa '*' para ver o VALOR dentro do endereço de total_reservas
+    if (*total_reservas >= 10)//usa '*' para ver o VALOR dentro do endereço de total_reservas
     {
         printf("Limite de 10 reservas atingido!\n");
         return;
     }
-    int num_digitado
+    int num_digitado;
     printf("Digite o numero do aviao que deseja reservar a passagem: ");
     scanf("%d", &num_digitado);
 
@@ -67,7 +67,7 @@ int main()
     fichaReserva reserva[10] = {0};//10 reservas por companhia - limite são 10 reservas no programa mesmo
     int opcao, total_reservas = 0;
 
-
+    //system("cls");//coloquei só pq abrindo no cmd o menu sai sem cor na 1ª exibição
     do
     {
         printf("\033[1;32m"); // Verde
