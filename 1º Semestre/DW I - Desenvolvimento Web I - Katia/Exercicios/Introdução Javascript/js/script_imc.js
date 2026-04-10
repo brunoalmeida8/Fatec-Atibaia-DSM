@@ -26,3 +26,11 @@ function classificarImc(valor){
     if(valor >= 25) paragrafo_classificacao.innerText="Sobrepeso!";
     resultado.appendChild(paragrafo_classificacao);
 }
+
+function Limpar() {
+    resultado.innerHTML="";//apaga o resultado do imc (em baixo)
+    const inputpeso=document.getElementById("peso");
+    inputpeso.value="";//apaga o valor digitado la no input do peso
+    const inputaltura=document.getElementById("altura");
+    inputaltura.value="";
+}
