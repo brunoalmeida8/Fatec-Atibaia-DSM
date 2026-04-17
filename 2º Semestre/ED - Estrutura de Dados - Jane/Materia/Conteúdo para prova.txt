@@ -1,0 +1,16 @@
+Conteúdo para prova
+
+Arrays (P e T)
+Modularização - uso de funções - passagens de parâmetros (P e T)
+alocação estática e dinâmica (P e T)
+Ponteiros (P e T)
+Estruturas (struct) (P e T)
+Listas encadeadas, duplamente encadeadas e circulares (T)
+
+Livros:
+1) Algoritmos e estruturas de dados em linguagem C - Andre Ricardo Backes (Cap.5)
+2) Lógica de Programação e estrutura de dados - Sandra Puga e Gerson Rissetti (Cap 7 e Cap 12)
+3) Linguagem C - Completa e descomplicada - Andre Backes (Cap 6, 9, 10 e 11)
+4) Estrutura de dados - Dilermando Piva Junior, Francisco Bianchi et al (Cap 6 e Cap 7)
+
+
