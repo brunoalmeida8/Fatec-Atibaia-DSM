@@ -11,13 +11,13 @@ int main ()
     int arr[5] = {10, 20, 30, 40, 50};
     int *ptr = arr;
 
-    printf("\nValor contido na posição 0: %d\tPrimeira posição do array            : %p", arr[0], ptr);
-    ptr++; //Vai para o proximo endereço - nesse caso elemento 1
-    printf("\nValor contido na posição 1: %d\tPosição incrementada em 1 no ponteiro: %p", arr[1], ptr);
+    printf("\nValor contido na posiï¿½ï¿½o 0: %d\tPrimeira posiï¿½ï¿½o do array            : %p", arr[0], ptr);
+    ptr++; //Vai para o proximo endereï¿½o - nesse caso elemento 1
+    printf("\nValor contido na posiï¿½ï¿½o 1: %d\tPosiï¿½ï¿½o incrementada em 1 no ponteiro: %p", arr[1], ptr);
 
     int dif = &arr[4] - &arr[1];
 
-    printf("\n\nDiferença entre ponteiros: %d\n\n", dif);
+    printf("\n\nDiferenï¿½a entre ponteiros: %d\n\n", dif);
 
 
     return 0;

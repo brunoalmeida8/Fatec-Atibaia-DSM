@@ -15,7 +15,7 @@ int main ()
     printf("Ponteiro 1: %p\n", ptr1);
     printf("Ponteiro 1: %p\n", ptr2);
 
-    printf("<< Comparação entre ponteiros >>");
+    printf("<< Comparaï¿½ï¿½o entre ponteiros >>");
 
     if (ptr1 > ptr2)
         printf("\n\nptr1 maior\n");
