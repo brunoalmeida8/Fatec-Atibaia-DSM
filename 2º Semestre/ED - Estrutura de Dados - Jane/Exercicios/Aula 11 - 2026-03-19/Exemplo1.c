@@ -10,7 +10,7 @@ struct Reg_contas
     char nome[20];
     float saldo;
     struct Reg_contas *ptr;
-;}
+};
 
 struct funcionario2
 {
