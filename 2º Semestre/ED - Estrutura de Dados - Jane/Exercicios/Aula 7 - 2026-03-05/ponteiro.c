@@ -8,7 +8,7 @@ int main()
     yptr = &y;
 
     printf("%d", yptr);
-    printf("\n%d", *yptr); // chamado de desreferenciação do ponteiro ou opraç~.. indie
+    printf("\n%d", *yptr); // chamado de desreferenciaï¿½ï¿½o do ponteiro ou opraï¿½~.. indie
 
     return 0;
 }

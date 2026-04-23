@@ -7,7 +7,7 @@ int main()
     setlocale(LC_ALL, "Portuguese");
     int *ptr;
 
-    ptr = (int*) malloc(10 * sizeof(int)); //Aloca memoria para 5 inteiros
+    ptr = (int*) malloc(10 * sizeof(int)); //Aloca memoria para 10 inteiros
     //nesse caso malloc esta armazenando na memoria um
     //espaço contiguo, entao podemos acessar os espaçoes como a um vetor
 

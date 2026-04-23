@@ -14,13 +14,13 @@ int main()
 
     aptr = &a;
 
-    printf("O endereço de a é %p"
-           "\nO valor de aptr é %p",&a, aptr);
+    printf("O endereï¿½o de a ï¿½ %p"
+           "\nO endereÃ§o de aptr ï¿½ %p",&a, aptr);
 
-    printf("\nO valor de a é %d"
-           "\nO valor de aptr é %d",a, *aptr);
+    printf("\nO valor de a ï¿½ %d"
+           "\nO valor de aptr ï¿½ %d",a, *aptr);
 
-    printf("\n\n Mostrando que * e & são complementos um"
+    printf("\n\n Mostrando que * e & sï¿½o complementos um"
            "do outro\n&*aptr = %p"
            "\n*&aptr = %p\n", &*aptr, *&aptr);
 
