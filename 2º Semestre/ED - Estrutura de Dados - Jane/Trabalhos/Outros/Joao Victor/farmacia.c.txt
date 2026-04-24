@@ -1,0 +1,209 @@
+#include <stdio.h>
+#include <locale.h>
+#include <stdlib.h>
+#include <string.h>
+
+typedef struct
+{
+    int CodigoMedicamento;
+    char NomeMedicamento[100];
+    int QuantidadeEstoque;
+    double PrecoUnitario;
+} Medicamento;
+
+void ExibeMenu();
+void ExibeOpcaoInvalida();
+Medicamento* CadastraMedicamento(Medicamento *medicamentos, int *qtde);
+void ListaMedicamentos(Medicamento *medicamentos, int *qtde);
+void BuscaMedicamento(Medicamento *medicamentos, int *qtde);
+void ExibeNenhumMedicamento();
+void ExibeSaida();
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    int opcao = 0, qtde = 0, cadastrouMaisDeUmaVez =0;
+    Medicamento *medicamentos = NULL;
+
+    while(opcao != 4)
+    {
+        ExibeMenu();
+        scanf("%d", &opcao);
+
+        switch(opcao)
+        {
+        case 1:
+            medicamentos = CadastraMedicamento(medicamentos, &qtde);
+            break;
+        case 2:
+            ListaMedicamentos(medicamentos, &qtde);
+            break;
+        case 3:
+            BuscaMedicamento(medicamentos, &qtde);
+            break;
+        case 4:
+            ExibeSaida();
+            break;
+        default:
+            ExibeOpcaoInvalida();
+            break;
+        }
+    }
+
+    free(medicamentos);
+    return 0;
+}
+
+void ExibeMenu()
+{
+    printf("---------------------------------------");
+    printf("\n1 - Cadastrar medicamentos");
+    printf("\n2 - Listar medicamentos");
+    printf("\n3 - Buscar medicamento por código");
+    printf("\n4 - Sair");
+    printf("\n---------------------------------------");
+    printf("\nEscolha uma das opções acima:");
+}
+
+void ExibeOpcaoInvalida()
+{
+    printf("\n---------------------------------------");
+    printf("\nOpcão Inválida!\n");
+}
+
+Medicamento* CadastraMedicamento(Medicamento *medicamentos, int *qtde)
+{
+    int novosMedicamentos;
+
+    printf("\n---------------------------------------");
+    printf("\nQuantos medicamentos deseja cadastrar:");
+    scanf("%d", &novosMedicamentos);
+
+    int total = *qtde + novosMedicamentos;
+
+    Medicamento *medicamentosTemporarios = realloc(medicamentos, total * sizeof(Medicamento));
+
+    if (medicamentosTemporarios == NULL)
+    {
+        printf("\nErro de alocação!\n");
+        return medicamentos;
+    }
+
+    medicamentos = medicamentosTemporarios;
+
+    ExibeMensagemCadastro(novosMedicamentos);
+
+    for(int i = *qtde; i < total; i++)
+    {
+        printf("\n---------------------------------------");
+        printf("\nInsira o código do medicamento:");
+        scanf("%d", &(medicamentos+i)->CodigoMedicamento);
+        getchar();
+
+        printf("Insira o nome do medicamento:");
+        fgets((medicamentos+i)->NomeMedicamento, sizeof((medicamentos+i)->NomeMedicamento), stdin);
+
+        // Não tinha encontrado como remover o \n do buffer, mas pedi uma ajudinha, e deu certo kkkk
+        (medicamentos+i)->NomeMedicamento[
+            strcspn((medicamentos+i)->NomeMedicamento, "\n")
+        ] = '\0';
+
+        printf("Insira a quantidade em estoque:");
+        scanf("%d", &(medicamentos+i)->QuantidadeEstoque);
+
+        printf("Insira o preço unitário:");
+        scanf("%lf", &(medicamentos+i)->PrecoUnitario);
+        getchar();
+    }
+
+    *qtde = total;
+
+    return medicamentos;
+}
+
+void ListaMedicamentos(Medicamento *medicamentos, int *qtde)
+{
+    if (*qtde == 0)
+    {
+        ExibeNenhumMedicamento();
+        return;
+    }
+
+    for(int i = 0; i<*qtde; i++)
+    {
+        printf("\n---------------------------------------");
+        printf("\nMedicamento %d:", i + 1);
+        printf("\n---------------------------------------");
+        printf("\nCódigo: %d", (medicamentos+i)->CodigoMedicamento);
+        printf("\nNome: %s", (medicamentos+i)->NomeMedicamento);
+        printf("\nQuantidade: %d", (medicamentos+i)->QuantidadeEstoque);
+        printf("\nPreço: %.2lf\n", (medicamentos+i)->PrecoUnitario);
+    }
+}
+
+void BuscaMedicamento(Medicamento *medicamentos, int *qtde)
+{
+    int codigo;
+    int encontrado=0;
+
+    printf("\n---------------------------------------");
+    printf("\nQual código do medicamento desejado:");
+    scanf("%d",&codigo);
+
+    if(*qtde == 0)
+    {
+        printf("\n---------------------------------------");
+        printf("\nNenhum medicamento cadastrado.\n");
+    }
+    else
+    {
+        for(int i =0; i< *qtde; i++)
+        {
+            if((medicamentos+i)->CodigoMedicamento == codigo)
+            {
+                printf("\n---------------------------------------");
+                printf("\nMedicamento %d:", i + 1);
+                printf("\n---------------------------------------");
+
+                printf("\nCódigo: %d", (medicamentos+i)->CodigoMedicamento);
+                printf("\nNome: %s", (medicamentos+i)->NomeMedicamento);
+                printf("\nQuantidade: %d", (medicamentos+i)->QuantidadeEstoque);
+                printf("\nPreço: %.2lf\n", (medicamentos+i)->PrecoUnitario);
+
+                encontrado = 1;
+            }
+        }
+
+        if(encontrado == 0){
+            printf("\n---------------------------------------");
+            printf("\nNenhum medicamento encontrado.\n");
+        }
+    }
+}
+
+void ExibeNenhumMedicamento()
+{
+    printf("\n---------------------------------------");
+    printf("\nNenhum medicamento cadastrado.\n");
+}
+
+void ExibeMensagemCadastro(int qtde)
+{
+    if(qtde > 1)
+    {
+        printf("\n---------------------------------------");
+        printf("\nInsira as informações dos medicamentos:");
+    }
+    else
+    {
+        printf("\n---------------------------------------");
+        printf("\nInsira as informações do medicamento:");
+    }
+}
+
+void ExibeSaida()
+{
+    printf("\n---------------------------------------");
+    printf("\nPrograma encerrado!");
+    printf("\n---------------------------------------");
+}
