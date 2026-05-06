@@ -12,7 +12,7 @@ int calcularMaior(int num1, int num2)
 
 int main()
 {
-    int num1, num2;
+    int num1, num2, maior;
 
     printf("Informe um numero: ");
     scanf("%d", &num1);
