@@ -9,8 +9,24 @@ void mediaAritmetica()
     printf("Digite outro valor: ");
     scanf("%f", &valor2);
     media = (valor1 + valor2) / 2;
-    printf("\nMedia aritmetica = %.2f", media);
+    printf("\nMedia aritmetica = %.2f", media); 
+}
 
+void mediaPonderada()
+{
+    float nota[3], peso[3], media, somaPesos;
+    printf("\n\n===Media Aritmetica\n\n");
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("Digite a nota %d: ", i + 1);
+        scanf("%f", &nota[i]);
+        printf("Digite o peso da nota %d: ", i + 1);
+        scanf("%f", &peso[i]);
+    }
+    somaPesos = peso[0] + peso[1] + peso[2];
+    media = ( (nota[0] * peso[0]) + (nota[1] * peso[1]) + (nota[2] * peso[2]) ) / somaPesos;
+    printf("\nMedia ponderada = %.2f", media);
 }
 
 int main()
@@ -31,7 +47,7 @@ int main()
             break;
 
         case 2:
-           // mediaponderada();
+            mediaPonderada();
             break;
 
         case 3:
@@ -40,8 +56,8 @@ int main()
             break;
         
         default:
+            printf("Digite um valor valido\n");
             break;
-            //continue;
         }
     } while (escolha != 3);
     
