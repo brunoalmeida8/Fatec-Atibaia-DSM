@@ -1,0 +1,38 @@
+mysql -u root –p 
+
+SHOW databases;
+
+CREATE DATABASE loja_varejo;
+
+USE loja_varejo;
+
+SHOW TABLES;
+
+CREATE TABLE cliente (ID Integer(10) unsigned not null, 
+nome varchar(50) not null, 
+telefone Integer(10),
+cidade varchar(50), 
+Primary key(ID));
+show tables;
+
+Describe cliente;
+
+insert into cliente (ID, nome, telefone, cidade) values 
+(300, 'Mônica dos Santos', 34556788, "São Paulo");
+
+select * from cliente;
+
+insert into cliente (ID, nome, telefone, cidade) values 
+(452, 'Mônica dos Santos', 34556788, "São Paulo"),
+(057, 'Sherife Wood', 34556788, "São Paulo"),
+(342, 'Mônica dos Santos', 23423423, "São Paulo"),
+(43, 'Caique Silva', 32423423, "São Paulo"),
+(42, 'Dorivaldo Santos', 23423423, "São Paulo"),
+(567, 'Neide Roddrigues', 34556788, "São Paulo"),
+(564, 'Silvio Santos', 34556788, "São Paulo"),
+(876, 'Carlos Eduardo', 34556788, "São Paulo"),
+(356, 'Serginho Chulapa', 34556788, "São Paulo"),
+(967, 'Thiago Silva', 34556788, "São Paulo"),
+(846, 'Mathias Dirney Santos', 34556788, "Minas Gerais");
+
+select * from cliente;
