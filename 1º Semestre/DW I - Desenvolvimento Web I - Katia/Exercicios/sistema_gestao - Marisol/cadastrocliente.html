@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de gestão</title>
+</head>
+<body>
+    <nav>
+        <a href="cadastrocliente.html">Gerenciamento de cliente</a>
+        <a href="">Gerenciamento de usuário</a>
+    </nav>
+    <h2>Gerenciamento de clientes</h2>
+    <div>
+        <form id="cadastroForm">
+            <div class="linha">
+                <div class="campo">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" required>
+                </div>
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" required>
+                </div>
+            </div>
+            <div class="linha">
+                <div class="campo">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" required>
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" required>
+                </div>
+            </div>
+            <button type="submit">Cadastro</button>
+        </form>
+        <div class="output">
+            <h3>Cliente cadastrados</h3>
+            <table id="clientesTable">
+                <thead>
+                    <tr>
+                        <th>CPF</th>
+                        <th>Nome</th>
+                        <th>Endereço</th>
+                        <th>Telefone</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+            </table>
+            <tbody></tbody>
+        </div>
+    </div>
+    <script src="js/scriptclientes.js"></script>
+</body>
+</html>

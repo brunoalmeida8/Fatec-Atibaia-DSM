@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home do cliente</title>
+</head>
+<body>
+    <header>
+        <h1>Loja de Eletronicos</h1>
+        <nav>
+            <button onclick="mostrarcarrinho()">Ver carrinho</button>
+            <button onclick="limparcarrinho()">Limpar carrinho</button>
+        </nav>
+    </header>
+    <main>
+        <section class="produtos">
+            <div class="prod">
+                <img src="https://m.media-amazon.com/images/I/51LAU1+ACrL._AC_SX679_.jpg" alt="">
+                <h2>Notebook</h2>
+                <p>R$ 3990,00</p>
+                <button onclick="adicionarproduto('Notebook', 3990.00)">Adicionar</button>
+            </div>
+            <div class="prod">
+                <img src="https://m.media-amazon.com/images/I/51uLuFNPDwL._AC_SX679_.jpg" alt="">
+                <h2>Mouse e teclado sem fio</h2>
+                <p>R$ 129,00</p>
+                <button onclick="adicionarproduto('Teclado e mouse sem fio', 129.20)">Adicionar</button>
+            </div>
+            <div class="prod">
+                <img src="https://m.media-amazon.com/images/I/71imAB-1AUL._AC_SX679_.jpg" alt="">
+                <h2>Monitor 20"</h2>
+                <p>R$ 205,62</p>
+                <button onclick="adicionarproduto('Monitor 20 polegadas', 205.62)">Adicionar</button>
+            </div>
+        </section>
+        <section id="carrinho" class="carrinhooculto">
+            <h3 id="total"></h3>
+        </section>
+    </main>
+    <script src="js/script_carrinho.js"></script>
+</body>
+</html>
