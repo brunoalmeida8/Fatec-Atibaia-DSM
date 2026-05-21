@@ -1,0 +1,12 @@
+mysql -u root
+
+show databases;
+
+
+CREATE TABLE cliente (ID Integer(10) unsigned not null, 
+nome varchar(50) not null, 
+telefone Integer(10),
+cidade varchar(50), 
+estado char(2) Default "SP",// é para deixar sp como Default se nada for preenchido no insertinto
+Primary key(ID));
+show tables;

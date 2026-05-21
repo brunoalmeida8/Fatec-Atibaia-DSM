@@ -36,3 +36,73 @@ insert into cliente (ID, nome, telefone, cidade) values
 (846, 'Mathias Dirney Santos', 34556788, "Minas Gerais");
 
 select * from cliente;
+
+
+
+
+describe clientes;
+
+select * from cliente limit 3;
+
+select * from cliente order by cidade;
+
+select * from cliente order by cidade desc;
+
+ALTER TABLE cliente ADD COLUMN uf char(2);
+
+ALTER TABLE cliente DROP uf;
+
+ALTER TABLE cliente ADD COLUMN uf char(2);
+
+ALTER TABLE cliente MODIFY uf varchar(2);
+
+ALTER TABLE cliente CHANGE uf UF char(2) DEFAULT 'sp';
+
+UPDATE cliente SET telefone = 88556788 WHERE nome = "Thiago Silva";
+
+ALTER TABLE cliente CHANGE UF uf char(2) DEFAULT 'sp';
+
+DELETE FROM cliente WHERE id=452;
+
+CREATE TABLE cliente2 LIKE cliente;
+
+CREATE TABLE cliente3 AS SELECT * FROM cliente;
+
+DROP TABLE cliente2;
+
+CREATE TABLE Cliente ( 
+    Cod_cli INTEGER PRIMARY KEY, 
+    Nome VARCHAR (50), 
+    Endereco VARCHAR (50), 
+    Telefone VARCHAR (20) 
+);
+
+CREATE TABLE Fornecedor ( 
+    Cod_for INTEGER PRIMARY KEY, 
+    Contato VARCHAR (25), 
+    Endereco VARCHAR (50), 
+    Telefone VARCHAR (25) 
+); 
+
+CREATE TABLE Produto ( 
+    Cod_pro INTEGER  PRIMARY KEY, 
+    Descricao VARCHAR (50), 
+    Valor_unitario DOUBLE (6,2), 
+    Cod_Fornecedor INTEGER, 
+    Data_cadastro DATE 
+); 
+
+CREATE TABLE Vendas ( 
+    NF INTEGER PRIMARY KEY, 
+    Cod_Cli INTEGER, 
+    Cod_Pro INTEGER, 
+    Data_venda DATE, 
+    Valor_venda DOUBLE, 
+    Vendedor VARCHAR (50), 
+    Regiao VARCHAR (25) 
+);
+
+SHOW CREATE TABLE vendas;
+
+insert into fornecedor (Cod_for, contato, endereco, telefone) values 
+(001, 'Francisco Souza', "Rua ari da silva", 11987654321);
