@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style_carrinho.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Loja de Eletronicos</h1>
+      <nav>
+        <button type="button" onclick="mostrarcarrinho()">Ver carrinho</button>
+        <button type="button" onclick="limparcarrinho()">
+          Limpar carrinho
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="produtos">
+        <div class="prod">
+          <img
+            src="https://m.media-amazon.com/images/I/514EAjs4c9L._AC_SX679_.jpg"
+            alt=""
+          />
+          <h2>Notebook</h2>
+          <p>R$ 3.990,00</p>
+          <button onclick="adicionarproduto('Notebook', 3990.0)">
+            Adicionar
+          </button>
+        </div>
+        <div class="prod">
+          <img
+            src="https://m.media-amazon.com/images/I/718-iQ6yEDL._AC_SX679_.jpg"
+            alt=""
+          />
+          <h2>Mouse e teclado sem fio gamer</h2>
+          <p>R$ 129,20</p>
+          <button onclick="adicionarproduto('teclado e mouse sem fio', 129.2)">
+            Adicionar
+          </button>
+        </div>
+        <div class="prod">
+          <img
+            src="https://m.media-amazon.com/images/I/51mHapX90SL._AC_SX679_.jpg"
+            alt=""
+          />
+          <h2>Monitor 29"</h2>
+          <p>R$ 2.400,00</p>
+          <button onclick="adicionarproduto('Monitor 29 polegadas', 2400.0)">
+            Adicionar
+          </button>
+        </div>
+      </section>
+      <section id="carrinho" class="carrinhooculto">
+        <h3 id="total"></h3>
+      </section>
+    </main>
+    <script src="js/script_carrinho.js"></script>
+  </body>
+</html>

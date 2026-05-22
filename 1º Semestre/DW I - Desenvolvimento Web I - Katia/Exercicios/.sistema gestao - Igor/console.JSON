@@ -1,0 +1,2 @@
+const usuario = { usuario: 'Katia', senha: '12345', tipo:'admin'};
+localStorage.setItem('usuario', JSON.stringify(usuario));
