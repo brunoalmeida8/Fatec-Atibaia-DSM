@@ -1,0 +1,25 @@
+IMPORTANTE
+Conteúdo da prova
+
+listas
+listas simplesmente encadeada
+listas duplamente encadeada
+listas circulares
+Pilha e Filas
+Grafos
+Árvores
+Ordenação de vetores (somente teórica)
+Complexidade de algoritmos
+Algoritmos recursivos (somente teórica)
+
+
+Livros: 
+
+Algoritmos e Estruturas de dados em Linguagem C - Andre Ricardo Backes
+Linguagem C - Completa e Descomplicada - Andre Backes
+Estruturas de dados - Ana Fernanda  Gomes Ascencio  &  Graziela Santos  de Araújo
+Lógica de Programação e Estruturas de dados - Sandra Puga e Gerson Rissetti
+
+ 
+
+ 
