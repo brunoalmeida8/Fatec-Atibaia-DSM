@@ -1,0 +1,27 @@
+Substantivo
+Gustavo
+coleção
+revistas em quadrinho
+amigos
+clube da leitura
+pai
+criança
+emprestimo
+nome
+tipo da coleção
+numero da edição
+ano da revista
+caixa
+
+Adjetivo 
+grande
+cor
+etiqueta
+numero
+
+
+Verbo
+tem
+emprestar
+cadastra revistas
+controla emprestimo
