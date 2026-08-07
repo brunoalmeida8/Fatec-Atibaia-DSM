@@ -7,4 +7,13 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.livros > div {
+    flex: 1;                   /* Faz os itens dividirem o espaço igualmente */
+    min-width: 220px;          /* Evita que encolham demais */
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
 }
