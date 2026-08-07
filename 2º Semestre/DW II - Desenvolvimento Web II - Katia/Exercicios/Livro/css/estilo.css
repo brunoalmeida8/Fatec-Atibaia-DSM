@@ -1,0 +1,56 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.livros{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+
+header{
+    background-color: cadetblue;
+    padding: 1.5rem;
+}
+
+nav button{
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: none;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+}
+.estante{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem;
+    flex-wrap: wrap;
+}
+    
+.livros{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    text-align: center;
+    width: 30%;
+}
+.livros img{
+    width: 100%;
+    height: 200px;
+}
