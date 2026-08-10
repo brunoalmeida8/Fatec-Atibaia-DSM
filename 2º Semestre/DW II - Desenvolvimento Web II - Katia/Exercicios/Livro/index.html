@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <button>Carrinho</button>
+            <button onclick="mostrarCarrinho()">Carrinho</button>
         </nav>
     </header>
 
@@ -23,7 +23,7 @@
                 <h2>Dom Casmurro</h2>
                 <p>Autor: Machado de Assis</p>
                 <p>Preço: R$ 29,90</p>
-                <button type="button">Adicionar</button>
+                <button type="button" onclick="adicionar('Dom Casmurro', 29,90)">Adicionar</button>
             </div>
 
             <!-- Livro 2 -->
@@ -53,6 +53,10 @@
                 <button type="button">Adicionar</button>
             </div>
         </section>
+        <section id="carrinho" class="carrinho oculto">
+            <h3 id="total"></h3>
+        </section>
+        <script src="js/script.js"></script>
     </main>
 </body>
 

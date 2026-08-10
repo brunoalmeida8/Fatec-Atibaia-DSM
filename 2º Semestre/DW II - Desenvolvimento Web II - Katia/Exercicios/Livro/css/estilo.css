@@ -22,6 +22,11 @@ body{
 header{
     background-color: cadetblue;
     padding: 1.5rem;
+    background-image: url ('../img/capa.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
 }
 
 nav button{
@@ -48,9 +53,31 @@ nav{
     border-radius: 0.5rem;
     box-shadow: 0 0 10px rgb(0, 0, 0);
     text-align: center;
-    width: 30%;
+    width: 25%;
+    max-width: 30%;
+    min-width: 20%;
 }
 .livros img{
     width: 100%;
     height: 200px;
+}
+
+.carrinho{
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 300px;
+    max-height: 80vh;
+    background-color: white;
+    overflow-y: auto;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.oculto{
+    transform: translateX(100%);
+}
+
+.visivel{
+    transform: translateX(0);
 }
