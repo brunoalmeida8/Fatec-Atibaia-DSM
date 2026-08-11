@@ -25,3 +25,26 @@ tem
 emprestar
 cadastra revistas
 controla emprestimo
+
+
+
+amigo
+    nome
+    fone
+    nomeMae
+    local
+
+emprestimo
+    dt saida
+    dt devolucao
+
+revista
+    titulo
+    edição
+    ano
+    tipo
+    
+caixa
+    cor
+    etiqueta
+    numero
