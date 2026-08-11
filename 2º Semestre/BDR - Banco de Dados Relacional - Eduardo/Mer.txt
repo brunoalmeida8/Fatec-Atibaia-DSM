@@ -1,0 +1,129 @@
+mer 
+
+representante grupo organizacional
+adm de materiais - gerenciamento de estoque
+
+é uma holdin
+    tem varias empresas 
+
+cada empresa tem suas filiais..
+cada pode ter diversas filiais do brasil inteiro
+
+a tem filiais no brasil inteiro
+    identificada
+        codigo 
+        razao social 
+        cnpj
+        cidade - estado
+        codigo interno tbm
+
+
+empresa a pode ter varias filiais
+    sigla 
+    descrição
+
+
+filiais tem galpoes para armazenar materiasi
+galpao nao é nem da empresa nem da filial
+    é do grupo 
+    
+    codigo galpao
+    nome - descrição
+    codigo interno - glpxp1 (galpao de armazenamento de itens )
+    jarinu - sp
+
+produtos
+empresa nem filial nem galpao nao tem cadastro de produtos
+o grupo empresarial HOLDIN tem cadastro unico de produtos
+serve para todos
+
+empresa pneus
+empresa artefato de borracha
+
+por exemplo produto borracha sintetica
+
+produto 
+    codigo
+    descrição
+    status - ativo ou inativo
+    nao tem valor, nao tem .... sei la
+
+
+holdin tem cadastro de produtos para toda holdin 
+compro produto tonelada de borracha (a holdin)
+a empresa a vai armazenar a borracha em kg
+a empresa b (artefato de borracha) armazena em kg
+
+estoque do produto esta no galpao, que pertence a uma empresa qeu tem uma filial 
+
+
+armazenar - pela a filial
+    unidade de medida - filiais
+    quanto custa o kg
+
+
+    qual a qtd max - filiais
+    qtd min - filiais 
+    ponto de reposição
+    saldo - em cada galpao
+
+estoque é por empresa e por filial
+so que condiciona em galpoes
+
+
+galpao tem localização para o produto
+    corredor
+    rua
+    sei la 
+
+
+produto dsm nutrição disciplinas nao podem misturar
+    familia - categoria
+        codigo
+        descrição (por ex materia prima, produto acabado, itens de consumo, material de limpeza, material de escritorio)
+    linha - subcategoria
+        codigo
+        descrição (borracha sintetica, arame, cola, sabao em po, canetas e lapis)
+
+estoque
+    movimentações - como é composto o saldo
+        quando item entrou/saiu
+        qtd entrou/saiu
+        pq saiu/entrou
+        tipo - ex entrada de sei la o q por compra, entrada por transferencia...
+        natureza - entrada, saida, neutra (exemplo inventario)
+
+        sequncia - 
+            entrada, 
+            data, 
+            qtd, 
+            de qual produto/material, 
+            de qual empresa, 
+            para qual filial, 
+            tipo, 
+            natureza
+            OBS - a unidade de medida é de acordo com o que ja ta na empresa entao nao precisa
+        compra, transferencia, venda....
+
+        empresa
+            tem a unidade de medida..
+            que e a mesma para todas as suas filiais
+
+holdin
+    empresa
+        filiais
+            galpao - mas é da holdin
+
+
+filial
+    qtd max
+    qtd min
+    ponto de reposição
+    saldo - de acordo com a unidade de medida da EMPRESA
+
+empresa
+    controle o unidade de medida
+
+produto da filial F1 pode ter metade num galpao e 
+
+
