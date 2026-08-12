@@ -1,0 +1,79 @@
+Holding agora compra e vende
+
+
+
+quando eu vendo eu tenho custo com frete
+    transportadora
+        contas a pagar
+    contas a pagar
+
+cliente
+    contas a receber
+
+transportadora
+    contas a pagar
+
+movimentação
+
+
+
+clientes
+    pk  id_cliente int
+    ds_cliente v
+    nr_cnpj v
+
+fornecedor
+    pk  id_fornecedor int
+    ds_fornecedor v
+    nr_cnpj v
+
+transportadora
+    pk  id_transportadora int
+    ds_transportadora v
+    nr_cnpj v
+
+movimentação
+    pk  id_movimentação int
+    nr_doc int
+    dt_venc date
+    vl_doc  decimal (10,2)
+    fk  id_cliente int
+    fk  id_fornecedor int
+    fk  id_transportadora int
+
+
+    clientes        1-n   movimentação
+    fornecedor      1-n   movimentação
+    transportadora  1-n   movimentação
+
+
+
+ouuu
+
+
+organização
+    pk  id_organização int
+    ds_organização v
+    nr_cnpj v
+    fk  id_tipo_org int
+
+tipo_org
+    pk  id_tipo_org int
+    ds_tipo_org v
+
+perfil
+    pk id_perfil
+    fk  id_organização int é uk composta
+    fk id_tipo_org int      é uk composta
+
+movimentação
+    pk  id_movimentação int
+    nr_doc int
+    dt_venc date
+    vl_doc  decimal (10,2)
+    fk  id_perfil int
+
+perfil          1-n     movimentação
+organização     1-n     perfil
+tipo_org        1-n     perfil
+
