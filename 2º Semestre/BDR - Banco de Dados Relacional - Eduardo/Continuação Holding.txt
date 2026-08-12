@@ -5,6 +5,8 @@ Holding agora compra e vende
 quando eu vendo eu tenho custo com frete
     transportadora
         contas a pagar
+
+fornecedor
     contas a pagar
 
 cliente
