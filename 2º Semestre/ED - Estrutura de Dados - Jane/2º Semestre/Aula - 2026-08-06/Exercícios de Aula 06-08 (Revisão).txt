@@ -1,0 +1,22 @@
+Exercícios de Aula 06-08 (Revisão)
+Data de conclusão 6 de agosto de 2026 às 21:00
+•
+Vários envios permitidos
+Instruções
+1.  (Variáveis) Crie um programa que leia: Nome, Idade, Altura de uma pessoa. Exiba os dados formatados.
+
+2. (Vetores) Crie um programa que leia 5 números inteiros, armazene em um vetor e apresente a média aritmética dos mesmos.
+
+3. (Vetores) Leia 10 números e armazene em um vetor, apresente os valores em ordem inversa a que foi digitada
+
+4. (Matrizes) Crie uma matriz 3x3, solicite os valores e exiba: 
+- A soma da diagonal principal
+- A soma de todos os valores  
+
+5. (Matrizes) Leia a nota de 5 alunos e 3 avaliações de cada, calcule e mostre:
+- A média de cada aluno
+- Maior média da turma
+
+6. (Funções) Criar um programa que possa entrar com três números e, para cada um, imprimir o dobro. Usar uma função que retorne valor.
+
+7. (Funções) Criar um programa que receba 3 números e a calcule por meio de uma função a média aritmética dos valores. A entrada dos dados e a apresentação do resultado devem acontecer na função main() 
