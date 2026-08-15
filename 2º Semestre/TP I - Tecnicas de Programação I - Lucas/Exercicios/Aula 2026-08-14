@@ -1,0 +1,9 @@
+Faça um sistema, com a classe veiculo, a classe veiculo vai possuir os seguiuntes atributos:
+
+tipoVeiculo, onde sera cdastrado um tipo de veiculo (carro, moto, avião);
+qtdRodas, a qtd de das q o veiculo possui;
+cor, a cor do veiculo
+
+vai ter dois metodos:
+    1 apresentar Veiculo com o tipo e a cor
+    2 apresentar todas as informações;
