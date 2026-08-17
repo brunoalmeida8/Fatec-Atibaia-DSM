@@ -10,7 +10,7 @@ namespace Projeto1
     {
         string modelo;
         string marca;
-        setring cor;
+        string cor;
         int ano;
         public void cadastrar(string modelo, string marca, string cor, int ano)
         {
@@ -19,7 +19,7 @@ namespace Projeto1
             this.cor = cor;
             this.ano = ano;
         }
-        public string motrar()
+        public string mostrar()
         {
             string texto = $"Marca: {this.marca} \nModelo: {this.modelo} \nCor: {this.cor}" +
                 $"\nAno de fabricação: {this.ano}";

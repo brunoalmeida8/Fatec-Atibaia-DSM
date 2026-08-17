@@ -1,0 +1,15 @@
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\obj\Debug\net8.0\Projeto1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\obj\Debug\net8.0\Projeto1.AssemblyInfoInputs.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\obj\Debug\net8.0\Projeto1.AssemblyInfo.cs
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\obj\Debug\net8.0\Projeto1.csproj.CoreCompileInputs.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\obj\Debug\net8.0\Projeto1.sourcelink.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\bin\Debug\net8.0\Projeto1.exe
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\bin\Debug\net8.0\Projeto1.deps.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\bin\Debug\net8.0\Projeto1.runtimeconfig.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\bin\Debug\net8.0\Projeto1.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\bin\Debug\net8.0\Projeto1.pdb
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\obj\Debug\net8.0\Projeto1.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\obj\Debug\net8.0\refint\Projeto1.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\obj\Debug\net8.0\Projeto1.pdb
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\obj\Debug\net8.0\Projeto1.genruntimeconfig.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto1\Projeto1\obj\Debug\net8.0\ref\Projeto1.dll
