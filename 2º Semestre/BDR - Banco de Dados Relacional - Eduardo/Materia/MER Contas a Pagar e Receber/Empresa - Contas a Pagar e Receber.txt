@@ -1,0 +1,65 @@
+** CENÁRIO 1 - ID único com FK sem compor PK (tracejada)
+
+** EMPRESA
+
+id_empresa ds_empresa                           nr_cnpj 
+---------- ---------------------------------    -------------------------
+         1 AlfaTech Sistemas Ltda.	        AB.12C.D34/IJKL-70
+	 2 Borrachas Santa Cruza Ltda.	        ZX.98M.N76/PQRS-04
+	 3 Industria de Aço ABC Ltda.           AC.26B.R47/TUVW-71
+	 4 Inova Pneus Ltda.                    ED.U8T.EC9/LMNO-91
+	 5 Bragança Logistica Ltda.    	        TI.26B.RAG/ANCA-28
+
+
+** EMPRESA_TIPO
+
+id_tipo_empresa  ds_tipo_empresa
+---------------  ---------------------
+              1  Fornecedor
+              2  Cliente
+              3  Transportadora 
+
+
+** EMPRESA_OPERACAO  ( "P" saída de caixa Contas a Pagar e "R" entrada de caixa Contas a Receber )
+
+id_empresa_operacao  id_empresa id_tipo_empresa id_operacao
+-------------------  ---------- --------------- -----------
+                  1           1               1     P
+                  2           3               3     P
+                  3           2               1     P
+                  4           5               2     R
+                  5           5               1     P
+                  6           4               2     R
+                  7           3               1     R
+
+
+** TITULO_TIPO_MOVIMENTO
+
+id_titulo_tipo_movimento ds_titulo_tipo_movimento id_natureza_tipo_movimento 
+------------------------ ------------------------ --------------------------
+                       1 Registro de Título       +
+                       2 Recebimento Realizado    -
+                       3 Desconto concedido       -
+                       4 Multa e Juros            +
+                       5 Cancelamento de Titulo   -
+
+** TITULO
+
+id_titulo id_empresa_operacao nr_documento dt_emissao dt_vencimento vl_titulo 
+--------- ------------------- ------------ ---------- ------------- ----------
+        1                   4  102331      14/08/2026 17/08/2026      1.250,40
+        2                   1  882121      17/08/2026 22/08/2026      3.130,00
+        3                   7  922111      09/08/2026 09/09/2026      4.100,00
+        4                   2  122211      12/08/2026 12/10/2026      1.500,00
+
+** TITULO_MOVIMENTO
+
+id_titulo_movimento id_titulo id_titulo_tipo_movimento vl_movimento dt_movimento id_usuario ds_observacao
+------------------- --------- ------------------------ ------------ ------------ ---------- -------------------
+                  1     10231                        1     1.250,00 14/08/2026   1001
+                  2     10231                        3       250,00 15/08/2026   1291       Parceria comercial
+                  3     10231                        2     1.000,00 17/08/2026   1291       Pagamento via PIX       
+
+
+
+
