@@ -1,0 +1,58 @@
+Exercícios de 20-08
+Vence hoje às 23:59
+•
+Vários envios permitidos
+Instruções
+1)Explique com suas palavras o que é complexidade de algoritmos.
+   É o que determina o tempo ou o uso de memoria necessarios para a execução de um codigo
+
+2)Cite um exemplo de algoritmo com complexidade O(1).
+   int num = 30;
+   if (num % 2 == 0){
+      printf("Numero %d é par", num);
+   } else {
+      printf("Numero %d é impar", num);
+   }
+
+3)Explique a diferença entre O, Ω e Θ.
+   Big O - define o pior cenario q a analise assintotica de um determinado algoritmo pode ter (limite superior);
+   Big Omega - é o melhor cenario (limite inferior) de um certo algoritmo;
+   Big Teta - é quando o Big O e o Big Omega de um algoritmo possuem o crescimento na mesma ordem
+
+4)Determine a complexidade das funções: 
+a)n + 10
+   O(n) - ignora os valores mantem somente a entrada n
+b)2n + 5
+   O(n) - ainda considera somente a entrada n, entao "2" e "5" não interferem na analise assintotica para a complexidade do algoritmo
+c)n² + n
+   O(n^2) - é uma função de crescimento quadratica
+d)5n³ + 10n²
+   O(n^3) - um crescimento de função cubica
+5)Qual é a complexidade do algoritmo?
+for(int i = 0; i < n; i++) {
+  for(int j = 0; j < n; j++) {
+     for(int k = 0; k < n; k++) {
+        printf("*");
+     }
+   }
+}
+   é um algoritico de complexidade de função cubica, pois possuem tres laços de for aninhados.
+
+6) Considere os seguintes algoritmos:
+Algoritmo A → O(log n)
+Algoritmo B → O(n)
+Algoritmo C → O(n²)
+Algoritmo D → O(2ⁿ)
+Perguntas:
+
+a) Qual deles é o mais eficiente?
+   Algoritmo A - O(log n) - é o mais eficiente
+
+b) Qual deles é o menos eficiente?
+   Algoritmo - O (2^n) - é uma função exponencial tendo o pior cenario dentre os apresentados
+
+c) Ordene os algoritmos do mais rápido para o mais lento.
+   Algoritmo A → O(log n)
+   Algoritmo B → O(n)
+   Algoritmo C → O(n²)
+   Algoritmo D → O(2ⁿ)
