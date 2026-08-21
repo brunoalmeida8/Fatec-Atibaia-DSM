@@ -1,0 +1,5 @@
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto2\Projeto2\obj\Debug\net8.0\Projeto2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto2\Projeto2\obj\Debug\net8.0\Projeto2.AssemblyInfoInputs.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto2\Projeto2\obj\Debug\net8.0\Projeto2.AssemblyInfo.cs
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto2\Projeto2\obj\Debug\net8.0\Projeto2.csproj.CoreCompileInputs.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Projeto2\Projeto2\obj\Debug\net8.0\Projeto2.sourcelink.json
