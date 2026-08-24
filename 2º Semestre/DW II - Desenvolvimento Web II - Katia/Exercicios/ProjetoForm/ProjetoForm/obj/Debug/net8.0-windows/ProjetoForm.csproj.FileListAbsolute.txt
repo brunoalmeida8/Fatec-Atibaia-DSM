@@ -1,0 +1,17 @@
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\bin\Debug\net8.0-windows\ProjetoForm.exe
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\bin\Debug\net8.0-windows\ProjetoForm.deps.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\bin\Debug\net8.0-windows\ProjetoForm.runtimeconfig.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\bin\Debug\net8.0-windows\ProjetoForm.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\bin\Debug\net8.0-windows\ProjetoForm.pdb
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.csproj.GenerateResource.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.AssemblyInfoInputs.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.AssemblyInfo.cs
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.csproj.CoreCompileInputs.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.sourcelink.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\refint\ProjetoForm.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.pdb
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.genruntimeconfig.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ref\ProjetoForm.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.Cadastro.resources
