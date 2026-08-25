@@ -1,0 +1,46 @@
+create database rh;
+use rh;
+
+create table estados(
+id_estado int auto_increment primary key,
+sg_estado char(2),
+ds_estado varchar(50) not null);
+
+create table municipios(
+id_municipio int auto_increment,
+ds_municipio varchar(50) not null,
+id_estado int not null,
+primary key(id_municipio),
+-- Constraint FK com Estados
+Constraint fk_municipio_estado 
+foreign key(id_estado) references estados(id_estado));
+
+create table pessoas(
+id_pessoa int,
+nr_cpf bigint not null,
+nm_pessoa varchar(70) not null,
+id_municipio_natural int not null,
+id_municipio_reside int not null);
+
+-- Criar Unique nr_cpf
+-- Alter table pessoas add unique(nr_cpf);
+Alter table pessoas add constraint uk_pessoas_cpf unique(nr_cpf);
+
+-- Criar Unique Estados (ds_estado)
+Alter table estados add constraint uk_estado_descricao unique(ds_estado);
+Alter table estados add constraint uk_estado_sigla unique(sg_estado);
+
+-- Criar FK de Pessoas com Municípios
+Alter table pessoas
+  add constraint fk_pes_munic_nat
+      foreign key(id_municipio_natural)
+        references municipios(id_municipio);
+
+Alter table pessoas
+  add constraint fk_pes_munic_res
+      foreign key(id_municipio_reside)
+        references municipios(id_municipio);
+
+
+ 
+

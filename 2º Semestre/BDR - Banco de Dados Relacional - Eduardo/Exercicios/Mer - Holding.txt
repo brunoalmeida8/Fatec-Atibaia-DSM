@@ -127,3 +127,13 @@ empresa
 produto da filial F1 pode ter metade num galpao e 
 
 
+
+
+
+
+
+
+
+Exercicio 
+Criar Modelo Fisico MySQL
+BD - ERP
