@@ -45,7 +45,7 @@ int main()
     scanf("%f", &num1);
     printf("Digite o segundo valor: ");
     scanf("%f", &num2);
-    printf("Digite o segundo valor: ");
+    printf("Digite o terceiro valor: ");
     scanf("%f", &num3);
 
     

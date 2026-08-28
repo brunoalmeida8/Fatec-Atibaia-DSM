@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{288A52F6-FA73-439E-A6D7-64F0D11BD9BC}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform\\projetoform\\projetoform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{288A52F6-FA73-439E-A6D7-64F0D11BD9BC}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\projetoform.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288A52F6-FA73-439E-A6D7-64F0D11BD9BC}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform\\projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{288A52F6-FA73-439E-A6D7-64F0D11BD9BC}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288A52F6-FA73-439E-A6D7-64F0D11BD9BC}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform\\projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{288A52F6-FA73-439E-A6D7-64F0D11BD9BC}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,49 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProjetoForm",
-              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\ProjetoForm.csproj",
-              "RelativeDocumentMoniker": "ProjetoForm\\ProjetoForm.csproj",
-              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\ProjetoForm.csproj",
-              "RelativeToolTip": "ProjetoForm\\ProjetoForm.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-08-24T23:03:05.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cadastro.cs",
-              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\Cadastro.cs",
-              "RelativeDocumentMoniker": "ProjetoForm\\Cadastro.cs",
-              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\Cadastro.cs",
-              "RelativeToolTip": "ProjetoForm\\Cadastro.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T22:57:00.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Cadastro.cs [Projeto]",
-              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\Cadastro.cs",
-              "RelativeDocumentMoniker": "ProjetoForm\\Cadastro.cs",
-              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\Cadastro.cs [Projeto]",
-              "RelativeToolTip": "ProjetoForm\\Cadastro.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-24T22:55:38.392Z",
-              "EditorCaption": " [Projeto]"
             }
           ]
         }

@@ -2,7 +2,7 @@
 
 int main()
 {
-    float vetor[10], soma, media;
+    float vetor[10], soma = 0, media;
 
     for (int i = 0; i < 10; i++)
     {

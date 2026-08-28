@@ -1,0 +1,20 @@
+Exercícios 27-08 - Ponteiros e Malloc()
+Vence hoje às 21:00
+•
+Vários envios permitidos
+Instruções
+1)Escreva um programa que mostre o tamanho em bytes que cada tipo de dados ocupa na memória: char, float, int e double
+2) Escreva um programa que contenha duas variáveis inteiras. Compare seus endereços e exiba o maior endereço.
+3) Crie um programa que:
+Aloque dinamicamente memória para um inteiro.
+Solicite ao usuário um valor.
+Armazene o valor na região alocada.
+Exiba o valor armazenado.
+Libere a memória.
+4) Soma de dois números em memória dinâmica. Crie um programa que:
+Aloque dinamicamente memória para três inteiros.
+Leia dois valores.
+Armazene a soma no terceiro espaço de memória.
+Mostre o resultado.
+Libere toda a memória.
+5) Explique, com suas palavras, o que entendeu por ponteiros e a importância de alocação dinâmica 
