@@ -48,10 +48,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(43, 11);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(61, 18);
             label1.Name = "label1";
-            label1.Size = new Size(104, 32);
+            label1.Size = new Size(155, 48);
             label1.TabIndex = 0;
             label1.Text = "Agência:";
             // 
@@ -59,10 +58,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(43, 55);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(61, 92);
             label2.Name = "label2";
-            label2.Size = new Size(107, 32);
+            label2.Size = new Size(159, 48);
             label2.TabIndex = 1;
             label2.Text = "Número:";
             label2.Click += label2_Click;
@@ -71,10 +69,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(43, 97);
-            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Location = new Point(61, 162);
             label3.Name = "label3";
-            label3.Size = new Size(78, 32);
+            label3.Size = new Size(116, 48);
             label3.TabIndex = 2;
             label3.Text = "Saldo:";
             // 
@@ -82,10 +79,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(43, 142);
-            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Location = new Point(61, 237);
             label4.Name = "label4";
-            label4.Size = new Size(59, 32);
+            label4.Size = new Size(88, 48);
             label4.TabIndex = 3;
             label4.Text = "CPF:";
             // 
@@ -93,10 +89,9 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(43, 182);
-            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Location = new Point(61, 303);
             label5.Name = "label5";
-            label5.Size = new Size(85, 32);
+            label5.Size = new Size(126, 48);
             label5.TabIndex = 4;
             label5.Text = "Nome:";
             label5.Click += label5_Click;
@@ -104,56 +99,51 @@
             // txtagencia
             // 
             txtagencia.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtagencia.Location = new Point(181, 7);
-            txtagencia.Margin = new Padding(2, 2, 2, 2);
+            txtagencia.Location = new Point(259, 12);
             txtagencia.Name = "txtagencia";
-            txtagencia.Size = new Size(180, 39);
-            txtagencia.TabIndex = 5;
+            txtagencia.Size = new Size(255, 55);
+            txtagencia.TabIndex = 1;
             // 
             // txtnumero
             // 
             txtnumero.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtnumero.Location = new Point(181, 50);
-            txtnumero.Margin = new Padding(2, 2, 2, 2);
+            txtnumero.Location = new Point(259, 83);
             txtnumero.Name = "txtnumero";
-            txtnumero.Size = new Size(180, 39);
-            txtnumero.TabIndex = 6;
+            txtnumero.Size = new Size(255, 55);
+            txtnumero.TabIndex = 2;
             // 
             // txtsaldo
             // 
             txtsaldo.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtsaldo.Location = new Point(181, 92);
-            txtsaldo.Margin = new Padding(2, 2, 2, 2);
+            txtsaldo.Location = new Point(259, 153);
             txtsaldo.Name = "txtsaldo";
-            txtsaldo.Size = new Size(180, 39);
-            txtsaldo.TabIndex = 7;
+            txtsaldo.Size = new Size(255, 55);
+            txtsaldo.TabIndex = 3;
             // 
             // txtnome
             // 
             txtnome.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtnome.Location = new Point(181, 178);
-            txtnome.Margin = new Padding(2, 2, 2, 2);
+            txtnome.Location = new Point(259, 297);
             txtnome.Name = "txtnome";
-            txtnome.Size = new Size(464, 39);
-            txtnome.TabIndex = 9;
+            txtnome.Size = new Size(661, 55);
+            txtnome.TabIndex = 5;
             // 
             // txtcpf
             // 
             txtcpf.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtcpf.Location = new Point(181, 137);
-            txtcpf.Margin = new Padding(2, 2, 2, 2);
+            txtcpf.Location = new Point(259, 228);
             txtcpf.Mask = "###,###,###-##";
             txtcpf.Name = "txtcpf";
-            txtcpf.Size = new Size(180, 39);
-            txtcpf.TabIndex = 10;
+            txtcpf.Size = new Size(255, 55);
+            txtcpf.TabIndex = 4;
+            txtcpf.MaskInputRejected += txtcpf_MaskInputRejected;
             // 
             // btncadastrar
             // 
             btncadastrar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btncadastrar.Location = new Point(28, 223);
-            btncadastrar.Margin = new Padding(2, 2, 2, 2);
+            btncadastrar.Location = new Point(40, 372);
             btncadastrar.Name = "btncadastrar";
-            btncadastrar.Size = new Size(178, 43);
+            btncadastrar.Size = new Size(254, 72);
             btncadastrar.TabIndex = 11;
             btncadastrar.Text = "Cadastrar";
             btncadastrar.UseVisualStyleBackColor = true;
@@ -162,41 +152,41 @@
             // btnmostrar
             // 
             btnmostrar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnmostrar.Location = new Point(211, 223);
-            btnmostrar.Margin = new Padding(2, 2, 2, 2);
+            btnmostrar.Location = new Point(301, 372);
             btnmostrar.Name = "btnmostrar";
-            btnmostrar.Size = new Size(178, 43);
+            btnmostrar.Size = new Size(254, 72);
             btnmostrar.TabIndex = 12;
             btnmostrar.Text = "Mostrar saldo";
             btnmostrar.UseVisualStyleBackColor = true;
+            btnmostrar.Click += btnmostrar_Click;
             // 
             // btndepositar
             // 
             btndepositar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btndepositar.Location = new Point(393, 223);
-            btndepositar.Margin = new Padding(2, 2, 2, 2);
+            btndepositar.Location = new Point(561, 372);
             btndepositar.Name = "btndepositar";
-            btndepositar.Size = new Size(178, 43);
+            btndepositar.Size = new Size(254, 72);
             btndepositar.TabIndex = 13;
             btndepositar.Text = "Depositar";
             btndepositar.UseVisualStyleBackColor = true;
+            btndepositar.Click += btndepositar_Click;
             // 
             // btnsacar
             // 
             btnsacar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnsacar.Location = new Point(576, 223);
-            btnsacar.Margin = new Padding(2, 2, 2, 2);
+            btnsacar.Location = new Point(823, 372);
             btnsacar.Name = "btnsacar";
-            btnsacar.Size = new Size(178, 43);
+            btnsacar.Size = new Size(254, 72);
             btnsacar.TabIndex = 14;
             btnsacar.Text = "Sacar";
             btnsacar.UseVisualStyleBackColor = true;
+            btnsacar.Click += btnsacar_Click;
             // 
             // Cadastro
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(772, 300);
+            ClientSize = new Size(1103, 500);
             Controls.Add(btnsacar);
             Controls.Add(btndepositar);
             Controls.Add(btnmostrar);
@@ -211,7 +201,6 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
             Name = "Cadastro";
             Text = "Conta Corrente";
             Load += Form1_Load;

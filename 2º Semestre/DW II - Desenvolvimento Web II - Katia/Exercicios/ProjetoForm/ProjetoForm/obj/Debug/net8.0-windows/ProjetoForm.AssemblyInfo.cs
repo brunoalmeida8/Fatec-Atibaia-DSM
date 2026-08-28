@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProjetoForm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb5b3e4a5382292fa68974c5b4c81d359d60c7b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38f274810ba9326712c1923b7282419f2e5fa58e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProjetoForm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProjetoForm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
