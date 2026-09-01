@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>        
+        <nav>            
+            <button >Carrinho</button>
+        </nav>
+    </header>
+    <main>
+        <section class="estante">
+            <div class="livros">
+                <img src="img/revolução dos bichos.jpg">
+                <h2>A revolução dos bichos</h2>
+                <p>George Orwell / Companhia das Letras</p>
+                <p>R$ 65,00</p>
+                <button onclick="adicionar('A revolução dos bichos', 65.00)"> Adicionar</button>
+            </div>
+            <div class="livros">
+                <img src="img/metamorfose.jpg">
+                <h2>A metamorfose</h2>
+                <p>Franz Kafka </p>
+                <p>R$ 50,00</p>
+                <button onclick="adicionar('A metamorfose', 50.00)"> Adicionar</button>
+            </div>
+            <div class="livros">
+                <img src="img/o alquimista.jpg">
+                <h2>O alquimista</h2>
+                <p>Paulo Coelho</p>
+                <p>R$ 42,00</p>
+                <button onclick="adicionar('O alquimista', 42.00)"> Adicionar</button>
+            </div>
+            <div class="livros">
+                <img src="img/it.jpg">
+                <h2>It: a Coisa</h2>
+                <p>Stephen King </p>
+                <p>R$ 98,00</p>
+                <button onclick="adicionar('It: a Coisa', 98.00)"> Adicionar</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

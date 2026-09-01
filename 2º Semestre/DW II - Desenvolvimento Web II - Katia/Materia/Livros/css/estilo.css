@@ -1,0 +1,43 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+}
+header{
+    /*background-color: cadetblue; */
+    padding: 1.5rem;
+    background-image: url('../img/capa.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+nav button{
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+}
+nav{    
+    display: flex;
+    justify-content: end;
+}
+.estante{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.livros {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    text-align: center;
+    width: 20%;
+}
+.livros img{
+    width: 100%;
+    height: 300px;
+}

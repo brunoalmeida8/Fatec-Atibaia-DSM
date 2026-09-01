@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{288A52F6-FA73-439E-A6D7-64F0D11BD9BC}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{288A52F6-FA73-439E-A6D7-64F0D11BD9BC}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform\\projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{288A52F6-FA73-439E-A6D7-64F0D11BD9BC}|ProjetoForm\\ProjetoForm.csproj|C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{288A52F6-FA73-439E-A6D7-64F0D11BD9BC}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "ProjetoForm\\Cadastro.cs",
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\Cadastro.cs",
               "RelativeToolTip": "ProjetoForm\\Cadastro.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAiwEQAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAA8wEQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-28T00:40:03.121Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "ProjetoForm\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T00:33:51.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T00:33:51.038Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "ProjetoForm\\Conta.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T00:33:49.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T00:33:49.697Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "ProjetoForm\\Corrente.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T00:33:43.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T00:33:43.796Z"
             },
             {
               "$type": "Document",

@@ -1,0 +1,37 @@
+Aula 2026-08-31
+
+Referencias de restrição de FK:
+Cacate - cascata
+	aparga a pai a filha apaga tbm
+	se apagar uma linha na tabela que tem uma PK sendo referenciada em outra tabela com o FK
+		as LINHAS que referenciaram aquela pk excluida somem 
+	se apagar o que a FK ta referenciando apaga a LINHA;
+
+Restrict - restrito
+	não consegue apagar a pai se tiver uma filha referenciando ela;
+	nao apaga uma linha que tem PK sendo referenciada em outra tabela como FK;
+	
+set null
+	se apagar a pai, a filha fica com campo null
+	se apagar a linha na tabela que tem uma PK sendo referenciada em outra tabela com FK
+		as LINHAS que referenciaram aquela PK excluida ficam com o valor NULL;
+	OBS - o campo nao pode ser NOT NULL;
+
+DTL - Data TRANSACTION Languege | Linguagem de transação de dados
+START TRANSACTION
+	COMMIT - confirmar
+	ROLLBACK - backup
+
+ALTER table
+	Alter table produtos add st_produto char(1) not null default 'A';
+		ele cria uma coluna com todas as linhas que ja tao la tendo "A" como valor dessa coluna;
+	Alter table produtos add constraint ck_produto_valor Check(vl_produto >= 0);
+		Check - evita cadastrar vl_produto com valor negativo;
+		OBS - se ja tiver algum valor negativo cadastrado ele nao roda esse comando
+
+Constraint ficam como INDEX indice
+
+
+DDL - 
+DML - 
+DTL - 
