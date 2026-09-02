@@ -19,7 +19,7 @@ set null
 
 DTL - Data TRANSACTION Languege | Linguagem de transação de dados
 START TRANSACTION
-	COMMIT - confirmar
+	COMMIT - confirmar -
 	ROLLBACK - backup
 
 ALTER table
