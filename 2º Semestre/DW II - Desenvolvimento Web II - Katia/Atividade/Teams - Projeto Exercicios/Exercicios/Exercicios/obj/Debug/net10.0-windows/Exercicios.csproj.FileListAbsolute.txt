@@ -1,0 +1,17 @@
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\bin\Debug\net10.0-windows\Exercicios.exe
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\bin\Debug\net10.0-windows\Exercicios.deps.json
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\bin\Debug\net10.0-windows\Exercicios.runtimeconfig.json
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\bin\Debug\net10.0-windows\Exercicios.dll
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\bin\Debug\net10.0-windows\Exercicios.pdb
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\Exercicios.Form1.resources
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\Exercicios.csproj.GenerateResource.cache
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\Exercicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\Exercicios.AssemblyInfoInputs.cache
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\Exercicios.AssemblyInfo.cs
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\Exercicios.csproj.CoreCompileInputs.cache
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\Exercicios.sourcelink.json
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\Exercicios.dll
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\refint\Exercicios.dll
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\Exercicios.pdb
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\Exercicios.genruntimeconfig.cache
+C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Teams - Projeto Exercicios\Exercicios\Exercicios\obj\Debug\net10.0-windows\ref\Exercicios.dll

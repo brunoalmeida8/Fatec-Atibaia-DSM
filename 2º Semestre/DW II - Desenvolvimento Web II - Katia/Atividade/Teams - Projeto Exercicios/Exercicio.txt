@@ -1,0 +1,16 @@
+EXERCÍCIOS
+Vence hoje às 23:59
+•
+Vários envios permitidos
+Instruções
+
+ 
+
+Crie um novo projeto chamado Exercícios. 
+Crie uma classe chamada Pessoa, contendo as properties (nome, endereço e telefone. 
+Considere, como subclasse da classe Pessoa, a classe Fornecedor, contendo as properties (credito e divida), um método obterSaldo(), que devolve a diferença entre os valores do credito e dívida.  
+Crie a subclasse Empregado, contendo as properties (matricula, setor, salarioBase e aliquota) e um método calcularSalario.  
+Crie as telas que atribua e exibe valores dos objetos instanciados. 
+ 
+
+Meu trabalho
