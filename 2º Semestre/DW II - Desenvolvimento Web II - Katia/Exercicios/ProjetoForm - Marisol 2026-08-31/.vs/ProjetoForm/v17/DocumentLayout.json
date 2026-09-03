@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform - marisol 2026-08-31\\projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform - marisol 2026-08-31\\projetoform\\corrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\corrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform - marisol 2026-08-31\\projetoform\\cadastro.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\cadastro.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\cadastro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform - marisol 2026-08-31\\projetoform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform - marisol 2026-08-31\\projetoform\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\conta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform - marisol 2026-08-31\\projetoform\\investimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\investimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\projetoform\\forminvestimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\forminvestimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoform - marisol 2026-08-31\\projetoform\\forminvestimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20AFC4EC-CD06-4BB1-A792-A42276C646C9}|ProjetoForm\\ProjetoForm.csproj|solutionrelative:projetoform\\forminvestimento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cadastro.Designer.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Cadastro.Designer.cs",
+              "RelativeDocumentMoniker": "ProjetoForm\\Cadastro.Designer.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Cadastro.Designer.cs",
+              "RelativeToolTip": "ProjetoForm\\Cadastro.Designer.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-03T01:19:48.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Corrente.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Corrente.cs",
+              "RelativeDocumentMoniker": "ProjetoForm\\Corrente.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Corrente.cs",
+              "RelativeToolTip": "ProjetoForm\\Corrente.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwBMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T22:31:02.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cadastro.cs [Projeto]",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Cadastro.cs",
+              "RelativeDocumentMoniker": "ProjetoForm\\Cadastro.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Cadastro.cs [Projeto]",
+              "RelativeToolTip": "ProjetoForm\\Cadastro.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T22:54:02.998Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cadastro.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Cadastro.cs",
+              "RelativeDocumentMoniker": "ProjetoForm\\Cadastro.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Cadastro.cs",
+              "RelativeToolTip": "ProjetoForm\\Cadastro.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T22:54:06.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Investimento.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Investimento.cs",
+              "RelativeDocumentMoniker": "ProjetoForm\\Investimento.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Investimento.cs",
+              "RelativeToolTip": "ProjetoForm\\Investimento.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T22:06:32.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Program.cs",
+              "RelativeDocumentMoniker": "ProjetoForm\\Program.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Program.cs",
+              "RelativeToolTip": "ProjetoForm\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T21:49:35.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Conta.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Conta.cs",
+              "RelativeDocumentMoniker": "ProjetoForm\\Conta.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\Conta.cs",
+              "RelativeToolTip": "ProjetoForm\\Conta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-24T22:24:27.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormInvestimento.cs [Projeto]",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\FormInvestimento.cs",
+              "RelativeDocumentMoniker": "ProjetoForm\\FormInvestimento.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\FormInvestimento.cs [Projeto]",
+              "RelativeToolTip": "ProjetoForm\\FormInvestimento.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T22:10:37.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormInvestimento.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\FormInvestimento.cs",
+              "RelativeDocumentMoniker": "ProjetoForm\\FormInvestimento.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm - Marisol 2026-08-31\\ProjetoForm\\FormInvestimento.cs",
+              "RelativeToolTip": "ProjetoForm\\FormInvestimento.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T22:16:59.669Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

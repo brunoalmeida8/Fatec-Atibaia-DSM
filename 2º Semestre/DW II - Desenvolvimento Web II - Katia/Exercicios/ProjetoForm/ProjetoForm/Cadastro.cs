@@ -68,9 +68,7 @@ namespace ProjetoForm
             double valor = Convert.ToDouble(Interaction.InputBox("Digite o valor: ",
                 "Sacar", "", -1, -1));
             if (!cc.Sacar(valor) MessageBox.Show("Saldo insuficiente");
-            {
-                
-            }
+
         }
     }
     }
