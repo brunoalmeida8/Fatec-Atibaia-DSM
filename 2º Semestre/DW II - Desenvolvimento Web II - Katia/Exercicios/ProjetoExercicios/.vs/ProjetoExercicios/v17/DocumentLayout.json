@@ -1,0 +1,124 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoexercicios\\projetoexercicios\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|solutionrelative:projetoexercicios\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoexercicios\\projetoexercicios\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|solutionrelative:projetoexercicios\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoexercicios\\projetoexercicios\\telafornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|solutionrelative:projetoexercicios\\telafornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoexercicios\\projetoexercicios\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|solutionrelative:projetoexercicios\\fornecedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoexercicios\\projetoexercicios\\empregado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|solutionrelative:projetoexercicios\\empregado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoexercicios\\projetoexercicios\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|solutionrelative:projetoexercicios\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TelaFornecedor.cs [Projeto]",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\TelaFornecedor.cs",
+              "RelativeDocumentMoniker": "ProjetoExercicios\\TelaFornecedor.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\TelaFornecedor.cs [Projeto]",
+              "RelativeToolTip": "ProjetoExercicios\\TelaFornecedor.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T01:11:43.998Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjetoExercicios\\Form1.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Form1.cs",
+              "RelativeToolTip": "ProjetoExercicios\\Form1.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAjwBIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T01:05:57.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Fornecedor.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Fornecedor.cs",
+              "RelativeDocumentMoniker": "ProjetoExercicios\\Fornecedor.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Fornecedor.cs",
+              "RelativeToolTip": "ProjetoExercicios\\Fornecedor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T00:33:51.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Projeto]",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Form1.cs",
+              "RelativeDocumentMoniker": "ProjetoExercicios\\Form1.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Form1.cs [Projeto]",
+              "RelativeToolTip": "ProjetoExercicios\\Form1.cs [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T00:31:35.913Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Empregado.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Empregado.cs",
+              "RelativeDocumentMoniker": "ProjetoExercicios\\Empregado.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Empregado.cs",
+              "RelativeToolTip": "ProjetoExercicios\\Empregado.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvxAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T00:38:59.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Pessoa.cs",
+              "RelativeDocumentMoniker": "ProjetoExercicios\\Pessoa.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Pessoa.cs",
+              "RelativeToolTip": "ProjetoExercicios\\Pessoa.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-04T00:32:06.202Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

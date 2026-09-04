@@ -43,27 +43,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ProjetoForm",
+              "Title": "ProjetoForm.csproj",
               "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\ProjetoForm.csproj",
               "RelativeDocumentMoniker": "ProjetoForm\\ProjetoForm.csproj",
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\ProjetoForm.csproj",
               "RelativeToolTip": "ProjetoForm\\ProjetoForm.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-09-03T01:20:24.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-03T01:20:24.621Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Cadastro.cs [Projeto]",
+              "Title": "Cadastro.cs [Design]",
               "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\Cadastro.cs",
               "RelativeDocumentMoniker": "ProjetoForm\\Cadastro.cs",
-              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\Cadastro.cs [Projeto]",
-              "RelativeToolTip": "ProjetoForm\\Cadastro.cs [Projeto]",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\Cadastro.cs [Design]",
+              "RelativeToolTip": "ProjetoForm\\Cadastro.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-28T00:31:48.089Z",
-              "EditorCaption": " [Projeto]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "ProjetoForm\\Conta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T00:33:49.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T00:33:49.697Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "ProjetoForm\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T00:33:51.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T00:33:51.038Z"
             },
             {
               "$type": "Document",
@@ -99,7 +96,7 @@
               "RelativeDocumentMoniker": "ProjetoForm\\Cadastro.cs",
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoForm\\ProjetoForm\\Cadastro.cs",
               "RelativeToolTip": "ProjetoForm\\Cadastro.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAADwv0UAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAADwv0UAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-28T00:40:03.121Z",
               "EditorCaption": ""
@@ -114,8 +111,7 @@
               "RelativeToolTip": "ProjetoForm\\Corrente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T00:33:43.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T00:33:43.796Z"
             }
           ]
         }
