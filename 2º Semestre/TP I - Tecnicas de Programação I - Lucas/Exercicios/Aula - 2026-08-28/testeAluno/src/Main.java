@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
             Aluno a1 = new Aluno();
-        if (a1.idade == null) {
+        if (a1.getNome() == null) {
             System.out.println("Eu nao tenho nome");
         }
     }

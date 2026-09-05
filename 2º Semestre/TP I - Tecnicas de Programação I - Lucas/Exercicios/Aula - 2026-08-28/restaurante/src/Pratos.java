@@ -47,17 +47,18 @@ public class Pratos {
 
 
     public double valorPrato(double valor, int quantidade){
-        return this.valor * this.quantidade;
+        return valor * quantidade;
     }
-    public void apresentarValor(double valor){
-        double total;
+    public double apresentarValor(double valor){
         if (valor < 200){
-            total = valor * 1.10;
+            this.total = valor * 1.10;
+            return this.total;
         } else {
-            total = valor * 1.15;
+            this.total = valor * 1.15;
             if (valor > 500) {
                 System.out.println("bala de troco");
             }
+            return this.total;
         }
     }
 
