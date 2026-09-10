@@ -1,11 +1,11 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main ()
+int main()
 {
     char nome[10];
     int altura, idade;
     printf("Digite seu nome: ");
-    fgets(nome, sizeof(nome), stdin);//fgets (nome, tamanho, local do input - "stdin = teclado")
+    fgets(nome, sizeof(nome), stdin); // fgets (nome, tamanho, local do input - "stdin = teclado")
     printf("Digite sua idade: ");
     scanf("%d", &idade);
     printf("Digite seu altura cm: ");
@@ -14,6 +14,9 @@ int main ()
     printf("\n\n==========================\n");
     printf("Dados formatados");
     printf("\n==========================\n");
-    printf("\nNome: %s \tIdade: %d \tAltura: %d\n\n", nome, idade, altura);
+    // printf("\nNome: %s \tIdade: %d \tAltura: %d\n\n", nome, idade, altura);
+    printf("Nome: %s", nome);
+    printf("Idade: %d", idade);
+    printf("\nAltura: %d\n\n", altura);
     return 0;
 }
