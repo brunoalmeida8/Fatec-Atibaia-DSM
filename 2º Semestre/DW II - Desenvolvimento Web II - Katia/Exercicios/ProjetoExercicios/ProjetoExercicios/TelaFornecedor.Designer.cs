@@ -40,6 +40,7 @@
             label5 = new Label();
             btncadastrar = new Button();
             btnmostrar = new Button();
+            btnvoltar = new Button();
             SuspendLayout();
             // 
             // label1
@@ -135,28 +136,42 @@
             // btncadastrar
             // 
             btncadastrar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btncadastrar.Location = new Point(153, 355);
+            btncadastrar.Location = new Point(276, 355);
             btncadastrar.Name = "btncadastrar";
             btncadastrar.Size = new Size(195, 57);
             btncadastrar.TabIndex = 10;
             btncadastrar.Text = "Cadastrar";
             btncadastrar.UseVisualStyleBackColor = true;
+            btncadastrar.Click += btncadastrar_Click;
             // 
             // btnmostrar
             // 
             btnmostrar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnmostrar.Location = new Point(439, 355);
+            btnmostrar.Location = new Point(493, 355);
             btnmostrar.Name = "btnmostrar";
             btnmostrar.Size = new Size(195, 57);
             btnmostrar.TabIndex = 11;
             btnmostrar.Text = "Mostrar";
             btnmostrar.UseVisualStyleBackColor = true;
+            btnmostrar.Click += btnmostrar_Click;
+            // 
+            // btnvoltar
+            // 
+            btnvoltar.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnvoltar.Location = new Point(59, 355);
+            btnvoltar.Name = "btnvoltar";
+            btnvoltar.Size = new Size(195, 57);
+            btnvoltar.TabIndex = 12;
+            btnvoltar.Text = "Voltar";
+            btnvoltar.UseVisualStyleBackColor = true;
+            btnvoltar.Click += btnvoltar_Click;
             // 
             // TelaFornecedor
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnvoltar);
             Controls.Add(btnmostrar);
             Controls.Add(btncadastrar);
             Controls.Add(txtdebito);
@@ -189,5 +204,6 @@
         private Label label5;
         private Button btncadastrar;
         private Button btnmostrar;
+        private Button btnvoltar;
     }
 }

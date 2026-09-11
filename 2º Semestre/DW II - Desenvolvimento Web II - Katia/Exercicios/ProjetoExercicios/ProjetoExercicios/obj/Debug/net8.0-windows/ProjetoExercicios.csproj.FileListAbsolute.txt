@@ -16,3 +16,4 @@ C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\
 C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoExercicios\ProjetoExercicios\obj\Debug\net8.0-windows\ProjetoExercicios.pdb
 C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoExercicios\ProjetoExercicios\obj\Debug\net8.0-windows\ProjetoExercicios.genruntimeconfig.cache
 C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoExercicios\ProjetoExercicios\obj\Debug\net8.0-windows\ref\ProjetoExercicios.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ProjetoExercicios\ProjetoExercicios\obj\Debug\net8.0-windows\ProjetoExercicios.telaempregado.resources

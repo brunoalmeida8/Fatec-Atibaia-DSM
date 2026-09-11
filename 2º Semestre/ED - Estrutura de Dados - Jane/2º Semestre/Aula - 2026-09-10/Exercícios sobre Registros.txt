@@ -1,0 +1,18 @@
+Exercícios sobre Registros
+Data de conclusão 15 de setembro de 2026 às 23:59
+•
+Vários envios permitidos
+Instruções
+1) Implemente um programa que leia o nome, a idade e o endereço de uma pessoa e armazene esses dados em uma estrutura. Em seguida, imprima na tela os dados da estrutura lida.
+
+2) Crie uma estrutura representando um aluno de uma disciplina. Essa estrutura deve conter o numero de matricula do aluno, seu nome e as notas de três provas. Agora, escreva um programa que leia os dados de cinco alunos e os armazene nessa estrutura. Em seguida, exiba  o nome e as notas do aluno que possui a maior média geral dentre os cinco.
+
+3) Crie uma estrutura representando uma hora. Essa estrutura deve conter os campos hora, minuto e segundo. Agora, escreva um programa que leia um vetor de cinco posições dessa estrutura e imprima a maior hora.
+
+4) Faça um programa que realize o cadastro de contas bancárias com as seguintes informações: número
+da conta, nome do cliente e saldo. O banco permitirá o cadastramento de apenas 15 contas. Crie o menu de opções a seguir.
+Menu de opções:
+1. Cadastrar contas.
+2. Visualizar todas as contas.
+3.Sair
+Meu trabalho

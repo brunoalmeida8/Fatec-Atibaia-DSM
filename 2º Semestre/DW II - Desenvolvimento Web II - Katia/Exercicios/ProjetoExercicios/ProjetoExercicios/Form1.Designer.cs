@@ -52,6 +52,7 @@
             btnempregado.TabIndex = 2;
             btnempregado.Text = "Empregado";
             btnempregado.UseVisualStyleBackColor = true;
+            btnempregado.Click += btnempregado_Click;
             // 
             // Form1
             // 

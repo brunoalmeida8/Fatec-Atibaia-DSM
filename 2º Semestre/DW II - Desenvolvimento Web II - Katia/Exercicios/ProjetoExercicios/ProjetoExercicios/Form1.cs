@@ -18,5 +18,12 @@ namespace ProjetoExercicios
             tela.Show();
             this.Hide();
         }
+
+        private void btnempregado_Click(object sender, EventArgs e)
+        {
+            telaempregado tela = new telaempregado();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

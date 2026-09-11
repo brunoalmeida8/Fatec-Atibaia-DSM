@@ -1,0 +1,16 @@
+Exercícios Ponteiros
+Vence hoje às 23:59
+•
+Vários envios permitidos
+Instruções
+Usando Linguagem C, desenvolva os programas abaixo:  (observação: uso dos ponteiros sem alocação dinâmica)
+
+1) Crie um programa que contenha um array de float com 10 elementos. Imprima o endereço de cada posição desse array.
+
+2) Crie uma matriz de float que contenha 3 linhas e 3 colunas. Imprima o endereço de cada posição dessa matriz
+
+3) Crie uma função que receba como parametro um vetor e o imprima. Não utilze índices para percorrer o vetor, apenas aritmética de ponteiros.
+
+4) Crie um programa que contenha um array com 5 elementos inteiros. Leia esse array do teclado e imprima o endereço das posições contendo valores pares.
+Meu trabalho
+
