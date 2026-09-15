@@ -1,0 +1,15 @@
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\bin\Debug\net8.0\ClasseAbstrataInterface.exe
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\bin\Debug\net8.0\ClasseAbstrataInterface.deps.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\bin\Debug\net8.0\ClasseAbstrataInterface.runtimeconfig.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\bin\Debug\net8.0\ClasseAbstrataInterface.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\bin\Debug\net8.0\ClasseAbstrataInterface.pdb
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\obj\Debug\net8.0\ClasseAbstrataInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\obj\Debug\net8.0\ClasseAbstrataInterface.AssemblyInfoInputs.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\obj\Debug\net8.0\ClasseAbstrataInterface.AssemblyInfo.cs
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\obj\Debug\net8.0\ClasseAbstrataInterface.csproj.CoreCompileInputs.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\obj\Debug\net8.0\ClasseAbstrataInterface.sourcelink.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\obj\Debug\net8.0\ClasseAbstrataInterface.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\obj\Debug\net8.0\refint\ClasseAbstrataInterface.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\obj\Debug\net8.0\ClasseAbstrataInterface.pdb
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\obj\Debug\net8.0\ClasseAbstrataInterface.genruntimeconfig.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\ClasseAbstrataInterface\ClasseAbstrataInterface\obj\Debug\net8.0\ref\ClasseAbstrataInterface.dll

@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|solutionrelative:projetoexercicios\\telaempregado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetoexercicios\\projetoexercicios\\telaempregado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\projetoexercicios\\telaempregado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{40C624F8-A4F7-4249-BF5D-7902B14239D3}|ProjetoExercicios\\ProjetoExercicios.csproj|solutionrelative:projetoexercicios\\telaempregado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "ProjetoExercicios\\telaempregado.cs",
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\telaempregado.cs",
               "RelativeToolTip": "ProjetoExercicios\\telaempregado.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwB4AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwB8AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-11T01:27:02.161Z",
               "EditorCaption": ""
@@ -91,8 +91,7 @@
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\telaempregado.cs [Projeto]",
               "RelativeToolTip": "ProjetoExercicios\\telaempregado.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T01:08:22.632Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2026-09-11T01:08:22.632Z"
             },
             {
               "$type": "Document",
@@ -103,8 +102,7 @@
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\TelaFornecedor.cs [Projeto]",
               "RelativeToolTip": "ProjetoExercicios\\TelaFornecedor.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T01:11:43.998Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2026-09-04T01:11:43.998Z"
             },
             {
               "$type": "Document",
@@ -116,8 +114,7 @@
               "RelativeToolTip": "ProjetoExercicios\\TelaFornecedor.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T00:44:41.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-11T00:44:41.935Z"
             },
             {
               "$type": "Document",
@@ -141,8 +138,7 @@
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoExercicios\\ProjetoExercicios\\Form1.cs [Projeto]",
               "RelativeToolTip": "ProjetoExercicios\\Form1.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T00:31:35.913Z",
-              "EditorCaption": " [Projeto]"
+              "WhenOpened": "2026-09-04T00:31:35.913Z"
             },
             {
               "$type": "Document",
@@ -154,8 +150,7 @@
               "RelativeToolTip": "ProjetoExercicios\\Fornecedor.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T00:33:51.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-04T00:33:51.412Z"
             },
             {
               "$type": "Document",
@@ -167,8 +162,7 @@
               "RelativeToolTip": "ProjetoExercicios\\Empregado.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-04T00:38:59.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-04T00:38:59.139Z"
             },
             {
               "$type": "Document",
