@@ -1,0 +1,122 @@
+Exercícios de fixação
+Vence amanhã às 23:59
+•
+Vários envios permitidos
+Instruções
+Contexto
+
+Você vai modelar o catálogo simples de uma livraria, com duas classes independentes: Livro e Autor. Em cada uma delas, você vai aplicar sobrecarga de construtores (para lidar com cadastros incompletos) e sobrecarga de métodos de apresentação (um resumido e um detalhado).
+
+ 
+
+Parte 1 — Classe Livro
+
+ 
+
+Passo 1 — Atributos
+
+Crie a classe Livro com os atributos privados:
+
+●       titulo (String)
+
+●       autor (String)
+
+●       anoPublicacao (int)
+
+Passo 2 — Construtores sobrecarregados
+
+Implemente dois construtores:
+
+●       Completo: recebe titulo, autor e anoPublicacao.
+
+●       Reduzido: recebe apenas titulo e autor; anoPublicacao recebe 0 (indicando "ano não informado").
+
+public Livro(String titulo, String autor, int anoPublicacao) {
+
+    this.titulo = titulo;
+
+    this.autor = autor;
+
+    this.anoPublicacao = anoPublicacao;
+
+}
+
+ 
+
+public Livro(String titulo, String autor) {
+
+    this.titulo = titulo;
+
+    this.autor = autor;
+
+    this.anoPublicacao = 0;
+
+}
+
+Passo 3 — Métodos de apresentação sobrecarregados
+
+Implemente dois métodos com o mesmo nome, apresentar, mas assinaturas diferentes:
+
+●       apresentar() — sem parâmetros, imprime apenas título e autor.
+
+●       apresentar(boolean comAno) se comAno for true, imprime também o ano de publicação (ou "ano não informado", se for 0); se for false, comporta-se como o método sem parâmetros.
+
+💡 Dica
+
+Isso é sobrecarga de método, o mesmo princípio da sobrecarga de construtores: mesmo nome, listas de parâmetros diferentes. O Java decide qual versão chamar de acordo com os argumentos passados na chamada.
+
+ 
+
+Parte 2 — Classe Autor
+
+ 
+
+Passo 4 — Atributos
+
+Crie a classe Autor (independente de Livro) com os atributos privados:
+
+●       nome (String)
+
+●       nacionalidade (String)
+
+●       anoNascimento (int)
+
+Passo 5 — Construtores sobrecarregados
+
+Implemente dois construtores:
+
+●       Completo: recebe nome, nacionalidade e anoNascimento.
+
+●       Reduzido: recebe apenas nome; nacionalidade recebe "Não informada" e anoNascimento recebe 0.
+
+Passo 6 — Métodos de apresentação sobrecarregados
+
+Implemente dois métodos apresentar para a classe Autor:
+
+●       apresentar() — imprime apenas o nome do autor.
+
+●       apresentar(String estilo) Imprime o nome seguido de uma frase seguindo o valor de estilo. Se estilo for "completo", inclua nacionalidade e ano de nascimento; se for qualquer outro valor (ex: "resumido"), imprima só o nome, igual ao método sem parâmetros.
+
+Repare
+
+As duas classes resolvem o mesmo problema "como apresentar algo de formas diferentes" — só que uma sobrecarga usa boolean como parâmetro de controle, e a outra usa String. Pense em qual abordagem fica mais clara em cada caso.
+
+ 
+
+Parte 3 — Testando tudo no main
+
+ 
+
+Passo 7 — Criando e apresentando objetos
+
+No método main, crie ao menos:
+
+●       Dois objetos Livro (um com cada construtor)
+
+●       Dois objetos Autor (um com cada construtor)
+
+Em seguida, chame as duas versões de apresentar() para cada objeto, de forma que todas as combinações possíveis apareçam no console.
+
+
+
+Meu trabalho

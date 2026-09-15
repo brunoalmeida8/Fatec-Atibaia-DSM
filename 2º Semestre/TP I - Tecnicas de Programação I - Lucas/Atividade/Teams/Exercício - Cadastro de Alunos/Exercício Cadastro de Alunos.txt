@@ -1,0 +1,94 @@
+Exercício: Cadastro de Alunos
+Data de conclusão 11 de setembro de 2026 às 23:00
+•
+Vários envios permitidos
+Instruções
+Contexto 
+
+A secretaria de uma escola precisa de um pequeno sistema para cadastrar alunos. Nem sempre todos os dados estão disponíveis no momento do cadastro, às vezes só se sabe o nome, outras vezes já se tem nome, idade e turma completos. Você vai modelar isso usando sobrecarga de construtores. 
+
+Passo 1 : Criar a classe Aluno 
+
+Crie uma classe chamada Aluno com os seguintes atributos privados: 
+
+nome (String) 
+idade (int) 
+turma (String) 
+Passo 2 : Construtor completo 
+
+Implemente um construtor que receba os três atributos como parâmetros e os atribua usando this: 
+
+public Aluno(String nome, int idade, String turma) { 
+
+    this.nome = nome; 
+
+    this.idade = idade; 
+
+    this.turma = turma; 
+
+} 
+
+Passo 3 : Construtor sobrecarregado, apenas nome e turma 
+
+Nem todo cadastro chega com a idade do aluno. Implemente um segundo construtor que receba apenas nome e turma, atribuindo 0 à idade (valor que indicará "idade não informada"). 
+
+Passo 4 : Construtor sobrecarregado, apenas nome 
+
+Às vezes a secretaria só quer reservar uma vaga com o nome do aluno. Implemente um terceiro construtor que receba apenas o nome, atribuindo 0 à idade e a string "Não definida" à turma. 
+
+Dica 
+
+Lembre-se: dois construtores nunca podem ter a mesma lista de parâmetros (mesma quantidade e mesmos tipos, na mesma ordem), é isso que permite ao Java diferenciar qual construtor chamar em cada caso. 
+
+Passo 5: Método exibirDados() 
+
+Implemente um método exibirDados() que imprime nome, idade e turma do aluno no console, em um formato legível (por exemplo: "Nome: ... | Idade: ... | Turma: ..."). 
+
+Passo 6: Contando os alunos cadastrados (atributo estático) 
+
+Adicione um atributo estático totalAlunos, iniciado em 0. Em todos os construtores, incremente esse atributo em 1. Crie também um método estático getTotalAlunos() que retorna esse valor. 
+
+Por que estático? 
+
+totalAlunos deve ser compartilhado por todos os objetos Aluno, não faz sentido cada aluno ter sua própria contagem. Por isso ele pertence à classe, e não a cada instância. 
+
+Passo 7: Testando no main 
+
+No método main, crie ao menos um objeto Aluno usando cada um dos três construtores, chame exibirDados() para cada um, e ao final imprima o total de alunos cadastrados: 
+
+Aluno a1 = new Aluno("Marina Costa", 16, "3ºA"); 
+
+Aluno a2 = new Aluno("Pedro Lima", "2ºB"); 
+
+Aluno a3 = new Aluno("Júlia Alves"); 
+
+ 
+
+a1.exibirDados(); 
+
+a2.exibirDados(); 
+
+a3.exibirDados(); 
+
+ 
+
+System.out.println("Total de alunos: " + Aluno.getTotalAlunos()); 
+
+Desafio final (opcional) 
+
+Adicione um quarto construtor que receba nome, idade, turma e uma matrícula (int) gerada automaticamente com base no valor de totalAlunos no momento da criação, de forma que o primeiro aluno cadastrado receba a matrícula 1, o segundo a matrícula 2, e assim por diante. 
+
+Pensando no desafio 
+
+A matrícula pode ser calculada dentro do próprio construtor, atribuindo totalAlunos + 1 antes de incrementar o contador, ou logo após incrementar, dependendo de como você organizar a lógica. Teste os dois jeitos e veja qual resultado faz mais sentido. 
+
+ 
+
+Meu trabalho
+
+Anexo
+Carregar deste dispositivo
+Nenhum arquivo escolhido
+Novo
+Pontos
+Sem pontos
