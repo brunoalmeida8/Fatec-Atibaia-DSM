@@ -5,31 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa831590-1bc0-4c60-b3d0-1b6bf67e4253" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/Atividade para estudo - Exercício de Revisão.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/correcaoExercicioMedia/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/correcaoExercicioMedia/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/correcaoExercicioMedia/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/correcaoExercicioMedia/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/correcaoExercicioMedia/correcaoExercicioMedia.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/correcaoExercicioMedia/src/Calculo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/correcaoExercicioMedia/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/exercicioMedia/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/exercicioMedia/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/exercicioMedia/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/exercicioMedia/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/exercicioMedia/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/exercicioMedia/exercicioMedia.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/exercicioMedia/src/Calculo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Atividade Media/exercicioMedia/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cadastroAlunos.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Aluno.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Teams/Exercícios de fixação - Livraria/livraria/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Teams/Exercícios de fixação - Livraria/livraria/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
