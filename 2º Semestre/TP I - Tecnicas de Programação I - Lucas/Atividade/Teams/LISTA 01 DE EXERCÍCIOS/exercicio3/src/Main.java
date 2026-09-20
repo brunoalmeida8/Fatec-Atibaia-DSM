@@ -9,14 +9,17 @@ public class Main {
         System.out.println("Informe um numero inteiro");
         int numero = scanner.nextInt();
 
-        if (numero != 0) {
-            if (numero % 2 == 0) {entao é par};
-        }
-        if (numero > 0) {
-            String resultado = "positivo";
-        } else if (numero < 0) {
-            String resultado = "negativo";
-        }
+        String resultado = (numero > 0) ? "Positivo" : (numero < 0) ? "Negativo" : "Zero";//Operador Ternario aninhado
+        //                  condição 1  ?   true 1   : else condição2 ? true 2   :  falso 2
+        //se nao for maior que zero, então testa se é menor que zero, se ainda não for menor que zero então é zero
 
+        System.out.println("\nNumero informado: " + numero);
+        System.out.println("Numero é : " + resultado);
+        if (numero != 0) {
+            String parImpar = ((numero % 2 == 0) ? "par" : "impar");// Operador Ternario
+            //                     condição      ? true  : se for falso
+            System.out.println("Numero é: " + parImpar);
+        }
+        scanner.close();
     }
 }
