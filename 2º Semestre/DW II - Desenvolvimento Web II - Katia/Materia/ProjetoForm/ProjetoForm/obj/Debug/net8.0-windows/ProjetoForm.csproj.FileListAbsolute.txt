@@ -1,0 +1,16 @@
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\bin\Debug\net8.0-windows\ProjetoForm.exe
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\bin\Debug\net8.0-windows\ProjetoForm.deps.json
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\bin\Debug\net8.0-windows\ProjetoForm.runtimeconfig.json
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\bin\Debug\net8.0-windows\ProjetoForm.dll
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\bin\Debug\net8.0-windows\ProjetoForm.pdb
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.csproj.GenerateResource.cache
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.AssemblyInfoInputs.cache
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.AssemblyInfo.cs
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.csproj.CoreCompileInputs.cache
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.dll
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\refint\ProjetoForm.dll
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.pdb
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.genruntimeconfig.cache
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ref\ProjetoForm.dll
+C:\Users\katia\Documents\FATEC\ProjetoForm\ProjetoForm\obj\Debug\net8.0-windows\ProjetoForm.Cadastro.resources

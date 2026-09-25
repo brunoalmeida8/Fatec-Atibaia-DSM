@@ -1,0 +1,17 @@
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\bin\Debug\net8.0-windows\ProejtoExercicios.exe
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\bin\Debug\net8.0-windows\ProejtoExercicios.deps.json
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\bin\Debug\net8.0-windows\ProejtoExercicios.runtimeconfig.json
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\bin\Debug\net8.0-windows\ProejtoExercicios.dll
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\bin\Debug\net8.0-windows\ProejtoExercicios.pdb
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ProejtoExercicios.Form1.resources
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ProejtoExercicios.TerlaFornecedor4.resources
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ProejtoExercicios.csproj.GenerateResource.cache
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ProejtoExercicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ProejtoExercicios.AssemblyInfoInputs.cache
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ProejtoExercicios.AssemblyInfo.cs
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ProejtoExercicios.csproj.CoreCompileInputs.cache
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ProejtoExercicios.dll
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\refint\ProejtoExercicios.dll
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ProejtoExercicios.pdb
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ProejtoExercicios.genruntimeconfig.cache
+C:\Users\katia\Documents\FATEC\ProejtoExercicios\ProejtoExercicios\obj\Debug\net8.0-windows\ref\ProejtoExercicios.dll
