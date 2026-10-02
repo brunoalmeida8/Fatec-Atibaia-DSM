@@ -1,8 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using ProjetoMVC.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddDbContext<AppDbContext>(options=>options.UseMySql(
+    builder.Configuration.GetConnectionString("DefaultConnection"), 
+    new MySqlServerVersion(new Version(8,0,33))));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -22,6 +27,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Produto}/{action=Index}/{id?}");
 
 app.Run();
