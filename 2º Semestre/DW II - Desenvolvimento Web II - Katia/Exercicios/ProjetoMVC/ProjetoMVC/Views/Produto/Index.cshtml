@@ -3,8 +3,31 @@
 
     ViewData["Title"] = "Produtos"; 
 }
+@model IEnumerable<Produto>
+<h1>Lista de Produtos</h1>
+<a href="/Produto/Create">Cadastrar Produto</a>
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>CÓDIGO</th>
+        <th>NOME</th>
+        <th>CATEGORIA</th>
+        <th>PREÇO</th>
+        <th>AÇÕES</th>
+    </tr>
+    @foreach(var produto in Model)
+        {
+            <tr>
+                <td>@produto.Id</td>
+                <td>@produto.Codigo</td>
+                <td>@produto.Nome</td>
+                <td>@produto.Categoria</td>
+                <td>@produto.Preco</td>
+                <td><a href="Produto/Edit/@produto.Id">Editar</a>
+                <a href="Produto/Delete/@produto.Id">Excluir</a>"</td>
+            </tr>
+        }
+    </table>
 </div>
