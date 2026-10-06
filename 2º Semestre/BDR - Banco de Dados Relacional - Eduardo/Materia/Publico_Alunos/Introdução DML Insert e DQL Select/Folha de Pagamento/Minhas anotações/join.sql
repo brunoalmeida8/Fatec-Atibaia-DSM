@@ -29,3 +29,14 @@ JOIN departamentos AS d
 WHERE f.vl_salario < 2000
     AND c.ds_cargo NOT IN ('gerente'); -- ou AND c.ds_cargo <> 2 | ou f.id_cargo <> 2
 ORDER BY f.nm_funcionario ASC;
+
+```sql
+SELECT a.nm_aluno AS Aluno,
+       d.nm_disciplina AS Disciplina
+FROM alunos AS a
+JOIN matriculas AS m 
+    ON a.id_aluno = m.id_aluno          -- Primeiro salto: vai da tabela principal para a tabela do meio
+JOIN disciplinas AS d 
+    ON m.id_disciplina = d.id_disciplina  -- Segundo salto: vai da tabela do meio para a tabela final
+
+```

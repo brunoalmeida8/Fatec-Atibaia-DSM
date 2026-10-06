@@ -1,0 +1,322 @@
+                                           ATIVIDADE PRÁTICA A2 - BANCO DE DADOS RELACIONAL (2026/2)
+
+                             TEMA: CONSULTAS COM JOIN (RH E FOLHA DE PAGAMENTO) - VALOR ATIVIDADE : 10,00 PONTOS
+
+Integrantes ( Nome completo em ordem alfabética )
+1 - BRUNO DE PAULA ALMEIDA
+2 - IGOR FELIPE BARBOSA
+3 - LUIZA KOVACS VIANA
+4 - MARISOL EMMA FRANKLAND SAWAYA
+5 - VICTOR LYAN FRONIO OLIVEIRA
+
+
+------------------------------------------------------- ORIENTAÇÕES GERAIS  -------------------------------------------------------------------
+
+a. Atividade em Grupo. Informar o nome dos integrantes no espaço acima;
+b. Proibido a utilização de IA para resolver os enunciados propostos;
+c. Após identificada a solução SELECT para cada enunciado, copiar APENAS a instrução SELECT no espaço reservado (RESPOSTA - APENAS A SINTAXE);
+d. Ao finalizar a prova, apenas um integrante do grupo deverá enviar o arquivo para os seguintes endereços de e-mail:
+   - eduperpin.academico@gmail.com 
+   - eduardo.pereira02@cps.sp.gov.br ( Em cópia )
+  
+   Assunto do e-mail: 2026_02 - BDR - A2 - JOIN - <Nome de um integrante>
+   
+   Atenção: Não esqueça de anexar o arquivo.   
+e. Caso as orientações não sejam seguidas, 2,00 (dois pontos) serão subtraídos da prova. 
+
+------------------------------------------------------- ORIENTAÇÕES TÉCNICAS -------------------------------------------------------------------
+
+a. Criar o Banco de Dados FOLHA;
+b. Executar o script mysql_rh_script_10_2026.txt para criar as tabelas no Banco de Dados FOLHA;
+c. Executar o script mysql_rh_dados_10_2026.txt para inserir dados nas tabelas do Banco de Dados FOLHA;
+d. Desenvolva os scripts SQL utilizando a sintaxe do padrão ANSI (JOIN).
+e. Certifique-se de utilizar apelidos (aliases) para as tabelas para otimizar a leitura do código.
+
+
+Apresente apenas as colunas solicitadas em cada enunciado.
+
+**------------------------------------------------------------ QUESTÃO 1 (Nível: Baixo | Valor: 1,00 ponto)
+
+ENUNCIADO:
+O Recursos Humanos solicitou uma listagem dos colaboradores ativos. Elabore uma consulta SQL que retorne o nome do funcionário, o seu cargo e o seu departamento e o valor do seu salário.
+Filtre os resultados apenas para funcionários ativos que pertençam ao departamento de Tecnologia da Informação, Recursos Humanos com salários entre 2100 e 3500.
+Apresentar os dados em ordem alfabética pelo nome do funcionário
+
+RESPOSTA - APENAS A SINTAXE 
+
+SELECT f.nm_funcionario AS nome,
+    c.ds_cargo AS cargo,
+    d.ds_departamento AS departamento,
+    f.vl_salario AS salario
+FROM funcionarios AS f
+JOIN cargos AS c
+    ON f.id_cargo = c.id_cargo
+JOIN departamentos AS d
+    ON f.id_departamento = d.id_departamento
+JOIN status AS s
+    ON f.id_status = s.id_status
+
+
+ WHERE f.vl_salario BETWEEN 2100 AND 3500 
+    AND s.ds_status = 'ativo'
+	AND (d.ds_departamento = 'TI' OR d.ds_departamento = 'RH')
+ORDER BY f.nm_funcionario ASC;
+
+
+
+
+
+
+
+
+**------------------------------------------------------------ QUESTÃO 2 (Nível: Baixo | Valor: 1,00 ponto)
+
+ENUNCIADO: 
+Apresentar o nome do dependente, o nome do funcionário e o grau de parentesco.
+Importante: Considerar apenas o grau de parentesco Filho(a), não considerar os dependentes dos estados de Minas Gerais, Pará;
+Apenas os dependentes do gênero feminino.
+Apresentar os dados em ordem crescente do nome do dependente.
+
+RESPOSTA - APENAS A SINTAXE 
+
+SELECT d.nm_dependente AS "nome do dependente",
+    f.nm_funcionario AS "nome do funcionario",
+    g.ds_grau AS "grau de parentesco"
+
+FROM dependentes AS d
+JOIN funcionarios AS f
+    ON d.id_funcionario = f.id_funcionario
+JOIN grau AS g
+    ON d.id_grau = g.id_grau
+JOIN estados AS e
+    ON d.id_estado = e.id_estado
+JOIN genero AS x
+    ON d.id_genero = x.id_genero
+
+WHERE g.ds_grau = 'FILHO(A)'
+    AND (e.sg_estado NOT IN ('MG') OR e.sg_estado NOT IN ('PA'))
+    AND x.ds_genero = 'FEMININO'
+ORDER BY d.nm_dependente ASC;
+
+
+
+
+
+
+
+**------------------------------------------------------------ QUESTÃO 3 (Nível: Baixo | Valor: 1,00 pontos)
+
+ENUNCIADO:
+Apresentar o nome do funcionário, a descrição do gênero do funcionário, a descrição da cidade de localização do funcionário, a descrição do cargo do funcionário, a descrição do departamento do funcionário. 
+Importante: Desconsiderar funcionários que estejam Afastados pelo INSS;
+Não considerar funcionários da região SUL, considerar somente GERENTES e SECRETARIAS que atuam no departamento financeiro.
+Apresentar os dados em ordem de descrição de cargo.
+
+RESPOSTA - APENAS A SINTAXE 
+
+
+
+SELECT f.nm_funcionario AS nome,
+    g.ds_genero AS genero,
+    ci.nm_cidade AS cidade,
+    ca.ds_cargo AS cargo,
+    d.ds_departamento AS departamento
+FROM funcionarios AS f
+JOIN genero AS g
+    ON f.id_genero = g.id_genero
+JOIN cidades AS ci
+    ON f.id_cidade = ci.id_cidade
+JOIN cargos AS ca
+    ON f.id_cargo = ca.id_cargo
+JOIN departamentos AS d
+    ON f.id_departamento = d.id_departamento
+JOIN status AS s
+    ON f.id_status = s.id_status
+JOIN estados AS e
+    ON ci.id_estado = e.id_estado
+JOIN regioes AS r
+    ON e.id_regiao = r.id_regiao
+
+WHERE s.ds_status NOT IN ("AFASTAMENTO INSS")
+    AND r.ds_regiao NOT IN ('SUL')
+    AND (ca.ds_cargo = 'GERENTE' OR ca.ds_cargo = 'SECRETARIA')
+    AND d.ds_departamento = 'FINANCEIRO'
+ORDER BY ca.ds_cargo ASC;
+
+
+
+
+
+
+
+
+
+
+
+
+
+**------------------------------------------------------------ QUESTÃO 4 (Nível: Médio | Valor: 2,00 pontos)
+
+ENUNCIADO:
+Elaborar uma consulta que deverá considerar somente funcionários que residam no estado de São Paulo, que pertençam à região Sudeste, sejam do gênero FEMININO e
+possuam salário igual ou superior a R$ 4.500,00.
+Deverá ser apresentado o nome do funcionário, o nome da cidade, a sigla do estado da federação da cidade, a descrição da região do estado da federação, a descrição do gênero e o valor do salário.
+Os dados devem ser apresentados em ordem alfabética pelo nome do funcionário.
+
+RESPOSTA - APENAS A SINTAXE 
+
+SELECT f.nm_funcionario nome,
+	c.nm_cidade cidade,
+	e.sg_estado estado,
+	r.ds_regiao região,
+	g.ds_genero gênero,
+	f.vl_salario salario
+FROM funcionarios f 
+JOIN cidades c
+ON f.id_cidade = c.id_cidade
+JOIN estados e
+ON e.id_estado = c.id_estado
+JOIN regioes r
+ON e.id_regiao = r.id_regiao
+JOIN genero g
+ON f.id_genero = g.id_genero
+WHERE f.vl_salario >= 4500
+AND g.ds_genero in ('feminino')
+AND e.id_estado = 1
+AND r.ds_regiao in ('sudeste')
+ORDER BY F.nm_funcionario;
+
+
+
+
+
+
+
+
+
+**------------------------------------------------------------ QUESTÃO 5 (Nível: Alto | Valor: 2,50 pontos)
+
+ENUNCIADO:
+O setor de Recursos Humanos necessita consultar o histórico funcional dos colaboradores.
+Apresente:
+nome do funcionário;
+descrição do cargo;
+descrição do departamento;
+data do histórico;
+tipo de histórico;
+descrição da ocorrência;
+observação registrada.
+
+A consulta deverá considerar somente funcionários que:
+
+estejam com status ATIVO;
+trabalhem nos departamentos Compras ou Financeiro;
+possuam salário igual ou superior a R$ 2.000,00;
+tenham ocorrência pertencente aos tipos de histórico ADVERTÊNCIA ou PROMOÇÃO.
+O resultado deverá ser ordenado pela data do histórico, da mais recente para a mais antiga.
+
+RESPOSTA - APENAS A SINTAXE 
+
+
+SELECT f.nm_funcionario Nome,
+c.ds_cargo cargo,
+d.ds_departamento Departamento,
+h.dt_historico Historico,
+th.ds_tipo_historico Tipo,
+o.ds_ocorrencia Ocorrencia,
+ho.ds_observacao Observacao,
+f.vl_salario,
+s.ds_status statuss
+FROM funcionarios f
+JOIN Status s
+	on f.id_Status = s.id_Status
+JOIN cargos c
+		on f.id_cargo = c.id_cargo
+JOIN departamentos d
+		on f.id_departamento = d.id_departamento
+JOIN historico h
+	ON h.id_funcionario = f.id_funcionario
+JOIN ocorrencia o
+	on h.id_ocorrencia = o.id_ocorrencia
+JOIN historico ho
+	on ho.id_funcionario = f.id_funcionario
+	JOIN tipo_historico th
+ 		on o.id_tipo_historico = th.id_tipo_historico
+WHERE s.ds_status = 'ATIVO'
+and (d.ds_departamento = 'COMPRAS' or d.ds_departamento ='FINANCEIRO')
+and f.vl_salario >= 2000 
+and (th.ds_tipo_historico = 'ADVERTÊNCIA' or th.ds_tipo_historico = 'PROMOÇÃO')
+order by h.dt_historico desc;
+
+
+
+
+
+
+
+**------------------------------------------------------------ QUESTÃO 6 (Nível: Alto | Valor: 2,50 pontos)
+
+ENUNCIADO:
+A instituição deseja realizar uma análise integrada dos dados cadastrais, organizacionais e da folha de pagamento dos funcionários.
+Apresente:
+nome do funcionário, a descrição do cargo, a descrição do departamento, a descrição da cidade, a sigla do estado da federação, valor do salário do funcionário, valor do INSS, Valor do IR, Valor do Bonus, Valor do FGTS, Valor do Salário Liquido.
+A consulta deverá considerar somente funcionários que atendam simultaneamente aos seguintes critérios:
+Estejam com status ATIVO;
+Não estejam vinculados ao departamento de Tecnologia da Informação;
+Não estejam localizados nos estados do Pará, Amazonas ;
+possuam salário cadastrado superior a R$ 1.500,00;
+a folha seja referente ao ano de 2026;
+o mês de referência esteja entre janeiro e outubro;
+possuam bônus superior a R$ 0,00;
+possuam valor líquido superior a R$ 1.100,00.
+Ordene o resultado pelo valor líquido da folha, do maior para o menor.
+
+RESPOSTA - APENAS A SINTAXE 
+
+
+
+
+
+SELECT f.nm_funcionario nome,
+	ca.ds_cargo cargo,
+	d.ds_departamento departamento,
+	ci.nm_cidade cidade,
+	e.sg_estado estado,
+	f.vl_salario salario,
+	fo.val_inss inss, 
+	fo.val_ir imposto,
+	fo.val_bonus,
+	fo.val_fgts,
+	fo.val_liquido
+
+FROM funcinarios f
+JOIN cargos ca
+ON f.id_cargo = ca.id_cargo
+JOIN departamentos d
+ON f.id_departamento = d.id_departamento
+JOIN cidades ci 
+ON f.id_cidade = ci.id_cidade
+JOIN estados e
+ON ci.id_estado = e.id_estado
+JOIN folha fo
+ON f.id_funcionario = fo.id_funcionario
+JOIN status s
+ON f.id_status = s.id_status
+
+WHERE s.ds_status = 'ATIVO'
+AND ds_departamentos NOT INT ('TI')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
