@@ -1,0 +1,32 @@
+﻿
+@{ //esse @{}é o html que a gente coloca dentro do C#
+
+    ViewData["Title"] = "Clientes"; 
+}
+@model IEnumerable<Cliente>
+<h1>Lista de Clientes</h1>
+<a href="/Cliente/Create">Cadastrar Cliente</a>
+
+<div class="text-center">
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th>CPF</th>
+        <th>TELEFONE</th>
+        <th>ENDEREÇO</th>
+    </tr>
+    @foreach(var cliente in Model)
+        {
+            <tr>
+                <td>@cliente.Id</td>
+                <td>@cliente.Nome</td>
+                <td>@cliente.Cpf</td>
+                <td>@cliente.Telefone</td>
+                <td>@cliente.Endereco</td>
+                <td><a href="Cliente/Edit/@cliente.Id">Editar</a>
+                <a href="Cliente/Delete/@cliente.Id">Excluir</a>"</td>
+            </tr>
+        }
+    </table>
+</div>
