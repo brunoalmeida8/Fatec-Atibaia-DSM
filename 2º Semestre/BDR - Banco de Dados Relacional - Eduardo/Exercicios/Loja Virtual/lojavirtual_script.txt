@@ -1,0 +1,262 @@
+/*
+===============================================================================
+BANCO DE DADOS: lojavirtual
+SGBD: MySQL 8.0+
+Objetivo: simular produtos, clientes, carrinhos e formas de pagamento.
+Observação de modelagem:
+- Cada registro de Carrinho representa um item/produto comprado no carrinho.
+- Um mesmo código de carrinho (id_compra) pode agrupar vários produtos para
+  representar uma compra com mais de um item. A tabela Carrinho possui 10 linhas,
+  distribuídas em 5 compras/clientes, com dois itens por compra.
+- Os valores totais da compra e do frete são repetidos nas linhas da mesma compra.
+===============================================================================
+*/
+
+DROP DATABASE IF EXISTS lojavirtual;
+CREATE DATABASE lojavirtual;
+
+USE lojavirtual;
+
+-- 1. Estados da Federação
+CREATE TABLE Estados (
+    id_estado INT PRIMARY KEY,
+    descricao_estado VARCHAR(60) NOT NULL,
+    sigla_estado CHAR(2) NOT NULL UNIQUE,
+    regiao ENUM('NORTE','NORDESTE','CENTRO-OESTE','SUDESTE','SUL') NOT NULL
+);
+
+-- 2. Unidades de Medidas
+CREATE TABLE Unidades_Medidas (
+    id_unidade INT PRIMARY KEY,
+    descricao_unidade VARCHAR(60) NOT NULL,
+    sigla_unidade VARCHAR(10) NOT NULL UNIQUE
+);
+
+-- 3. Formas de Pagamento
+CREATE TABLE Forma_Pagamento (
+    id_forma_pagamento INT PRIMARY KEY,
+    descricao_forma_pagamento VARCHAR(60) NOT NULL UNIQUE
+);
+
+-- 4. Produtos
+CREATE TABLE Produtos (
+    id_produto INT PRIMARY KEY,
+    descricao_produto VARCHAR(120) NOT NULL,
+    id_unidade INT NOT NULL,
+    valor_produto DECIMAL(10,2) NOT NULL,
+    valor_frete DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+    status_produto ENUM('ATIVO','INATIVO') NOT NULL DEFAULT 'ATIVO',
+    CONSTRAINT ck_produto_valor CHECK (valor_produto >= 0),
+    CONSTRAINT ck_produto_frete CHECK (valor_frete >= 0),
+    CONSTRAINT fk_produto_unidade FOREIGN KEY (id_unidade)
+        REFERENCES Unidades_Medidas(id_unidade)
+        ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
+-- 5. Clientes
+CREATE TABLE Clientes (
+    id_cliente INT PRIMARY KEY,
+    nome_cliente VARCHAR(120) NOT NULL,
+    cpf CHAR(11) NOT NULL UNIQUE,
+    email VARCHAR(150) NOT NULL UNIQUE,
+    telefone VARCHAR(20),
+    data_nascimento DATE,
+    logradouro VARCHAR(120) NOT NULL,
+    numero VARCHAR(10) NOT NULL,
+    complemento VARCHAR(60),
+    bairro VARCHAR(80) NOT NULL,
+    cidade VARCHAR(80) NOT NULL,
+    cep CHAR(8) NOT NULL,
+    id_estado INT NOT NULL,
+    data_cadastro DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_cliente_estado FOREIGN KEY (id_estado)
+        REFERENCES Estados(id_estado)
+        ON UPDATE CASCADE ON DELETE RESTRICT
+);
+
+-- 6. Carrinho: cada linha é um item; id_compra agrupa itens da mesma compra.
+CREATE TABLE Carrinho (
+    id_carrinho INT PRIMARY KEY,
+    id_compra INT NOT NULL,
+    id_cliente INT NOT NULL,
+    id_produto INT NOT NULL,
+    quantidade DECIMAL(10,3) NOT NULL DEFAULT 1,
+    valor_unitario DECIMAL(10,2) NOT NULL,
+    valor_frete_item DECIMAL(10,2) NOT NULL DEFAULT 0.00,
+    valor_total_compra DECIMAL(12,2) NOT NULL,
+    valor_total_frete DECIMAL(12,2) NOT NULL,
+    id_forma_pagamento INT NOT NULL,
+    data_compra DATETIME NOT NULL,
+    status_compra ENUM('ABERTO','PAGO','CANCELADO','ENVIADO','ENTREGUE') NOT NULL,
+    CONSTRAINT ck_carrinho_quantidade CHECK (quantidade > 0),
+    CONSTRAINT ck_carrinho_valores CHECK (
+        valor_unitario >= 0 AND valor_frete_item >= 0
+        AND valor_total_compra >= 0 AND valor_total_frete >= 0
+    ),
+    CONSTRAINT fk_carrinho_cliente FOREIGN KEY (id_cliente)
+        REFERENCES Clientes(id_cliente)
+        ON UPDATE CASCADE ON DELETE RESTRICT,
+    CONSTRAINT fk_carrinho_produto FOREIGN KEY (id_produto)
+        REFERENCES Produtos(id_produto)
+        ON UPDATE CASCADE ON DELETE RESTRICT,
+    CONSTRAINT fk_carrinho_pagamento FOREIGN KEY (id_forma_pagamento)
+        REFERENCES Forma_Pagamento(id_forma_pagamento)
+        ON UPDATE CASCADE ON DELETE RESTRICT,
+    INDEX idx_carrinho_compra (id_compra),
+    INDEX idx_carrinho_cliente (id_cliente)
+);
+
+-- Dados: 27 unidades de medida? A lista abaixo contém exatamente 30.
+INSERT INTO Unidades_Medidas (id_unidade, descricao_unidade, sigla_unidade) VALUES
+(1,'Unidade','UN'),
+(2,'Quilograma','KG'),
+(3,'Grama','G'),
+(4,'Litro','L'),
+(5,'Mililitro','ML'),
+(6,'Metro','M'),
+(7,'Centímetro','CM'),
+(8,'Metro quadrado','M2'),
+(9,'Metro cúbico','M3'),
+(10,'Caixa','CX'),
+(11,'Pacote','PCT'),
+(12,'Par','PAR'),
+(13,'Dúzia','DZ'),
+(14,'Rolo','RL'),
+(15,'Lata','LT'),
+(16,'Garrafa','GF'),
+(17,'Saco','SC'),
+(18,'Fardo','FD'),
+(19,'Kit','KIT'),
+(20,'Jogo','JG'),
+(21,'Folha','FL'),
+(22,'Resma','RES'),
+(23,'Peça','PC'),
+(24,'Tubo','TB'),
+(25,'Barra','BR'),
+(26,'Ampola','AMP'),
+(27,'Dose','DS'),
+(28,'Palete','PAL'),
+(29,'Tonelada','TON'),
+(30,'Hora','H');
+
+INSERT INTO Estados (id_estado, descricao_estado, sigla_estado, regiao) VALUES
+(1,'Acre','AC','NORTE'),
+(2,'Alagoas','AL','NORDESTE'),
+(3,'Amapá','AP','NORTE'),
+(4,'Amazonas','AM','NORTE'),
+(5,'Bahia','BA','NORDESTE'),
+(6,'Ceará','CE','NORDESTE'),
+(7,'Distrito Federal','DF','CENTRO-OESTE'),
+(8,'Espírito Santo','ES','SUDESTE'),
+(9,'Goiás','GO','CENTRO-OESTE'),
+(10,'Maranhão','MA','NORDESTE'),
+(11,'Mato Grosso','MT','CENTRO-OESTE'),
+(12,'Mato Grosso do Sul','MS','CENTRO-OESTE'),
+(13,'Minas Gerais','MG','SUDESTE'),
+(14,'Pará','PA','NORTE'),
+(15,'Paraíba','PB','NORDESTE'),
+(16,'Paraná','PR','SUL'),
+(17,'Pernambuco','PE','NORDESTE'),
+(18,'Piauí','PI','NORDESTE'),
+(19,'Rio de Janeiro','RJ','SUDESTE'),
+(20,'Rio Grande do Norte','RN','NORDESTE'),
+(21,'Rio Grande do Sul','RS','SUL'),
+(22,'Rondônia','RO','NORTE'),
+(23,'Roraima','RR','NORTE'),
+(24,'Santa Catarina','SC','SUL'),
+(25,'São Paulo','SP','SUDESTE'),
+(26,'Sergipe','SE','NORDESTE'),
+(27,'Tocantins','TO','NORTE');
+
+INSERT INTO Forma_Pagamento (id_forma_pagamento, descricao_forma_pagamento) VALUES
+(1,'À vista'),
+(2,'Cartão de crédito'),
+(3,'PIX'),
+(4,'Cartão de débito'),
+(5,'Boleto bancário'),
+(6,'Transferência bancária'),
+(7,'Carteira digital');
+
+INSERT INTO Produtos
+(id_produto, descricao_produto, id_unidade, valor_produto, valor_frete, status_produto) VALUES
+(1,'Notebook 15 polegadas',1,3299.90,45.00,'ATIVO'),
+(2,'Mouse sem fio',1,89.90,12.00,'ATIVO'),
+(3,'Teclado mecânico',1,249.90,18.00,'ATIVO'),
+(4,'Monitor 27 polegadas',1,1199.00,55.00,'ATIVO'),
+(5,'Cadeira de escritório',1,899.00,70.00,'ATIVO'),
+(6,'Café em grãos',2,42.50,15.00,'ATIVO'),
+(7,'Água mineral',4,3.50,8.00,'ATIVO'),
+(8,'Tecido de algodão',6,29.90,20.00,'ATIVO'),
+(9,'Papel A4',22,28.00,14.00,'ATIVO'),
+(10,'Caneta azul',1,2.50,5.00,'ATIVO'),
+(11,'Lâmpada LED',1,19.90,9.00,'ATIVO'),
+(12,'Detergente líquido',4,4.99,10.00,'ATIVO'),
+(13,'Par de luvas',12,16.90,8.00,'ATIVO'),
+(14,'Cabo USB-C',1,35.00,7.00,'ATIVO'),
+(15,'Rolo de fita adesiva',14,8.90,6.00,'ATIVO'),
+(16,'Piso laminado',8,79.90,35.00,'ATIVO'),
+(17,'Suco de laranja',5,6.50,9.00,'ATIVO'),
+(18,'Caixa de parafusos',10,24.90,11.00,'ATIVO'),
+(19,'Tubo de silicone',24,18.00,8.00,'INATIVO'),
+(20,'Kit de ferramentas',19,159.90,22.00,'ATIVO');
+
+INSERT INTO Clientes
+(id_cliente, nome_cliente, cpf, email, telefone, data_nascimento,
+ logradouro, numero, complemento, bairro, cidade, cep, id_estado) VALUES
+(1,'Ana Paula Martins','11111111101','ana.martins@example.com','11988880001','1988-03-12','Rua das Flores','100',NULL,'Centro','São Paulo','01001000',25),
+(2,'Bruno Carvalho','11111111102','bruno.carvalho@example.com','21988880002','1990-07-21','Avenida Atlântica','250','Apto 31','Copacabana','Rio de Janeiro','22021001',19),
+(3,'Carla Souza','11111111103','carla.souza@example.com','31988880003','1985-11-05','Rua Afonso Pena','55',NULL,'Centro','Belo Horizonte','30130003',13),
+(4,'Diego Oliveira','11111111104','diego.oliveira@example.com','41988880004','1992-01-18','Rua XV de Novembro','80',NULL,'Centro','Curitiba','80020010',16),
+(5,'Elisa Ferreira','11111111105','elisa.ferreira@example.com','51988880005','1987-09-30','Rua da Praia','400','Casa 2','Centro','Porto Alegre','90010001',21),
+(6,'Felipe Santos','11111111106','felipe.santos@example.com','61988880006','1991-05-14','Quadra 100','12',NULL,'Asa Sul','Brasília','70390000',7),
+(7,'Gabriela Lima','11111111107','gabriela.lima@example.com','71988880007','1993-12-02','Rua Chile','90',NULL,'Comércio','Salvador','40020000',5),
+(8,'Henrique Costa','11111111108','henrique.costa@example.com','81988880008','1989-06-27','Rua do Sol','150',NULL,'Boa Vista','Recife','50050000',17),
+(9,'Isabela Rocha','11111111109','isabela.rocha@example.com','85988880009','1994-02-09','Avenida Beira Mar','700',NULL,'Meireles','Fortaleza','60165000',6),
+(10,'João Mendes','11111111110','joao.mendes@example.com','85988880010','1986-08-16','Rua Tocantins','25',NULL,'Centro','Palmas','77001000',27);
+
+-- 10 linhas de carrinho: 5 clientes (IDs 1, 2, 3, 7 e 8), duas linhas por compra.
+-- Os totais por compra são: soma(quantidade * valor_unitario) e fretes dos itens.
+INSERT INTO Carrinho
+(id_carrinho, id_compra, id_cliente, id_produto, quantidade, valor_unitario,
+ valor_frete_item, valor_total_compra, valor_total_frete, id_forma_pagamento,
+ data_compra, status_compra) VALUES
+(1,1001,1,1,1,3299.90,45.00,3389.80,57.00,3,'2026-09-01 10:15:00','PAGO'),
+(2,1001,1,2,1,89.90,12.00,3389.80,57.00,3,'2026-09-01 10:15:00','PAGO'),
+(3,1002,2,3,1,249.90,18.00,1466.90,73.00,2,'2026-09-03 14:20:00','PAGO'),
+(4,1002,2,4,1,1199.00,55.00,1466.90,73.00,2,'2026-09-03 14:20:00','PAGO'),
+(5,1003,3,6,2,42.50,15.00,85.00,30.00,1,'2026-09-05 09:00:00','PAGO'),
+(6,1003,3,7,1,3.50,8.00,88.50,23.00,1,'2026-09-05 09:00:00','PAGO'),
+(7,1004,7,9,2,28.00,14.00,80.90,25.00,5,'2026-09-08 16:45:00','PAGO'),
+(8,1004,7,18,1,24.90,11.00,80.90,25.00,5,'2026-09-08 16:45:00','PAGO'),
+(9,1005,8,18,1,24.90,11.00,33.80,17.00,3,'2026-09-10 11:30:00','PAGO'),
+(10,1005,8,15,1,8.90,6.00,33.80,17.00,3,'2026-09-10 11:30:00','PAGO');
+
+/* ----- Instruções de SELECT --------- */
+
+-- ============================================================================
+-- SELECT solicitado:
+-- Retorna dados do cliente, conforme item e, que possuem carrinho e:
+--   (a) não são das regiões CENTRO-OESTE nem SUL;
+--   (b) existe ao menos um registro de carrinho para o cliente;
+--   (c) A forma de pagamento seja em PIX ou Boleto Bancário
+--   (d) não existe item em nenhuma compra desse cliente cuja unidade esteja
+--       entre as três unidades excluídas: UN (Unidade), KG (Quilograma), L (Litro).
+--   (e) Apresentar os seguintes dados:
+--         - Id do cliente
+--         - Nome do Cliente
+--         - Descrição do Estado da Federação do Cliente
+--         - Sigla do Estado 
+--         - A Descrição da Região do Estado
+--         - Em ordem de nome de cliente
+-- ============================================================================ 
+
+-- RESULTADO ESPERADO ---
+
+-- Resultado esperado com os dados deste script:
+-- id_cliente | nome_cliente   | descricao_estado | sigla_estado | regiao
+-- 7          | Gabriela Lima  | Bahia            | BA           | NORDESTE
+-- 8          | Henrique Costa | Pernambuco       | PE           | NORDESTE
+
+
+
+
