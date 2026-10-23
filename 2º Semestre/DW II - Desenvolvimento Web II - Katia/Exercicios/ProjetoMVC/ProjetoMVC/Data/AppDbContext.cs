@@ -12,6 +12,6 @@ namespace ProjetoMVC.Data
 
         public DbSet<Produto> Produtos { get; set; }//vetor add insere na ultima posição
 
-        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }//declaração do list, armazena clientes do tipo Cliente
     }
 }

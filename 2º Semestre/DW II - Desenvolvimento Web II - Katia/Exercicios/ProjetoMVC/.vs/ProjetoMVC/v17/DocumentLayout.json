@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoMVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetomvc\\projetomvc\\controllers\\clientecontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|solutionrelative:projetomvc\\controllers\\clientecontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetomvc\\projetomvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|solutionrelative:projetomvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetomvc\\projetomvc\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|solutionrelative:projetomvc\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetomvc\\projetomvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|solutionrelative:projetomvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,18 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetomvc\\projetomvc\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|solutionrelative:projetomvc\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetomvc\\projetomvc\\controllers\\clientecontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|solutionrelative:projetomvc\\controllers\\clientecontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetomvc\\projetomvc\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|solutionrelative:projetomvc\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetomvc\\projetomvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|solutionrelative:projetomvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B548F644-7E07-4F5C-9CB3-16CD83AC9E9A}|ProjetoMVC\\ProjetoMVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\projetomvc\\projetomvc\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoMVC\\ProjetoMVC\\Views\\Cliente\\Create.cshtml",
               "RelativeDocumentMoniker": "ProjetoMVC\\Views\\Cliente\\Create.cshtml",
@@ -78,12 +78,11 @@
               "RelativeToolTip": "ProjetoMVC\\Views\\Cliente\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-19T23:10:31.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T23:10:31.369Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoMVC\\ProjetoMVC\\Views\\Cliente\\Index.cshtml",
               "RelativeDocumentMoniker": "ProjetoMVC\\Views\\Cliente\\Index.cshtml",
@@ -91,12 +90,11 @@
               "RelativeToolTip": "ProjetoMVC\\Views\\Cliente\\Index.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-19T22:59:45.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-19T22:59:45.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoMVC\\ProjetoMVC\\Program.cs",
               "RelativeDocumentMoniker": "ProjetoMVC\\Program.cs",
@@ -109,39 +107,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ClienteControler.cs",
               "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoMVC\\ProjetoMVC\\Controllers\\ClienteControler.cs",
               "RelativeDocumentMoniker": "ProjetoMVC\\Controllers\\ClienteControler.cs",
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoMVC\\ProjetoMVC\\Controllers\\ClienteControler.cs",
               "RelativeToolTip": "ProjetoMVC\\Controllers\\ClienteControler.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwCQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-19T22:30:05.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoMVC\\ProjetoMVC\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "ProjetoMVC\\Models\\Cliente.cs",
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoMVC\\ProjetoMVC\\Models\\Cliente.cs",
               "RelativeToolTip": "ProjetoMVC\\Models\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-19T22:21:08.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoMVC\\ProjetoMVC\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "ProjetoMVC\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\ProjetoMVC\\ProjetoMVC\\Data\\AppDbContext.cs",
               "RelativeToolTip": "ProjetoMVC\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABrAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-21T22:58:47.692Z",
               "EditorCaption": ""
@@ -168,8 +166,7 @@
               "RelativeToolTip": "ProjetoMVC\\Views\\Produto\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-05T23:08:32.699Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T23:08:32.699Z"
             },
             {
               "$type": "Document",
@@ -181,8 +178,7 @@
               "RelativeToolTip": "ProjetoMVC\\Controllers\\ProdutoController.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAiwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T22:46:33.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T22:46:33.366Z"
             },
             {
               "$type": "Document",
@@ -194,8 +190,7 @@
               "RelativeToolTip": "ProjetoMVC\\Models\\Produto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-21T22:40:06.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-21T22:40:06.747Z"
             },
             {
               "$type": "Document",
@@ -207,8 +202,7 @@
               "RelativeToolTip": "ProjetoMVC\\Views\\Produto\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-05T22:58:50.793Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T22:58:50.793Z"
             },
             {
               "$type": "Document",
