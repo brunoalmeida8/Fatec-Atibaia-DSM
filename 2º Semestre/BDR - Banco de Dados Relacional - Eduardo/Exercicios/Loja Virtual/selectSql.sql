@@ -43,3 +43,13 @@ SELECT C.id_cliente, C.nome_cliente, E.descricao_estado, E.sigla_estado, E.regia
     ORDER BY C.nome_cliente ASC;
     
 
+
+EXISTS (
+    SELECT 1 
+    FROM dependentes AS D
+    JOIN grau AS G                      -- Entra aqui para buscar o nome do grau
+        ON D.id_grau = G.id_grau
+    WHERE F.id_funcionario = D.id_funcionario -- Amarra com o funcionário de fora
+      AND G.ds_grau = 'FILHO(A)'              -- Filtra o que você quer
+)
+
