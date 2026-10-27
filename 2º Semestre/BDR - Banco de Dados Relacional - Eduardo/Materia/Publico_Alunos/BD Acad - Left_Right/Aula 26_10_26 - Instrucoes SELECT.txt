@@ -1,0 +1,111 @@
+--- Criar table a partir de um SELECT
+	
+        Create table FUNC2 AS
+	Select f.id_funcionario,
+               f.nm_funcionario,
+               c.ds_cargo
+   	from funcionarios f 
+    	join cargos c 
+     	 on f.id_cargo = c.id_cargo 
+   	order by f.nm_funcionario
+  
+--- UNION
+create table clientes(id_cliente int,
+	ds_cliente  varchar(30), st_cliente varchar(1));
+
+create table fornecedores(id_fornecedor int,
+	ds_fornecedor  varchar(30), st_fornecedor varchar(1));
+
+insert into clientes values(1,'Cliente A','A');
+insert into clientes values(2,'Cliente B','A');
+insert into clientes values(3,'Cliente C','I');
+
+insert into fornecedores values(1,'Fornecedor A','A');
+insert into fornecedores values(2,'Fornecedor B','A');
+insert into fornecedores values(3,'Fornecedor C','I');
+
+-- Criar a tabela a partir de uma Sintaxe de UNION
+Create table Cli_FOR as
+select id_cliente codigo,
+       ds_cliente nome,
+       st_cliente ds_status,
+       'É UM CLIENTE' Observacao
+   from clientes
+ UNION
+select id_fornecedor codigo,
+       ds_fornecedor nome,
+       st_fornecedor ds_status,
+       'É UM FORNECEDOR' Observacao
+   from fornecedores;  
+
+--- count()
+SELECT COUNT(*) QTD FROM funcionarios;
+
+SELECT SUM(vl_salario) VALOR_FOLHA, AVG(vl_salario) MEDIA
+FROM FUNCIONARIOS;
+
+SELECT COUNT(*) QTD, SUM(vl_salario) VALOR_FOLHA,
+       AVG(vl_salario) MEDIA,
+       MAX(vl_salario) MAXIMO,
+       MIN(vl_salario) MINIMO
+FROM FUNCIONARIOS;
+
+DEPARTAMENTO   QTDE    FOLHA
+------------   -----   ---------
+CONTABILIDADE    23    415890.50
+FINANCEIRO       05    80178.30
+
+
+SELECT F.NM_FUNCIONARIO, F.VL_SALARIO,
+       D.DS_DEPARTAMENTO
+    FROM FUNCIONARIOS f
+    JOIN departamentos D 
+      ON F.id_departamento = D.id_departamento;
+
+SELECT D.DS_DEPARTAMENTO DEPARTAMENTO, 
+       COUNT(*) QTDE,
+       SUM(F.VL_SALARIO) FOLHA
+    FROM FUNCIONARIOS f
+    JOIN departamentos D 
+      ON F.id_departamento = D.id_departamento
+GROUP BY D.DS_DEPARTAMENTO
+HAVING QTDE > 19
+
+SELECT D.DS_DEPARTAMENTO DEPARTAMENTO, 
+       COUNT(*) QTDE,
+       SUM(F.VL_SALARIO) FOLHA
+    FROM FUNCIONARIOS f
+    JOIN departamentos D 
+      ON F.id_departamento = D.id_departamento
+   WHERE D.DS_DEPARTAMENTO IN('CONTABILIDADE','FINANCEIRO')
+ GROUP BY D.DS_DEPARTAMENTO
+HAVING QTDE > 19 AND FOLHA > 138000;
+
+SELECT F.NM_FUNCIONARIO, F.VL_SALARIO,
+       D.DS_DEPARTAMENTO,
+       C.DS_CARGO
+    FROM FUNCIONARIOS f
+    JOIN departamentos D 
+      ON F.id_departamento = D.id_departamento
+    JOIN cargos c
+      ON f.id_cargo = c.id_cargo
+
+
+SELECT D.DS_DEPARTAMENTO departamento,
+       C.DS_CARGO cargo,
+       count(*) qtde,
+       sum(F.VL_SALARIO) folha,
+       avg(F.VL_SALARIO) media,
+       max(F.VL_SALARIO) maximo,
+       min(F.VL_SALARIO) minimo
+    FROM FUNCIONARIOS f
+    JOIN departamentos D 
+      ON F.id_departamento = D.id_departamento
+    JOIN cargos c
+      ON f.id_cargo = c.id_cargo
+  group by D.DS_DEPARTAMENTO,
+       C.DS_CARGO 
+
+
+
+	            

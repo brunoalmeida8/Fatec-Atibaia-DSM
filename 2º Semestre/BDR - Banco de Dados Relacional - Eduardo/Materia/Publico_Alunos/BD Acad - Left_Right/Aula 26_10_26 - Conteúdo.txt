@@ -1,0 +1,23 @@
+1. Devolutiva da resolução do exercício LojaVirtual;
+
+2.Apresentar a programação para a P2 (A3 e A4);
+
+3.Conteúdo Técnico
+
+  - Create Table AS
+  
+  - UNION
+
+  - Left e Right JOIN
+
+  - Funções de Grupo
+
+    - Count(*)
+     
+    - Sum()
+
+    - Max()
+
+    - Min()
+
+    - Avg()

@@ -34,4 +34,8 @@ Constraint ficam como INDEX indice
 
 DDL - 
 DML - 
-DTL - 
+DTL -
+
+
+
+CREATE 
