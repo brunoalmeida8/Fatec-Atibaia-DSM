@@ -1,0 +1,62 @@
+ENUNCIADO
+** DISCIPLINA: BANCO DE DADOS RELACIONAL
+** Curso:** Análise e Desenvolvimento de Sistemas  
+** Tema:** Funções de Grupo, GROUP BY, HAVING e Subqueries  
+** Grau de dificuldade: 8/10
+
+###-------------------------------------------------------------------------------- Contextualização
+
+Um órgão responsável pela fiscalização de trânsito deseja obter informações gerenciais sobre as multas aplicadas nos estados brasileiros. Para isso, utiliza um banco de dados relacional que armazena informações sobre veículos, estados da federação, infrações e multas.
+
+A equipe de desenvolvimento deverá elaborar uma consulta SQL que permita identificar, por estado e tipo de infração, a quantidade de multas aplicadas, o valor total arrecadado, os valores máximo e mínimo das multas e o valor médio das penalidades registradas.
+
+
+###-------------------------------------------------------------------------------- Considerações
+
+Condições
+-------------
+Apenas os veículos que não sejam dos Estados da Paraíba, Ceara, Pernambuco, Tocantins
+Quantidade de Pontos da Infração superior a 4 pontos
+Valor da multa deverá compreender o intervalo de R$ 500,00 até R$ 1500,00
+
+Premissas
+---------
+O veiculo em questão deverá existir entre os fabricantes Chevrolet / Honda / Ford / Fiat / Volkswagen / Toyota
+Não poderá haver nenhum registro de processo para a multa em questão.
+
+
+Resultados
+----------
+Para a infração apontada no estado, considerar apenas a quantidade de multas superior a 2;
+O valor da soma das multas deverá ser superior a R$ 550,00
+O maior valor de aplicação de multa deverá ser superior a R$ 200,00
+
+Ordem
+------
+Apresentar os dados em Ordem de Estado da Federação e Descrição da Infração
+
+
+###-------------------------------------------------------------------------------- Tarefa
+
+Desenvolva uma única instrução SQL que apresente as seguintes informações:
+
+1. A descrição do estado da federação.
+2. A descrição da infração.
+3. A quantidade de multas aplicadas, utilizando a função `COUNT(*)`.
+4. A soma dos valores das multas, utilizando a função `SUM()`.
+5. O maior valor de multa aplicada, utilizando a função `MAX()`.
+6. O menor valor de multa aplicada, utilizando a função `MIN()`.
+7. A média dos valores das multas, utilizando a função `AVG()`.
+
+###-------------------------------------------------------------------------------- Resultado Esperado
+
+Estado   	Infracao					Quantidade_Multas	Vl_Soma_Multas	Vl_Maior_Multa	Vl_Menor_Multa	Vl_Media_Multas	
+------          ---------------------------------------------   -----------------       --------------  --------------  --------------  ---------------
+Amapá	        Conduzir veículo sem licenciamento		3			880.41		293.47		293.47		293.470000	
+Amazonas	Estacionar em vaga reservada sem credencial	3			880.41		293.47		293.47		293.470000	
+Goiás	        Avançar o sinal vermelho do semáforo		3			880.41		293.47		293.47		293.470000	
+Maranhão	Não dar preferência ao pedestre na faixa	3			880.41		293.47		293.47		293.470000	
+Rondônia	Conduzir veículo sem licenciamento		3			880.41		293.47		293.47		293.470000	
+Rondônia	Transitar em velocidade superior à máxima 	3			2641.23		880.41		880.41		880.410000	
+Roraima   	Estacionar em vaga reservada sem credencial	3			880.41		293.47		293.47		293.470000	
+

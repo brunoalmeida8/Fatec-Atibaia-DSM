@@ -1,0 +1,123 @@
+-- =========================================================
+-- Banco de Dados: Multas
+-- Data 28/10/2026
+-- =========================================================
+CREATE DATABASE IF NOT EXISTS `multas`
+  CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE `multas`;
+
+CREATE TABLE IF NOT EXISTS `pessoas` (
+  `id_pessoa` INT NOT NULL AUTO_INCREMENT,
+  `nm_pessoa` VARCHAR(50) NOT NULL,
+  `nr_cpf` VARCHAR(11) NOT NULL,
+  PRIMARY KEY (`id_pessoa`),
+  UNIQUE KEY `uk_pessoas_cpf` (`nr_cpf`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `estados` (
+  `id_estado` INT NOT NULL AUTO_INCREMENT,
+  `sg_estado` VARCHAR(2) NOT NULL,
+  `ds_estado` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`id_estado`),
+  UNIQUE KEY `uk_estados_sigla` (`sg_estado`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `cores` (
+  `id_cor` INT NOT NULL AUTO_INCREMENT,
+  `ds_cor` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id_cor`),
+  UNIQUE KEY `uk_cores_descricao` (`ds_cor`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `fabricante` (
+  `id_fabricante` INT NOT NULL AUTO_INCREMENT,
+  `ds_fabricante` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`id_fabricante`),
+  UNIQUE KEY `uk_fabricante_descricao` (`ds_fabricante`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `modelos` (
+  `id_modelo` INT NOT NULL AUTO_INCREMENT,
+  `id_fabricante` INT NOT NULL,
+  `ds_modelo` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`id_modelo`),
+  UNIQUE KEY `uk_modelo_fabricante` (`id_fabricante`, `ds_modelo`),
+  KEY `idx_modelos_fabricante` (`id_fabricante`),
+  CONSTRAINT `fk_modelos_fabricante1`
+    FOREIGN KEY (`id_fabricante`) REFERENCES `fabricante` (`id_fabricante`)
+    ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `veiculos` (
+  `id_veiculo` INT NOT NULL AUTO_INCREMENT,
+  `id_pessoa` INT NOT NULL,
+  `id_estado` INT NOT NULL,
+  `id_cor` INT NOT NULL,
+  `id_modelo` INT NOT NULL,
+  `nr_renavan` BIGINT NOT NULL,
+  `nr_placa` VARCHAR(7) NOT NULL,
+  `nr_ano_fabricacao` INT NOT NULL,
+  `nr_ano_modelo` INT NOT NULL,
+  `vl_veiculo` DECIMAL(10,2) NOT NULL,
+  PRIMARY KEY (`id_veiculo`),
+   CONSTRAINT `fk_veiculos_pessoas`
+    FOREIGN KEY (`id_pessoa`) REFERENCES `pessoas` (`id_pessoa`)
+    ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_veiculos_estados1`
+    FOREIGN KEY (`id_estado`) REFERENCES `estados` (`id_estado`)
+    ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_veiculos_cores1`
+    FOREIGN KEY (`id_cor`) REFERENCES `cores` (`id_cor`)
+    ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_veiculos_modelos1`
+    FOREIGN KEY (`id_modelo`) REFERENCES `modelos` (`id_modelo`)
+    ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `infracoes` (
+  `id_infracao` INT NOT NULL AUTO_INCREMENT,
+  `cd_infracao` VARCHAR(10) NOT NULL,
+  `ds_infracao` VARCHAR(150) NOT NULL,
+  `qt_pontos` INT UNSIGNED NOT NULL,
+  `vl_infracao` DECIMAL(10,2) NOT NULL,
+  PRIMARY KEY (`id_infracao`),
+  UNIQUE KEY `uk_infracoes_codigo` (`cd_infracao`)
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `multas` (
+  `id_multa` INT NOT NULL AUTO_INCREMENT,
+  `nr_multa` VARCHAR(5) NOT NULL,
+  `dt_hr_multa` DATETIME NOT NULL,
+  `id_veiculo` INT NOT NULL,
+  `id_infracao` INT NOT NULL,
+  `vl_multa` DECIMAL(10,2) NOT NULL,
+  `qt_pontos` INT UNSIGNED NOT NULL,
+  `ds_local_infracao` VARCHAR(100) NOT NULL,
+  `id_estado` INT NOT NULL,
+  PRIMARY KEY (`id_multa`),
+  UNIQUE KEY `uk_multas_identificacao` (`nr_multa`),
+  CONSTRAINT `fk_multas_veiculos`
+    FOREIGN KEY (`id_veiculo`) REFERENCES `veiculos` (`id_veiculo`)
+    ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_multas_infracoes`
+    FOREIGN KEY (`id_infracao`) REFERENCES `infracoes` (`id_infracao`)
+    ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_multas_estados`
+    FOREIGN KEY (`id_estado`) REFERENCES `estados` (`id_estado`)
+    ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `processos` (
+  `id_processo` INT NOT NULL AUTO_INCREMENT,
+  `id_multa` INT NOT NULL,
+  `dt_processo` DATETIME NOT NULL,
+  `vl_processo` DECIMAL(10,2) NOT NULL,
+  `ds_situacao` VARCHAR(100),
+  PRIMARY KEY (`id_processo`),
+  CONSTRAINT `fk_processos_multas`
+    FOREIGN KEY (`id_multa`) REFERENCES `multas` (`id_multa`)
+    ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB;
+
+
+

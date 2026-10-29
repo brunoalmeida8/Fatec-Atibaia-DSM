@@ -1,0 +1,62 @@
+SELECT
+    e.ds_estado AS Estado,
+    i.ds_infracao AS Infracao,
+
+    COUNT(*) AS Quantidade_Multas,
+    SUM(m.vl_multa) AS Vl_Soma_Multas,
+    MAX(m.vl_multa) AS Vl_Maior_Multa,
+    MIN(m.vl_multa) AS Vl_Menor_Multa,
+    AVG(m.vl_multa) AS Vl_Media_Multas
+
+FROM estados e
+
+INNER JOIN multas m
+    ON e.id_estado = m.id_estado
+
+INNER JOIN infracoes i
+    ON m.id_infracao = i.id_infracao
+
+INNER JOIN veiculos v
+    ON e.id_estado = v.id_estado
+ 
+WHERE e.sg_estado not in('PB','CE','PE','TO')
+  and i.qt_pontos > 4
+  and ( m.vl_multa >= 500.00 or m.vl_multa <= 1500 )
+  
+  and Exists ( Select 1 
+                     from modelos mo
+                  	  join fabricante f
+                  		on mo.id_fabricante = f.id_fabricante
+                    where mo.id_modelo = v.id_modelo
+                      and f.ds_fabricante in('Chevrolet','Honda','Ford','Fiat','Volkswagen','Toyota'))
+           
+  and Not Exists ( Select 1
+                 from processos pr
+                where pr.id_multa = m.id_multa)
+                                          
+GROUP BY
+    e.ds_estado,
+    i.ds_infracao
+
+HAVING
+    COUNT(*) > 2
+    AND Vl_Soma_Multas > 550.00
+    AND Vl_Maior_Multa > 200.00
+ORDER BY
+    e.ds_estado, 
+    i.ds_infracao;
+
+
+RESULTADO
+---------
+
+
+Estado   	Infracao					Quantidade_Multas	Vl_Soma_Multas	Vl_Maior_Multa	Vl_Menor_Multa	Vl_Media_Multas	
+------          ---------------------------------------------   -----------------       --------------  --------------  --------------  ---------------
+Amapá	        Conduzir veículo sem licenciamento		3			880.41		293.47		293.47		293.470000	
+Amazonas	Estacionar em vaga reservada sem credencial	3			880.41		293.47		293.47		293.470000	
+Goiás	        Avançar o sinal vermelho do semáforo		3			880.41		293.47		293.47		293.470000	
+Maranhão	Não dar preferência ao pedestre na faixa	3			880.41		293.47		293.47		293.470000	
+Rondônia	Conduzir veículo sem licenciamento		3			880.41		293.47		293.47		293.470000	
+Rondônia	Transitar em velocidade superior à máxima 	3			2641.23		880.41		880.41		880.410000	
+Roraima   	Estacionar em vaga reservada sem credencial	3			880.41		293.47		293.47		293.470000	
