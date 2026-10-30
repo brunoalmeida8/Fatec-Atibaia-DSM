@@ -13,7 +13,7 @@ SELECT E.ds_estado AS estado,
     JOIN veiculos AS V
         ON M.id_veiculo = V.id_veiculo
     JOIN estados AS E
-        ON V.id_estado = E.id_estado
+        ON M.id_estado = E.id_estado
     GROUP BY E.ds_estado, I.ds_infracao;
 
 
