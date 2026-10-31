@@ -1,0 +1,53 @@
+-- ============================================================================
+-- SELECT solicitado:
+-- Retorna clientes/estados que possuem carrinho e:
+--   (a) não são das regiões CENTRO-OESTE nem SUL;
+--   (b) existe ao menos um registro de carrinho para o cliente;
+--   (c) A forma de pagamento seja em PIX ou Boleto Bancário
+--   (d) não existe item em nenhuma compra desse cliente cuja unidade esteja
+--       entre as três unidades excluídas: UN (Unidade), KG (Quilograma), L (Litro).
+--   (e) Apresentar os seguintes dados:
+--         - Id do cliente
+--         - Nome do Cliente
+--         - Descrição do Estado da Federação do Cliente
+--         - Sigla do Estado 
+--         - A Descrição da Regiao do Estado
+--         - Em ordem de nome de cliente
+-- ============================================================================
+
+
+---- PROPOSTA SELECT
+SELECT cl.id_cliente,
+    cl.nome_cliente,
+    e.descricao_estado,
+    e.sigla_estado,
+    e.regiao
+FROM Clientes AS cl
+INNER JOIN Estados AS e
+    ON e.id_estado = cl.id_estado
+WHERE e.regiao NOT IN ('CENTRO-OESTE', 'SUL')
+  AND EXISTS (
+      SELECT 1
+      FROM Carrinho AS ca
+      INNER JOIN Forma_Pagamento AS fp
+          ON fp.id_forma_pagamento = ca.id_forma_pagamento
+      WHERE ca.id_cliente = cl.id_cliente
+        and fp.descricao_forma_pagamento in('PIX','Boleto bancário'))
+  AND NOT EXISTS (
+      SELECT 1
+      FROM Carrinho AS ca2
+      INNER JOIN Produtos AS p2
+          ON p2.id_produto = ca2.id_produto
+      INNER JOIN Unidades_Medidas AS um2
+          ON um2.id_unidade = p2.id_unidade
+      WHERE ca2.id_cliente = cl.id_cliente
+        AND um2.sigla_unidade IN ('UN', 'KG', 'L'))
+ORDER BY cl.nome_cliente;
+
+-- Resultado esperado com os dados deste script:
+-- id_cliente | nome_cliente   | descricao_estado | sigla_estado | regiao
+-- 7          | Gabriela Lima  | Bahia            | BA           | NORDESTE
+-- 8          | Henrique Costa | Pernambuco       | PE           | NORDESTE
+
+
+

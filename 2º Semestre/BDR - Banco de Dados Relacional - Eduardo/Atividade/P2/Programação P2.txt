@@ -1,0 +1,15 @@
+**--------------------------------------------------- BANCO DE DADOS RELACIONAL
+
+-- Outubro
+   26/10 (Segunda) - Create Table as Select, Union, Left Join e Right Join
+   28/10 (Quarta) - Atividade Left/Right Join
+
+-- Novembro
+   04/11 (Quarta) - Update e Delete
+   09/11 (Segunda) - Atividade/Exercício Update e Delete
+   11/11 (Quarta) -  Revisão de Conteúdo para A3
+   16/11 (Segunda) - Atividade A3
+   18/11 (Quarta) - Vista da Atividade A3
+   23/11 (Segunda) - Atividade A4 - PI
+   25/11 (Quarta) - Vista da A4
+   30/11 (Segunda) - Prova P3

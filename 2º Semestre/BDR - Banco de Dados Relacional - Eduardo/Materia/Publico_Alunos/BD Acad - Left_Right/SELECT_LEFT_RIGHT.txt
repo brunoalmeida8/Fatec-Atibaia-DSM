@@ -1,0 +1,54 @@
+
+-- JOIN
+SELECT
+    A.Id_Aluno,
+    A.Nm_Aluno,
+    A.Id_Curso,
+    C.Ds_Curso
+FROM Alunos A
+ JOIN Cursos C
+    ON A.Id_Curso = C.Id_Curso;
+
+
+-- LEFT 
+SELECT
+    A.Id_Aluno,
+    A.Nm_Aluno,
+    A.Id_Curso,
+    C.Ds_Curso
+FROM Alunos A
+LEFT JOIN Cursos C
+    ON A.Id_Curso = C.Id_Curso;
+
+-- RIGHT
+SELECT
+    A.Id_Aluno,
+    A.Nm_Aluno,
+    C.Id_Curso,
+    C.Ds_Curso
+FROM Alunos A
+RIGHT JOIN Cursos C
+    ON A.Id_Curso = C.Id_Curso;
+
+--
+-- Parte 1: todos os alunos e os cursos correspondentes
+SELECT
+    A.Id_Aluno,
+    A.Nm_Aluno,
+    C.Id_Curso,
+    C.Ds_Curso
+FROM Alunos A
+LEFT JOIN Cursos C
+    ON A.Id_Curso = C.Id_Curso
+
+UNION
+
+-- Parte 2: cursos sem alunos correspondentes
+SELECT
+    A.Id_Aluno,
+    A.Nm_Aluno,
+    C.Id_Curso,
+    C.Ds_Curso
+FROM Alunos A
+RIGHT JOIN Cursos C
+    ON A.Id_Curso = C.Id_Curso;

@@ -1,0 +1,81 @@
+CREATE DATABASE ACAD;
+
+USE ACAD;
+
+CREATE TABLE Alunos (
+    Id_Aluno int PRIMARY KEY,
+    id_curso int,
+    Nm_Aluno Varchar(30),
+    Sg_Genero Char(1),
+    Id_UF int);
+
+CREATE TABLE Estados (
+    Id_UF int PRIMARY KEY,
+    ds_uf char(2),
+    Nm_UF Varchar(30)
+);
+
+CREATE TABLE Cursos (
+    Id_Curso Int PRIMARY KEY,
+    Ds_Curso Varchar(40)
+);
+
+INSERT INTO Estados (Id_UF, Ds_UF, Nm_UF) VALUES
+(1,  'AC', 'Acre'),
+(2,  'AL', 'Alagoas'),
+(3,  'AP', 'Amapá'),
+(4,  'AM', 'Amazonas'),
+(5,  'BA', 'Bahia'),
+(6,  'CE', 'Ceará'),
+(7,  'DF', 'Distrito Federal'),
+(8,  'ES', 'Espírito Santo'),
+(9,  'GO', 'Goiás'),
+(10, 'MA', 'Maranhão'),
+(11, 'MT', 'Mato Grosso'),
+(12, 'MS', 'Mato Grosso do Sul'),
+(13, 'MG', 'Minas Gerais'),
+(14, 'PA', 'Pará'),
+(15, 'PB', 'Paraíba'),
+(16, 'PR', 'Paraná'),
+(17, 'PE', 'Pernambuco'),
+(18, 'PI', 'Piauí'),
+(19, 'RJ', 'Rio de Janeiro'),
+(20, 'RN', 'Rio Grande do Norte'),
+(21, 'RS', 'Rio Grande do Sul'),
+(22, 'RO', 'Rondônia'),
+(23, 'RR', 'Roraima'),
+(24, 'SC', 'Santa Catarina'),
+(25, 'SP', 'São Paulo'),
+(26, 'SE', 'Sergipe'),
+(27, 'TO', 'Tocantins');
+
+INSERT INTO Cursos (Id_Curso, Ds_Curso) VALUES
+(1,  'Análise e Desenvolvimento de Sistemas'),
+(2,  'Ciência da Computação'),
+(3,  'Sistemas de Informação'),
+(4,  'Engenharia de Software'),
+(5,  'Engenharia da Computação'),
+(6,  'Gestão da Tecnologia da Informação'),
+(7,  'Redes de Computadores'),
+(8,  'Banco de Dados'),
+(9,  'Segurança da Informação'),
+(10, 'Administração'),
+(11, 'Ciências Contábeis'),
+(12, 'Direito'),
+(13, 'Pedagogia'),
+(14, 'Enfermagem'),
+(15, 'Gestão de Recursos Humanos');
+
+INSERT INTO Alunos
+    (Id_Aluno, Id_Curso, Nm_Aluno, Sg_Genero, Id_UF)
+VALUES
+(1,  1,  'Ana Silva',       'F', 25),
+(2,  2,  'Bruno Santos',    'M', 7),
+(3,  3,  'Carla Oliveira',  'F', 13),
+(4,  4,  'Daniel Souza',    'M', 19),
+(5,  5,  'Elisa Costa',     'F', 7),
+(6,  8, 'Felipe Almeida','M', NULL),
+(7,  9, 'Gabriela Lima', 'F', NULL),
+(8,  NULL, 'Henrique Rocha','M', 25),
+(9,  NULL, 'Isabela Martins','F', 26),
+(10, NULL, 'João Pereira',  'M', 27);
