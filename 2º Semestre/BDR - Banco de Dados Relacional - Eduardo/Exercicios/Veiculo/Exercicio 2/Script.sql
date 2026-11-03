@@ -3,17 +3,17 @@
 SELECT E.ds_estado AS estado,
     I.ds_infracao AS infracoes,
     COUNT(*) AS Quantidade_Multas,
-    SUM(vl_multa) AS Vl_Soma_Multas,
-    MAX(vl_multa) AS Vl_Maior_Multa,
-    MIN(vl_multa) AS Vl_Menor_Multa,
-    AVG(vl_multa) AS Vl_Media_Multas
-    FROM multas AS M
-        JOIN infracoes AS I
+    SUM(M.vl_multa) AS Vl_Soma_Multas,
+    MAX(M.vl_multa) AS Vl_Maior_Multa,
+    MIN(M.vl_multa) AS Vl_Menor_Multa,
+    AVG(M.vl_multa) AS Vl_Media_Multas
+    FROM estados AS E
+    JOIN multas AS M
+        ON E.id_estado = M.id_estado
+    JOIN infracoes AS I
         ON M.id_infracao = I.id_infracao
     JOIN veiculos AS V
-        ON M.id_veiculo = V.id_veiculo
-    JOIN estados AS E
-        ON M.id_estado = E.id_estado
+        ON E.id_estado = V.id_estado
     GROUP BY E.ds_estado, I.ds_infracao;
 
 
