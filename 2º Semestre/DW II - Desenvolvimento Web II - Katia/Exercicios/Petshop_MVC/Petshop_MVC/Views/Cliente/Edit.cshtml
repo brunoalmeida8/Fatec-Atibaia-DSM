@@ -1,10 +1,44 @@
-﻿@model IEnumerable<Cliente>//lista não numerada de clientes
+﻿@model Pet
 @{
-    ViewData["Title"] = "Home Cliente";
+    ViewData["Title"] = "Editar Pet";
 }
 <link rel="stylesheet" href="~/css/cliente.css" />
 
 <div class="text-center">
-    <h1 class="display-4">Cadastro de Clientes</h1>
-
+    <h1 class="display-4">Editar Pet</h1>
+    <div>
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly"></div>
+            <input type="hidden" asp-for="Id" />
+            <div>
+                <label asp-for="Tutor"></label>
+                <input asp-for="Tutor" />
+                <span asp-validation-for="Tutor"></span>
+            </div>
+            <div>
+                <label asp-for="Nome"></label>
+                <input asp-for="Nome" />
+                <span asp-validation-for="Nome"></span>
+            </div>
+            <div>
+                <label asp-for="Especie"></label>
+                <input asp-for="Especie" />
+                <span asp-validation-for="Especie"></span>
+            </div>
+            <div>
+                <label asp-for="Raca"></label>
+                <input asp-for="Raca" />
+                <span asp-validation-for="Raca"></span>
+            </div>
+            <div>
+                <label asp-for="DataNascimento"></label>
+                <input asp-for="DataNascimento" type="date" />
+                <span asp-validation-for="DataNascimento"></span>
+            </div>
+            <div>
+                <button type="submit">Salvar Alterações</button>
+                <a asp-action="Index">Voltar</a>
+            </div>
+        </form>
+    </div>
 </div>

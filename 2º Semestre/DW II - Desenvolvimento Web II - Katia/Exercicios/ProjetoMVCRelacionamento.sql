@@ -22,3 +22,13 @@ CREATE TABLE pet(
 );
 
 DESCRIBE cliente;
+
+USE bd_projeto_mvc;
+CREATE TABLE pets ( 
+    Id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    tutor varchar(100),
+    nome varchar(100), 
+    especie varchar(50), 
+    raca varchar(50), 
+    dataNascimento date
+);

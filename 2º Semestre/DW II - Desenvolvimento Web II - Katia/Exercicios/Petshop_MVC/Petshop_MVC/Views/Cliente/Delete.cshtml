@@ -1,10 +1,23 @@
-﻿@model IEnumerable<Cliente>//lista não numerada de clientes
+﻿@model Pet
 @{
-    ViewData["Title"] = "Home Cliente";
+    ViewData["Title"] = "Excluir Pet";
 }
 <link rel="stylesheet" href="~/css/cliente.css" />
 
 <div class="text-center">
-    <h1 class="display-4">Cadastro de Clientes</h1>
+    <h1 class="display-4">Excluir Pet</h1>
+    <h3>Tem certeza que deseja excluir este pet?</h3>
+    <div>
+        <p><strong>Tutor:</strong> @Html.DisplayFor(model => model.Tutor)</p>
+        <p><strong>Nome:</strong> @Html.DisplayFor(model => model.Nome)</p>
+        <p><strong>Espécie:</strong> @Html.DisplayFor(model => model.Especie)</p>
+        <p><strong>Raça:</strong> @Html.DisplayFor(model => model.Raca)</p>
+        <p><strong>Data de Nascimento:</strong> @Html.DisplayFor(model => model.DataNascimento)</p>
 
+        <form asp-action="DeleteConfirmed">
+            <input type="hidden" asp-for="Id" />
+            <button type="submit">Confirmar Exclusão</button>
+            <a asp-action="Index">Cancelar</a>
+        </form>
+    </div>
 </div>

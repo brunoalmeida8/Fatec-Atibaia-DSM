@@ -20,3 +20,5 @@ CREATE TABLE clientes(
     endereco VARCHAR(100) NOT NULL
 );
 
+
+

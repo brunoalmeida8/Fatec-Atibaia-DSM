@@ -72,8 +72,8 @@ namespace Petshop_MVC.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteConfirmed(int? id)
         {
-            var cliente = await (_context.Clientes.FindAsync(id);
-            if (cliente == null)
+            var cliente = await _context.Clientes.FindAsync(id);
+            if (cliente != null)
             {
                 _context.Clientes.Remove(cliente);
             }

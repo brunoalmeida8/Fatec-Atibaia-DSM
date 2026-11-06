@@ -1,0 +1,39 @@
+﻿@model Pet
+@{
+    ViewData["Title"] = "Home Pet";
+}
+<link rel="stylesheet" href="~/css/"pet.css" />
+
+<div class="text-center">
+    <h1 class="display-4">Cadastro de Pets</h1>
+    <div>
+        <form asp-action="Creat">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div>
+                <label asp-for="Tutor"></label>
+                <input asp-for="Tutor" />
+                <span asp-validation-for="Tutor"></span>
+            </div>
+            <div>
+                <label asp-for="Nome"></label>
+                <input asp-for="Nome" />
+                <span asp-validation-for="Nome"></span>
+            </div>
+            <div>
+                <label asp-for="Especie"></label>
+                <input asp-for="Especie" />
+                <span asp-validation-for="Especie"></span>
+            </div>
+            <div>
+                <label asp-for="Raca"></label>
+                <input asp-for="Raca" />
+                <span asp-validation-for="Raca"></span>
+            </div>
+            <div>
+                <label asp-for="DataNascimento"></label>
+                <input asp-for="DataNascimento" />
+                <span asp-validation-for="DataNascimento"></span>
+            </div>
+        </form>
+    </div>
+</div>

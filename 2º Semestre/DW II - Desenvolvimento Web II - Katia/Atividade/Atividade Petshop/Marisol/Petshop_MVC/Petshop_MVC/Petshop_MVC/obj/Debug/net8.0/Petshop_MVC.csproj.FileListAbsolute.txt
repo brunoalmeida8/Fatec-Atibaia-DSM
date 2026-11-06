@@ -1,0 +1,141 @@
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.AssemblyInfoInputs.cache
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.AssemblyInfo.cs
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.RazorAssemblyInfo.cache
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.RazorAssemblyInfo.cs
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\appsettings.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.staticwebassets.runtime.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.staticwebassets.endpoints.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.exe
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.deps.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.runtimeconfig.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.pdb
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\scopedcss\bundle\Petshop_MVC.styles.css
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\scopedcss\projectbundle\Petshop_MVC.bundle.scp.css
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_.94B2A1D9.Up2Date
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\refint\Petshop_MVC.dll
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.pdb
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.genruntimeconfig.cache
+C:\Users\Aluno\Documents\2_semestre\desenv_web\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\ref\Petshop_MVC.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\appsettings.Development.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\appsettings.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.staticwebassets.runtime.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.staticwebassets.endpoints.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.exe
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.deps.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.runtimeconfig.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Petshop_MVC.pdb
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\MySql.Data.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\MySqlConnector.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\ZstdSharp.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.csproj.AssemblyReference.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.AssemblyInfoInputs.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.AssemblyInfo.cs
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.csproj.CoreCompileInputs.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.RazorAssemblyInfo.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.RazorAssemblyInfo.cs
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.sourcelink.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\scopedcss\bundle\Petshop_MVC.styles.css
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\scopedcss\projectbundle\Petshop_MVC.bundle.scp.css
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.build.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.development.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_.94B2A1D9.Up2Date
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\refint\Petshop_MVC.dll
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.pdb
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.genruntimeconfig.cache
+C:\Github\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Atividade\Atividade Petshop\Marisol\Petshop_MVC\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\ref\Petshop_MVC.dll
