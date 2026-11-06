@@ -2,7 +2,7 @@
 
 SELECT E.ds_estado AS estado,
     I.ds_infracao AS infracoes,
-    -- F.ds_fabricante, -- so pra testar o WHERE fabrincante
+    M.vl_multa,
     COUNT(*) AS Quantidade_Multas,
     SUM(M.vl_multa) AS Vl_Soma_Multas,
     MAX(M.vl_multa) AS Vl_Maior_Multa,
@@ -14,22 +14,46 @@ SELECT E.ds_estado AS estado,
     JOIN infracoes AS I
         ON M.id_infracao = I.id_infracao
     JOIN veiculos AS V
-        ON E.id_estado = V.id_estado
+       ON M.id_estado = V.id_estado
+    
+    -- se fosse tentar mostrar ds_fabricante, colocando WHERE + JOIN
+    -- JOIN modelos AS MO
+    --     ON V.id_modelo = MO.id_modelo
+    -- JOIN fabricante AS F
+    --     ON MO.id_fabricante = F.id_fabricante   
 
-    JOIN modelos AS MO
-        ON V.id_modelo = MO.id_modelo
-    JOIN fabricante AS F
-        ON MO.id_fabricante = F.id_fabricante   
-    -- WHERE E.ds_estado NOT IN ('paraiba', 'ceara', 'pernambuco', 'tocantins')
-       -- AND I.qt_pontos > 4
-     WHERE f.ds_fabricante in('Chevrolet','Honda','Ford','Fiat','Volkswagen','Toyota')
-    -- WHERE EXISTS (SELECT 1
-       -- FROM )
-    GROUP BY E.ds_estado, I.ds_infracao
+-- condições
+    WHERE E.ds_estado NOT IN ('paraiba', 'ceara', 'pernambuco', 'tocantins')
+       AND I.qt_pontos > 4
+       AND vl_multa BETWEEN 500 AND 1500 -- aqui só traz uma linha, prof usou OR q estaria equivocado
+
+-- premissas
+    -- se fosse tentar mostrar ds_fabricante com WHERE + JOIN
+    -- AND f.ds_fabricante in('Chevrolet','Honda','Ford','Fiat','Volkswagen','Toyota')
+    
+    AND EXISTS (SELECT 1
+        FROM modelos AS MO
+        JOIN fabricante AS F
+            ON MO.id_fabricante = F.id_fabricante
+        WHERE MO.id_modelo = V.id_modelo
+        AND F.ds_fabricante in('Chevrolet','Honda','Ford','Fiat','Volkswagen','Toyota')
+    )
+    
+    AND NOT EXISTS(SELECT 1
+        FROM processos AS P
+        WHERE M.id_multa = P.id_multa)
+
+    GROUP BY E.ds_estado, I.ds_infracao, M.vl_multa
+    
+-- resultados
     HAVING COUNT(*) > 2 -- qtd multas superior a 2
         AND SUM(M.vl_multa) > 550 -- (usando a função de grupo) soma multa > 550,00
         AND Vl_Maior_Multa > 200 -- (usando o apelido/alias AS) a maior multa da linha > 200,00
+    
+-- ordem
     ORDER BY E.ds_estado ASC, I.ds_infracao ASC;
+
+
 
 
 
