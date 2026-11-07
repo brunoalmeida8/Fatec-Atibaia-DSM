@@ -21,9 +21,6 @@ CREATE TABLE pet(
     REFERENCES cliente(clienteId)
 );
 
-DESCRIBE cliente;
-
-USE bd_projeto_mvc;
 CREATE TABLE pets ( 
     Id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
     tutor varchar(100),
@@ -32,3 +29,5 @@ CREATE TABLE pets (
     raca varchar(50), 
     dataNascimento date
 );
+
+DESCRIBE cliente;
