@@ -76,7 +76,7 @@
               "RelativeDocumentMoniker": "Petshop_MVC\\appsettings.json",
               "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC\\Petshop_MVC\\appsettings.json",
               "RelativeToolTip": "Petshop_MVC\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-11-06T22:51:55.198Z",
               "EditorCaption": ""
@@ -115,8 +115,7 @@
               "RelativeToolTip": "Petshop_MVC\\Views\\Pet\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-06T22:11:58.791Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-06T22:11:58.791Z"
             },
             {
               "$type": "Document",
