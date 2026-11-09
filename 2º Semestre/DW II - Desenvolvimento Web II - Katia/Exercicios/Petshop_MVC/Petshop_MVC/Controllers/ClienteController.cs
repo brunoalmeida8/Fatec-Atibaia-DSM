@@ -24,7 +24,7 @@ namespace Petshop_MVC.Controllers
             return View();
         }
         [HttpPost]//esse recebe um objeto
-        public async Task<IActionResult> Create([Bind("ClienteId, Nome, CPf, Telefone, Email")]Cliente cli)
+        public async Task<IActionResult> Create([Bind("ClienteId, Nome, Cpf, Telefone, Email")]Cliente cli)
         {
             if(ModelState.IsValid)
             {
@@ -70,14 +70,14 @@ namespace Petshop_MVC.Controllers
             return View(cliente);
         }
         [HttpPost]
-        public async Task<IActionResult> DeleteConfirmed(int? id)
+        public IActionResult DeleteConfirmed(int? ClienteId)
         {
-            var cliente = await _context.Clientes.FindAsync(id);
+            var cliente = _context.Clientes.Find(ClienteId);
             if (cliente != null)
             {
                 _context.Clientes.Remove(cliente);
+                _context.SaveChanges();
             }
-            await _context.SaveChangesAsync();
             return RedirectToAction("Index");
         }
     }

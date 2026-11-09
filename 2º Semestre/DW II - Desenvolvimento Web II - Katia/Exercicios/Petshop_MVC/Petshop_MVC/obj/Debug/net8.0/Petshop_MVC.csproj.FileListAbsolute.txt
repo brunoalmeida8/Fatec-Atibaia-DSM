@@ -62,7 +62,6 @@ C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\
 C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.development.json
 C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\swae.build.ex.cache
 C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_.94B2A1D9.Up2Date
 C:\GitHub\Fatec-Atibaia-DSM\2º Semestre\DW II - Desenvolvimento Web II - Katia\Exercicios\Petshop_MVC\Petshop_MVC\obj\Debug\net8.0\Petshop_MVC.dll

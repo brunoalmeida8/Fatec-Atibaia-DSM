@@ -24,10 +24,10 @@
                     <td>@Html.DisplayFor(modelItem => item.Telefone)</td>
                     <td>@Html.DisplayFor(modelItem => item.Email)</td>
                     <td>
-                        <a asp-action="Edit" asp-rout-id="@item.ClienteId">Editar</a>
+                        <a asp-action="Edit" asp-route-id="@item.ClienteId">Editar</a>
                     </td>
                     <td>
-                        <a asp-action="Delete" asp-rout-id="@item.ClienteId">Excluir</a>
+                        <a asp-action="Delete" asp-route-id="@item.ClienteId">Excluir</a>
                     </td>
                 </tr>
             }

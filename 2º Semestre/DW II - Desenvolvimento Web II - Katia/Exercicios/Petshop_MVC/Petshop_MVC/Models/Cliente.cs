@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Petshop_MVC.Models
 {
-    [Table("cliente")]
+    [Table("clientes")]
     public class Cliente
     {
         //esse key tem que ter, e ele usa o using System.ComponentModel.DataAnnotations la em cima

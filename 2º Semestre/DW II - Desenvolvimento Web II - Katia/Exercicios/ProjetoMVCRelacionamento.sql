@@ -1,6 +1,6 @@
 CREATE DATABASE petshop_mvc;
 USE petshop_mvc;
-CREATE TABLE cliente(
+CREATE TABLE clientes(
     clienteId INT NOT NULL AUTO_INCREMENT,
     nome VARCHAR(100) DEFAULT NULL,
     cpf VARCHAR(14) DEFAULT NULL,
