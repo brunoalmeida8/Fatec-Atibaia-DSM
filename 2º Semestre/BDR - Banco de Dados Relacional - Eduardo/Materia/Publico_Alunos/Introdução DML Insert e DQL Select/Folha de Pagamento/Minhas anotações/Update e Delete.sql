@@ -5,53 +5,123 @@ TRUNCATE TABLE - DML rollback
 DELETE FROM TABLE
 ALTER TABLE
 
+SELECT * FROM 
+DELETE FROM unidades_medidas WHERE id_unidades_medidas=1;
+
+
+-- SUBQUERY / SUB SELECT
+SELECT F.nm_funcionario, F.vl_salario
+    FROM funcionarios AS f
+    -- WHERE F.id_cidade = 501 -- usa entao 
+    WHERE F.id_cidade IN (SELECT id_cidade FROM cidades WHERE nm_cidade='ATIBAIA');
+
+-- DELETA TODO MUNDO QUE É DA CIDADE DE ATIBAIA
+DELETE FROM funcionarios
+    -- WHERE id_cidade = 501 -- USA ENTAO
+    WHERE id_cidade IN (SELECT id_cidade FROM cidades WHERE nm_cidade='ATIBAIA');
+
+-- DELETAR TODOS DE ATIBAIA COM JOIN
+DELETE F.id
+SELECT F.nm_funcionario, F.vl_salario
+    FROM funcionarios AS f
+    INNER JOIN cidades C
+        ON C.id_cidade = F.id_cidade
+    -- WHERE F.id_cidade = 501 -- sem JOIN
+    -- WHERE F.id_cidade IN (SELECT id_cidade FROM cidades WHERE nm_cidade='ATIBAIA'); -- JOIN
+    WHERE C.nm_cidade = ('ATIBAIA');
+    
+
+-- DELETAR TODOS OS UFNCIONARIOS COM CARGO DE GERENTE E SALARIO ENTRE 2000 E 3000
+-- PRIMEIRO FAZ O SELECT 
+SELECT F.nm_funcionario,
+    C.ds_cargo
+    FROM funcionario AS F
+    JOIN CARGOS AS C
+        ON F.id_cargo = C.id_cargo
+    WHERE c.ds_cargo - 'gerente'
+    AND F.vl_salario BETWEEN 2000 AND 3000;
+    -- SUBSTITUI O SELECT com os campos pelo alias da tabela FROM...
+DELETE F FROM funcionario F
+    JOIN CARGOS AS C
+        ON F.id_cargo = C.id_cargo
+    WHERE c.ds_cargo - 'gerente'
+    AND F.vl_salario BETWEEN 2000 AND 3000;
+
+
+
+-- UPDATE
+SELECT id_funcionario,
+    nm_funcionario,
+    vl_salario
+    FROM funcionarios
+
+UPDATE funcionarios -- TABLE
+    SET vl_salario = 2000 -- COLUNA Q QUER ALTERAR
+    WHERE id_funcionario = 5; -- CONDIÇÃO
+
+-- ALTERAR SALARIO EMAIL E SALARIO PARA + 10%
+UPDATE funcionarios
+    SET ds_email = 'rosangela@gmail.com', 
+    vl_salario = vl_salario * 1.30
+    WHERE id_funcionario = 5;
+
+UPDATE funcionarios
+SET vl_salario = vl_salario * 1.30
+    WHERE id_cidade IN (SELECT C.id_cidade 
+        FROM cidades C
+        WHERE C.nm_cidade = 'ATIBAIA');
+
+UPDATE funcionarios
+    INNER JOIN cidades C
+        ON C.id_cidade - F.id_cidade
+    SET vl_salario = vl_salario * 1.30
+    WHERE C.nm_cidade = 'ATIBAIA';
+
+
+
+-- PERGUNTA ANDRE
+UPDATE PRODUTOS
+    SET id_unidades_medidas = 2
+    WHERE id_unidades_medidas IS NULL;
+
+
+
+SELECT F.nm_funcionario,
+    C.ds_cargo
+    FROM funcionario AS F
+    JOIN CARGOS AS C
+        ON F.id_cargo = C.id_cargo
+    WHERE c.ds_cargo - 'gerente'
+    AND F.vl_salario BETWEEN 2000 AND 3000;
+    -- SUBSTITUI O SELECT com os campos pelo alias da tabela FROM...
+DELETE F FROM funcionario F
+    JOIN CARGOS AS C
+        ON F.id_cargo = C.id_cargo
+    WHERE c.ds_cargo - 'gerente'
+    AND F.vl_salario BETWEEN 2000 AND 3000;
 
 
 
 
+DELETE historico dos funcionarios que reside em ATIBAIA
 
+SELECT F.nm_funcionario, 
+    C.nm_cidade,
+    H.id_historico
+    FROM funcionarios AS F
+    INNER JOIN cidades AS C
+        ON C.id_cidade - F.id_cidade
+    INNER JOIN historico AS H
+        ON F.id_funcionario = F.id_funcionario
+    WHERE C.nm_cidade = 'ATIBAIA';
 
-
-SELECT E.ds_estado AS estado,
-    I.ds_infracao AS infracoes,
-    COUNT(*) AS Quantidade_Multas,
-    SUM(M.vl_multa) AS Vl_Soma_Multas,
-    MAX(M.vl_multa) AS Vl_Maior_Multa,
-    MIN(M.vl_multa) AS Vl_Menor_Multa,
-    AVG(M.vl_multa) AS Vl_Media_Multas
-    FROM estados AS E
-    JOIN multas AS M
-        ON E.id_estado = M.id_estado
-    JOIN infracoes AS I
-        ON M.id_infracao = I.id_infracao
-    JOIN veiculos AS V
-        ON E.id_estado = V.id_estado
-    WHERE E.ds_estado NOT IN ('paraiba', 'ceara', 'pernambuco', 'tocantins')
-        AND I.qt_pontos > 4
-    GROUP BY E.ds_estado, I.ds_infracao
-    -- WHERE f.ds_fabricante in('Chevrolet','Honda','Ford','Fiat','Volkswagen','Toyota'))
-    -- WHERE EXISTS (SELECT 1
-       -- FROM )
-    HAVING COUNT(*) > 2 -- qtd multas superior a 2
-        AND SUM(M.vl_multa) > 550 -- (usando a função de grupo) soma multa > 550,00
-        AND Vl_Maior_Multa > 200 -- (usando o apelido/alias AS) a maior multa da linha > 200,00
-    ORDER BY E.ds_estado ASC, I.ds_infracao ASC;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+DELETE FROM historico
+    WHERE id_funcionario IN (SELECT F.nm_funcionario, 
+        C.nm_cidade,
+        H.id_historico
+        FROM funcionarios AS F
+        INNER JOIN cidades AS C
+            ON C.id_cidade - F.id_cidade
+        INNER JOIN historico AS H
+            ON F.id_funcionario = F.id_funcionario
+        WHERE C.nm_cidade = 'ATIBAIA';)

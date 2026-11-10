@@ -1,0 +1,47 @@
+drop database if exists setnull_prod;
+Create database if not exists setnull_prod;
+use setnull_prod;
+
+-- Criar tabela de Unidade de Medida
+Create table if not exists unidades_medidas(
+  id_unidade_medida int auto_increment primary key,
+  sg_unidade_medida char(2) not null,
+  ds_unidade_medida varchar(40) not null unique);
+
+-- Criar tabela de Produtos
+create table if not exists produtos(
+id_produto int auto_increment primary key,
+ds_produto varchar(50) not null unique,
+id_unidade_medida int,
+-- Constraint FK com Unidade de Medida
+Constraint fk_produtos_unidade 
+  foreign key(id_unidade_medida)
+   references unidades_medidas(id_unidade_medida)
+   on delete set null);
+
+
+-- Insert Dados
+insert into unidades_medidas(sg_unidade_medida, ds_unidade_medida) values('KG','Quilograma'),('PT','Pacote'),('LT','Litro');
+
+insert into produtos values(null, 'Arroz tipo A 5kg', 1);
+insert into produtos values(null, 'Feijão 1kg', 1);
+insert into produtos values(null, 'Açúcar União', 1);
+
+insert into produtos values(null, 'Bolacha Maria', 2);
+insert into produtos values(null, 'Biscoite de Leite', 2);
+
+insert into produtos values(null, 'Oleo Girassol', 3);
+insert into produtos values(null, 'Vinagre Maça', 3);
+
+
+/*
+-- Possibilidades
+
+ON DELETE CASCADE 
+ -> Ao excluir uma unidade de medida, todos os produtos associados a ela também serão excluídos
+ON DELETE RESTRICT
+ -> Não permite excluir a unidade de medida enquanto existir algum produto utilizando-a.
+ON DELETE SET NULL
+ -> Ao excluir a unidade de medida, o produto continua existindo, mas id_unidade_medida passa a ser NULL. 
+ -> id_unidade_medida não pode ser NOT NULL
+*/

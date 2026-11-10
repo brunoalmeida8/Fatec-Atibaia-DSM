@@ -1,0 +1,111 @@
+---> SELECT NOME E SALARIO DE FUNCIONARIO QUE RESIDEM EM ATIBAIA
+
+select f.nm_funcionario, f.vl_salario
+  from funcionarios f 
+ where f.id_cidade in ( select id_cidade  
+                         from cidades 
+                        where nm_cidade = 'ATIBAIA' );
+
+---------------------------------------------------------------------------------
+
+---> DELETAR TODOS OS FUNCIONARIOS DE ATIBAIA com SUBQUERY
+delete from funcionarios 
+where id_cidade in( select id_cidade  
+                         from cidades 
+                        where nm_cidade = 'ATIBAIA' );
+
+---------------------------------------------------------------------------------
+
+
+---> DELETAR TODOS OS FUNCIONARIOS DE ATIBAIA com JOIN
+DELETE f
+FROM funcionarios f
+INNER JOIN cidades c
+    ON c.id_cidade = f.id_cidade
+WHERE c.nm_cidade = 'ATIBAIA';
+
+---> deletar todos os funcionários
+com cargo de gerente e salario entre 2000 e 3000
+
+DELETE F FROM FUNCIONARIOS F 
+  JOIN CARGOS C 
+  ON F.id_cargo = C.id_cargo
+  WHERE C.ds_cargo = 'GERENTE'
+   AND F.vl_salario BETWEEN 2000 AND 3000;
+
+---------------------------------------------------------------------------------
+
+---> ALTERAR O SALARIO DO FUNCIONARIO PARA 1000 QUE RESIDEM EM ATIBAIA (JOIN)
+
+update funcionarios f
+inner join cidades c
+    on c.id_cidade = f.id_cidade
+   set vl_salario = 1000
+where c.nm_cidade = 'ATIBAIA';
+
+---------------------------------------------------------------------------------
+
+---> ALTERAR EMAIL E SALARIO + 10% DA ROSANGELA
+
+UPDATE funcionarios
+  SET ds_email = 'ROSANGELA@GMAIL.COM',
+      VL_SALARIO = vl_salario * 1.10
+ WHERE id_funcionario = 5;
+
+-------------------------------------------------------------------------
+
+
+---> ALTERAR O SALARIO DO FUNCIONARIO PARA 1000 QUE RESIDEM EM ATIBAIA (SUBQUERY)
+
+Update funcionarios
+ set vl_salario = VL_SALARIO * 1.30 
+  where id_funcionario in(Select f.id_funcionario
+                            from funcionarios f
+                          inner join cidades c
+                             on c.id_cidade = f.id_cidade
+                           where c.nm_cidade = 'ATIBAIA');
+
+
+Update funcionarios
+ set vl_salario = VL_SALARIO * 1.30 
+  where id_CIDADE in(Select C.id_cidade
+                             FROM CIDADES C 
+                          where c.nm_cidade = 'ATIBAIA');
+
+update funcionarios f
+inner join cidades c
+    on c.id_cidade = f.id_cidade
+   set vl_salario = vl_salario * 1.30 
+where c.nm_cidade = 'ATIBAIA';
+
+
+-----------------------------------------
+
+UPDATE produtos
+  SET id_unidade_medida = 2
+  WHERE ID_UNIDADE_MEDIDA IS NULL
+
+-------------------------------------------------------------
+
+--> DELETAR TODOS OS HISTORICOS DOS FUNCIONARIOS DA CIDADE DE ATIBAIA
+
+DELETE FROM HISTORICO
+WHERE ID_FUNCIONARIO IN(SELECT F.ID_FUNCIONARIO
+                          FROM FUNCIONARIOS F 
+                          JOIN CIDADES C 
+                            ON F.id_cidade = C.id_cidade 
+                         WHERE C.nm_cidade = 'ATIBAIA');
+
+
+
+
+
+
+
+
+
+
+
+
+
+

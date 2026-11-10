@@ -25,7 +25,7 @@ SELECT E.ds_estado AS estado,
 -- condições
     WHERE E.ds_estado NOT IN ('paraiba', 'ceara', 'pernambuco', 'tocantins')
        AND I.qt_pontos > 4
-       AND vl_multa BETWEEN 500 AND 1500 -- aqui só traz uma linha, prof usou OR q estaria equivocado
+       AND vl_multa BETWEEN 500 OR 1500 -- aqui só traz uma linha, prof usou OR q estaria equivocado
 
 -- premissas
     -- se fosse tentar mostrar ds_fabricante com WHERE + JOIN
