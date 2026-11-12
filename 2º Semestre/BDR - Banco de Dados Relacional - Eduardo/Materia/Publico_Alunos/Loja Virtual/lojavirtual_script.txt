@@ -258,5 +258,3 @@ INSERT INTO Carrinho
 -- 8          | Henrique Costa | Pernambuco       | PE           | NORDESTE
 
 
-
-

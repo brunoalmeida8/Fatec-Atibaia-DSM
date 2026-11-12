@@ -1,0 +1,70 @@
+unidade     quantidade
+-------     ----------
+      1              8
+      2              1
+
+select id_unidade unidade, 
+       count(*) quantidade
+  from produtos
+group by id_unidade
+
+
+status    quantidade
+------    ----------
+ATIVO             19
+INATIVO            1
+
+
+select status produto status,
+       count(*) quantidade
+   from produtos
+group by status produto
+
+
+
+
+unidade    quantidade
+-------    ----------
+Unidade             8
+Pacote              1
+
+
+select u.descricao_unidade unidade,
+       p.descricao_produto produto
+    from produtos p 
+  join unidades_medidas u  
+  on p.id_unidade = u.id_unidade
+
+
+select u.descricao_unidade unidade,
+       count(*) quantidade,
+       sum(p.valor_produto) soma_total,
+       max(p.valor_produto) maximo,
+       min(p.valor_produto) minimo,
+       round(avg(p.valor_produto),3) media
+    from produtos p 
+  join unidades_medidas u  
+  on p.id_unidade = u.id_unidade
+where u.descricao_unidade not in('Metro','Kit')
+group by u.descricao_unidade
+having media > 100 
+order by u.descricao_unidade
+
+
+select u.descricao_unidade unidade,
+       count(*) quantidade,
+       sum(p.valor_produto) soma_total,
+       max(p.valor_produto) maximo,
+       min(p.valor_produto) minimo,
+       round(avg(p.valor_produto),3) media
+    from produtos p 
+  join unidades_medidas u  
+  on p.id_unidade = u.id_unidade
+where u.descricao_unidade not in('Metro','Kit')
+group by u.descricao_unidade
+having minimo > 7 and maximo < 30
+order by u.descricao_unidade;
+
+
+
+
