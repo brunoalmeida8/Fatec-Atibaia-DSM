@@ -36,13 +36,14 @@ public class Retangulo {
         } else {
             ehQuadrado = "não";
         }*/
-        //assim é mais reduzido
-        String ehQuadrado = (ehQuadrado()) ? "sim" : "não";
+        String ehQuadrado = (ehQuadrado()) ? "sim" : "não";//assim é mais reduzido
 
-        System.out.println("Base: " + this.base);
-        System.out.println("Altura: " + this.altura);
-        System.out.println("Área: " + this.calcularArea());
-        System.out.println("Perímetro: " + this.calcularPerimetro());
+        System.out.println("\n======= Exibindo Retangulo =======");;
+        System.out.println("Base: " + String.format("%.2f", this.base));
+        System.out.printf("Altura: %.2f\n", this.altura);
+        System.out.printf("Área: %.2f\n", this.calcularArea());
+        System.out.println("Perímetro: " + String.format("%.2f", this.calcularPerimetro()));
+        System.out.println("É quadrado: " + ehQuadrado);
     }
 
 
