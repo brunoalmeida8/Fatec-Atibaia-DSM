@@ -10,6 +10,10 @@ public class ContaBancaria {
         this.saldo = saldo;
     }
 
+    //sobrecarga pq no enunciado nao fala com quanto a conta da Renata tem que ser criada
+    public ContaBancaria(String titular) {
+        this.titular = titular;
+    }
     //getters e setters
 
     public String getTitular() {
@@ -37,11 +41,12 @@ public class ContaBancaria {
         if(valor <= 0){
             System.out.println("Erro valor informado <= 0!");
             return false;
-        } else if(valor > this.saldo){
+        } else if(valor <= this.saldo){
             this.saldo = this.saldo - valor;
             System.out.println("Saque realizado com sucesso!");
             return true;
         } else {
+            System.out.println("Erro! Valor solicitado para Saque é maior que o Saldo atual");
             return false;
         }
     }
