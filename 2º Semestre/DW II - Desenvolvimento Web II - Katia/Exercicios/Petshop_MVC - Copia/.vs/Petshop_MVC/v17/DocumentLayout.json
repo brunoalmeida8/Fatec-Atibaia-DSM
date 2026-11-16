@@ -1,0 +1,108 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\petshop_mvc - copia\\petshop_mvc\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|solutionrelative:petshop_mvc\\models\\pet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\petshop_mvc - copia\\petshop_mvc\\controllers\\petscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|solutionrelative:petshop_mvc\\controllers\\petscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\petshop_mvc - copia\\petshop_mvc\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|solutionrelative:petshop_mvc\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\petshop_mvc - copia\\petshop_mvc\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|solutionrelative:petshop_mvc\\views\\cliente\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\petshop_mvc - copia\\petshop_mvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|solutionrelative:petshop_mvc\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PetsController.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\Petshop_MVC\\Controllers\\PetsController.cs",
+              "RelativeDocumentMoniker": "Petshop_MVC\\Controllers\\PetsController.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\Petshop_MVC\\Controllers\\PetsController.cs",
+              "RelativeToolTip": "Petshop_MVC\\Controllers\\PetsController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAADwvzIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T22:16:44.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Pet.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\Petshop_MVC\\Models\\Pet.cs",
+              "RelativeDocumentMoniker": "Petshop_MVC\\Models\\Pet.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\Petshop_MVC\\Models\\Pet.cs",
+              "RelativeToolTip": "Petshop_MVC\\Models\\Pet.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T22:07:46.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\Petshop_MVC\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Petshop_MVC\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\Petshop_MVC\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Petshop_MVC\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T21:58:00.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\Petshop_MVC\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Petshop_MVC\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\Petshop_MVC\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Petshop_MVC\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T21:53:20.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\Petshop_MVC\\Views\\Cliente\\Index.cshtml",
+              "RelativeDocumentMoniker": "Petshop_MVC\\Views\\Cliente\\Index.cshtml",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC - Copia\\Petshop_MVC\\Views\\Cliente\\Index.cshtml",
+              "RelativeToolTip": "Petshop_MVC\\Views\\Cliente\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-09T23:19:00.187Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

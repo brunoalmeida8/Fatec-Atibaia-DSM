@@ -1,0 +1,18 @@
+﻿@model Petshop_MVC.Models.Pet
+
+<h1>Excluir Pet</h1>
+<p>Tem certeza que deseja excluir este pet?</p>
+
+<div>
+    <p><strong>Tutor:</strong> @Model.Tutor</p>
+    <p><strong>Nome:</strong> @Model.Nome</p>
+    <p><strong>Espécie:</strong> @Model.Especie</p>
+    <p><strong>Raça:</strong> @Model.Raca</p>
+    <p><strong>Data de Nascimento:</strong> @Model.DataNascimento?.ToShortDateString()</p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit">Confirmar Exclusão</button>
+    <a asp-action="Index">Cancelar</a>
+</form>

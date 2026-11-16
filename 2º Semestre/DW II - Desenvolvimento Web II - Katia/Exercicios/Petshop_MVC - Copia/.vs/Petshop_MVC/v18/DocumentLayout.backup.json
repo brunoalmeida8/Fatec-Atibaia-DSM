@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\GitHub\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\petshop_mvc\\petshop_mvc\\views\\pet\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|solutionrelative:petshop_mvc\\views\\pet\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\exercicios\\petshop_mvc\\petshop_mvc\\views\\pet\\delete.cshtml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{91AA7296-463F-4FA6-B606-326DD8B1F142}|Petshop_MVC\\Petshop_MVC.csproj|solutionrelative:petshop_mvc\\views\\pet\\delete.cshtml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\GitHub\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC\\Petshop_MVC\\Views\\Pet\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Petshop_MVC\\Views\\Pet\\Delete.cshtml",
+              "ToolTip": "C:\\GitHub\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC\\Petshop_MVC\\Views\\Pet\\Delete.cshtml",
+              "RelativeToolTip": "Petshop_MVC\\Views\\Pet\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-07T14:42:12.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\GitHub\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC\\Petshop_MVC\\Views\\Pet\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Petshop_MVC\\Views\\Pet\\Delete.cshtml",
+              "ToolTip": "C:\\GitHub\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC\\Petshop_MVC\\Views\\Pet\\Delete.cshtml",
+              "RelativeToolTip": "Petshop_MVC\\Views\\Pet\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-07T14:24:26.9Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

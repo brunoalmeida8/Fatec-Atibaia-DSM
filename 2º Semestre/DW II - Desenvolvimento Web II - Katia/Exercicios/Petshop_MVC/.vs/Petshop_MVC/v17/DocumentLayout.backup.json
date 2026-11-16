@@ -58,8 +58,7 @@
               "RelativeToolTip": "Petshop_MVC\\Views\\Cliente\\Index.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAADwvyQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-09T23:19:00.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T23:19:00.187Z"
             },
             {
               "$type": "Document",
@@ -67,9 +66,9 @@
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC\\Petshop_MVC\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "Petshop_MVC\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC\\Petshop_MVC\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "Petshop_MVC\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAA/wFQAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Exercicios\\Petshop_MVC\\Petshop_MVC\\Controllers\\ClienteController.cs*",
+              "RelativeToolTip": "Petshop_MVC\\Controllers\\ClienteController.cs*",
+              "ViewState": "AgIAAD8AAAAAAAAAAAA/wFQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-09T23:00:33.503Z",
               "EditorCaption": ""
@@ -84,8 +83,7 @@
               "RelativeToolTip": "Petshop_MVC\\Views\\Cliente\\Delete.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-09T22:42:13.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T22:42:13.559Z"
             },
             {
               "$type": "Document",
@@ -97,8 +95,7 @@
               "RelativeToolTip": "Petshop_MVC\\Models\\Cliente.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAYwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T22:29:42.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T22:29:42.056Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "Petshop_MVC\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-09T22:21:16.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T22:21:16.617Z"
             },
             {
               "$type": "Document",
@@ -123,8 +119,7 @@
               "RelativeToolTip": "Petshop_MVC\\Views\\Cliente\\Edit.cshtml",
               "ViewState": "AgIAABYAAAAAAAAAAADwvysAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-09T22:06:29.081Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T22:06:29.081Z"
             },
             {
               "$type": "Document",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "Petshop_MVC\\Views\\Cliente\\Create.cshtml",
               "ViewState": "AgIAABEAAAAAAAAAAADwvyYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-09T22:01:58.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T22:01:58.272Z"
             },
             {
               "$type": "Document",
@@ -149,8 +143,7 @@
               "RelativeToolTip": "Petshop_MVC\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T21:45:55.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T21:45:55.275Z"
             }
           ]
         }

@@ -1,0 +1,19 @@
+﻿@model Cliente// nao usa enumerable pq não é uma list e sim um unico objeto
+@{
+    ViewData["Title"] = "Home Cliente";
+}
+<link rel="stylesheet" href="~/css/cliente.css" />
+
+<div class="text-center">
+    <h1 class="display-4">Exclusão de Clientes</h1>
+    <div>
+        <p>@Html.DisplayNameFor(model => model.Nome)</p>
+    </div>
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="ClienteId"/>
+        <input type="submit" value="Excluir"/>
+        
+    </form>
+</div>
+
+<h1>Delete</h1>

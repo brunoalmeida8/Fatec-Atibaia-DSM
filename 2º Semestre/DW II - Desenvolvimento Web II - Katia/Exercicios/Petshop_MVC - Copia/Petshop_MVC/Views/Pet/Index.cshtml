@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Pet>
+@{
+    ViewData["Title"] = "Lista de Pets";
+}
+<link rel="stylesheet" href="~/css/cliente.css" />
+
+<div class="text-center">
+    <h1 class="display-4">Cadastro de Pets</h1>
+    <p><a asp-action="Create">Cadastrar Novo Pet</a></p>
+    <table>
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Tutor)</th>
+                <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                <th>@Html.DisplayNameFor(model => model.Especie)</th>
+                <th>@Html.DisplayNameFor(model => model.Raca)</th>
+                <th>@Html.DisplayNameFor(model => model.DataNascimento)</th>
+                <th>Operações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Tutor)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Especie)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Raca)</td>
+                    <td>@Html.DisplayFor(modelItem => item.DataNascimento)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
