@@ -1,0 +1,281 @@
+ATIVIDADE PRÁTICA A3 - BANCO DE DADOS RELACIONAL (2026/2)
+
+BANCO DE DADOS : FOLHA
+
+TEMA: FUNÇÕES DE GRUPO
+      UPDATE
+      DELETE
+
+VALOR TOTAL: 10,00 PONTOS
+
+QUANTIDADE DE EXERCÍCIOS : 7
+
+SCRIPTS 
+- mysql_rh_script_11_2026.txt - script de criação das tabelas e definição das constraints.
+- mysql_rh_dados_11_2026.txt - script de inserção dos registros nas tabelas.
+
+ORIENTAÇÕES:
+1. Desenvolva os scripts SQL utilizando a sintaxe apresentadas em sala de aula;
+2. Certifique-se de utilizar apelidos (aliases) para as tabelas para otimizar a leitura do código.
+3. Apresente apenas as colunas solicitadas em cada enunciado.
+4. Atividade realizada em grupo;
+5. O que não é permitido:
+   - Utilizar IA ou qualquer que apresente a resolução do enunciado;
+   - Utilizar aparelho celular. Durante a atividade, deverá guardar!
+   - Comunicação por whatsapp, Telegram, Teams, GoogleMet ou qualquer outro comunicador;
+   - Compartilhar arquivos em pastas ou qualquer outro tipo de compartilhamento;
+   - Envio de arquivos por e-mail;
+6. O que é permitido:
+   - Consultar material do aluno (Caderno, Anotações e Arquivos Pessoais);
+   - Sites técnicos pertinentes a Banco de Dados;
+7. A Entrega
+   - Devera ser realizada por um único integrante do Grupo;
+   - Entrega em arquivo ASCII, formato .TXT
+   - Nome do Arquivo deverá ser BDR_A3_FOLHA.TXT
+   - Relacionar o nome completo dos integrantes em ORDEM ALFABÉTICA;
+   - Apresentar os enunciados em ordem crescente ( 1 até 7 )
+   - Para cada enunciado apresentar APENAS a sintaxe para a resolução. NÂO apresentar o resultado dos registros recuperados;
+   - Enviar o arquivo anexado para eduperpin.academico@gmail.com COM CÓPIA para eduardo.pereira51@fatec.sp.gov.br
+     ASSUNTO: 2026_02 - BDR - Atividade A3 
+   - Caso não sejam seguidas as regras de ENTREGA, serão descontados 2,00 pontos;
+ 
+
+Distribuição dos exercícios e pesos de avaliação
+A atividade terá sete exercícios, distribuídos conforme os quatro níveis de dificuldade:
+
+| Exercício | Nível                   | Dificuldade | Peso      |
+| --------- | ----------------------- | ----------- | --------- |
+| 01        | Nível 1 – Básico        | 2           | 1,00      |
+| 02        | Nível 1 – Básico        | 2           | 1,00      |
+| 03        | Nível 2 – Intermediário | 4           | 1,25      |
+| 04        | Nível 2 – Intermediário | 5           | 1,25      |
+| 05        | Nível 3 – Avançado      | 7           | 1,50      |
+| 06        | Nível 3 – Avançado      | 8           | 1,50      |
+| 07        | Nível 4 – Especialista  | 10          | 2,50      |
+| Total     |                         |             | 10,00     |
+
+
+------------------------------------------------------ NÍVEL 1 – INICIANTE / BÁSICO --------------------------------------------
+
+*** Exercício 01 - Dificuldade 2/10 - 1,00 ponto ***
+
+Consulta de funcionários e seus respectivos cargos e departamentos
+O departamento de Recursos Humanos necessita elaborar um relatório contendo informações dos funcionários que atualmente possuem situação ATIVO na empresa.
+Desenvolva uma instrução SQL que apresente as seguintes informações:
+- Código do funcionário;
+- Nome completo do funcionário;
+- Descrição do cargo ocupado;
+- Descrição do departamento ao qual pertence.
+A consulta deverá apresentar exclusivamente funcionários com situação ATIVO.
+Ordenar o resultado pelo nome do funcionário em ordem alfabética crescente.
+
+** Resultado esperado **
+
+43 registros
+A consulta retorna 43 funcionários ativos.
+Exemplo das primeiras linhas do resultado:
+
+| ID | Funcionário               | Cargo                     | Departamento  |
+| -- | ------------------------- | ------------------------- | ------------- |
+| 53 | ALEXANDRE RODRIGUES LOPES | ANALISTA DE SUPORTE       | FINANCEIRO    |
+| 25 | ALINE ALMEIDA GOMES       | COMPRADOR                 | RH            |
+| 48 | ANA ALVES CARVALHO        | ENGENHEIRO                | TI            |
+| 21 | BRUNO LOPES ALVES         | ASSISTENTE ADMINISTRATIVO | TI            |
+| 32 | CAMILA LIMA FERREIRA      | SECRETARIA                | CONTABILIDADE |
+| 4  | CARLA SANTOS              | GERENTE                   | FINANCEIRO    |
+| 22 | CAROLINA CARVALHO ALMEIDA | AUXILIAR ADMINISTRATIVO   | RH            |
+| 38 | CAROLINA COSTA CARVALHO   | ANALISTA DE SUPORTE       | TI            |
+
+
+*** Exercício 02 - Dificuldade 2/10 - 1,00 ponto ***
+
+Quantidade de funcionários e média salarial por departamento**
+O setor administrativo deseja identificar quais departamentos possuem média salarial igual ou superior a R$ 6.000,00.
+Desenvolva uma instrução SQL que apresente:
+- Nome do departamento;
+- Quantidade de funcionários vinculados ao departamento;
+- Média salarial dos funcionários.
+6. Ordenar o resultado pela média salarial em ordem decrescente.
+
+** Resultado esperado **
+
+3 registros
+
+| Departamento  | Quantidade | Média salarial |
+| ------------- | ---------- | -------------- |
+| RH            | 19         | 6.582,12       |
+| CONTABILIDADE | 22         | 6.234,41       |
+| FINANCEIRO    | 25         | 6.234,18       |
+
+
+------------------------------------------------------ NÍVEL 2 – INTERMEDIÁRIO --------------------------------------------
+
+*** Exercício 03 - Dificuldade 4/10 - 1,25 ponto ***
+
+Análise estatística dos salários por cargo
+O departamento de Recursos Humanos deseja realizar um levantamento estatístico dos salários praticados na empresa, considerando os diferentes cargos existentes.
+Desenvolva uma instrução SQL que apresente, para cada cargo:
+- Descrição do cargo;
+- Quantidade de funcionários;
+- Soma total dos salários;
+- Maior salário;
+- Menor salário;
+- Média salarial.
+
+**Requisitos obrigatórios:**
+
+1. Apresentar somente os cargos que possuem cinco ou mais funcionários.
+2. Ordenar o resultado pela quantidade de funcionários em ordem decrescente.
+
+** Resultado esperado **
+
+10 registros
+
+| Cargo                     | Qtd. | Soma salarial | Maior     | Menor    | Média    |
+| ------------------------- | ---- | ------------- | --------- | -------- | -------- |
+| ANALISTA DE SUPORTE       | 17   | 97.505,95     | 11.784,64 | 1.200,00 | 5.735,64 |
+| GERENTE                   | 16   | 99.265,34     | 11.493,24 | 1.437,16 | 6.204,08 |
+| DIRETOR                   | 13   | 78.986,43     | 11.634,12 | 973,82   | 6.075,88 |
+| AUXILIAR ADMINISTRATIVO   | 10   | 65.902,94     | 11.063,58 | 1.000,00 | 6.590,29 |
+| ENGENHEIRO                | 9    | 72.343,52     | 11.862,18 | 3.882,31 | 8.038,17 |
+| TECNICO CONTÁBIL          | 9    | 50.258,17     | 8.087,23  | 1.269,01 | 5.584,24 |
+| SECRETARIA                | 9    | 58.258,52     | 11.606,21 | 1.301,20 | 6.473,17 |
+| COMPRADOR                 | 8    | 53.182,66     | 11.884,23 | 1.891,25 | 6.647,83 |
+| ASSISTENTE ADMINISTRATIVO | 8    | 37.402,62     | 11.760,63 | 1.182,43 | 4.675,33 |
+| ANALISTA DE SISTEMAS      | 6    | 36.173,52     | 11.348,75 | 1.711,97 | 6.028,92 |
+
+
+*** Exercício 04 - Dificuldade 5/10 - 1,25 ponto ***
+
+Exclusão de cargos e integridade referencial**
+O departamento de Recursos Humanos está realizando uma atualização no cadastro de cargos da empresa e identificou que o cargo de código 10, denominado AUXILIAR ADMINISTRATIVO, deverá ser removido da tabela CARGOS.
+Desenvolva uma instrução SQL utilizando `DELETE` para excluir o cargo mencionado.
+Após executar o comando, realize uma consulta na tabela FUNCIONARIOS para verificar os registros dos funcionários que anteriormente estavam associados a esse cargo.
+
+**Questões que deverão ser respondidas pelo aluno:**
+1. Por que a exclusão do cargo foi permitida, mesmo existindo funcionários associados a ele?
+2. Por que os funcionários não foram excluídos da tabela FUNCIONARIOS?
+3. O que aconteceu com o atributo `id_cargo` dos funcionários que estavam associados ao cargo excluído?
+4. Qual constraint definida no modelo de dados foi responsável por esse comportamento?
+
+Exemplo do resultado após a exclusão:
+
+| ID funcionário | Nome                      | ID cargo |
+| -------------- | ------------------------- | -------- |
+| 5              | ROSANGELA BRAVO           | NULL     |
+| 22             | CAROLINA CARVALHO ALMEIDA | NULL     |
+| 26             | EDUARDO SANTOS VIEIRA     | NULL     |
+| 35             | GABRIELA PEREIRA LIMA     | NULL     |
+| 44             | MARCELO CARVALHO PEREIRA  | NULL     |
+| 52             | VINICIUS SILVA FERNANDES  | NULL     |
+| 81             | GABRIEL VIEIRA COSTA      | NULL     |
+| 93             | RENATA MARTINS RIBEIRO    | NULL     |
+| 94             | RODRIGO ALMEIDA GOMES     | NULL     |
+| 97             | FERNANDA SOUZA ALMEIDA    | NULL     |
+
+
+------------------------------------------------------ NÍVEL 3 – AVANÇADO --------------------------------------------
+
+*** Exercício 05 - Dificuldade 7/10 - 1,50 ponto ***
+
+O departamento de Recursos Humanos decidiu conceder um reajuste salarial de 10% aos funcionários que atendam simultaneamente às seguintes condições:
+- Pertencer ao departamento de TI, identificado pelo código 4000;
+- Possuir situação ATIVO;
+- Receber salário inferior a R$ 5.000,00;
+- Não possuir nenhum registro de ocorrência na tabela HISTORICO.
+
+Desenvolva uma instrução SQL que atualize os registros desses funcionários, realizando as seguintes alterações:
+
+1. Atualizar salario, aplicando um reajuste de 10% sobre o salário atual.
+2. Atualizar o valor da descrição da apresentação, acrescentando a informação `REAJUSTE SALARIAL DE 10%`.
+
+** Resultado esperado **
+
+6 registros atualizados
+
+| ID | Funcionário                | Salário anterior | Novo salário |
+| -- | -------------------------- | ---------------- | ------------ |
+| 8  | LUCAS CARVALHO COSTA       | 4.916,72         | 5.408,39     |
+| 21 | BRUNO LOPES ALVES          | 1.992,30         | 2.191,53     |
+| 23 | LEONARDO ALMEIDA RODRIGUES | 1.509,00         | 1.659,90     |
+| 43 | VINICIUS BARBOSA OLIVEIRA  | 2.580,66         | 2.838,73     |
+| 75 | ISABELA SANTOS ALVES       | 1.269,01         | 1.395,91     |
+| 94 | RODRIGO ALMEIDA GOMES      | 2.023,97         | 2.226,37     |
+
+
+*** Exercício 06 - Dificuldade 8/10 - 1,50 ponto ***
+
+Análise salarial dos funcionários por região geográfica
+A diretoria da empresa deseja realizar uma análise comparativa da distribuição salarial dos funcionários considerando as regiões geográficas brasileiras.
+Para isso, será necessário utilizar os relacionamentos existentes entre as tabelas FUNCIONARIOS, CIDADES, ESTADOS e REGIOES.
+Desenvolva uma instrução SQL que apresente, para cada região:
+- Descrição da região;
+- Quantidade de funcionários;
+- Soma total dos salários;
+- Maior salário;
+- Menor salário;
+- Média salarial.
+
+**Requisitos obrigatórios:**
+
+1. Agrupar os registros por região geográfica.
+4. Apresentar somente as regiões que possuam pelo menos 10 funcionários e média salarial superior a R$ 6.000,00.
+5. Ordenar as regiões pela média salarial em ordem decrescente.
+
+** Resultado esperado **
+
+2 registros
+
+| Região   | Qtd. funcionários | Soma salarial | Maior salário | Menor salário | Média salarial |
+| -------- | ----------------- | ------------- | ------------- | ------------- | -------------- |
+| SUL      | 19                | 127.167,36    | 11.884,23     | 2.147,85      | 6.693,02       |
+| NORDESTE | 31                | 202.703,41    | 11.784,64     | 1.000,00      | 6.538,82       |
+
+
+------------------------------------------------------ NÍVEL 4 – ESPECIALISTA / DESAFIO --------------------------------------------
+
+*** Exercício 07 - Dificuldade 10/10 - 2,50 pontos ***
+
+Relatório gerencial de desempenho salarial por departamento e cargo
+
+A diretoria da empresa deseja desenvolver um relatório gerencial para identificar os departamentos e cargos que apresentam maior concentração de funcionários com remuneração elevada.
+Para essa análise, deverão ser considerados exclusivamente os funcionários que não possuem nenhum registro na tabela HISTORICO.
+O relatório deverá apresentar informações agrupadas por departamento e cargo, permitindo identificar a quantidade de funcionários, a soma total dos salários, o maior salário, o menor salário e a média salarial de cada agrupamento.
+
+**Critérios para elaboração da consulta:**
+
+6. Considerar apenas a quantidade de funcionários no departamento e cargo maior ou igual a 2;
+   E
+7. Considerar apenas a media salarial superior a R$ 5.000,00.
+8. Apresentar os resultados em ordem decrescente de média salarial e pela quantidade de funcionários.
+
+** Resultado esperado **
+
+21 registros
+
+| Departamento  | Cargo                   | Qtd. | Soma salarial | Maior salário | Menor salário | Média salarial |
+| ------------- | ----------------------- | ---- | ------------- | ------------- | ------------- | -------------- |
+| TI            | ENGENHEIRO              | 3    | 32.167,74     | 11.367,30     | 9.521,94      | 10.722,58      |
+| CONTABILIDADE | GERENTE                 | 2    | 18.947,52     | 9.664,15      | 9.283,37      | 9.473,76       |
+| RH            | ENGENHEIRO              | 2    | 18.866,89     | 11.862,18     | 7.004,71      | 9.433,44       |
+| CONTABILIDADE | SECRETARIA              | 2    | 17.910,23     | 11.392,81     | 6.517,42      | 8.955,11       |
+| FINANCEIRO    | AUXILIAR ADMINISTRATIVO | 6    | 47.410,58     | 10.573,81     | 1.000,00      | 7.901,76       |
+| RH            | SECRETARIA              | 2    | 15.799,39     | 11.606,21     | 4.193,18      | 7.899,69       |
+| COMPRAS       | GERENTE                 | 2    | 14.792,76     | 11.493,24     | 3.299,52      | 7.396,38       |
+| FINANCEIRO    | TECNICO CONTÁBIL        | 3    | 21.401,30     | 8.087,23      | 6.045,71      | 7.133,77       |
+| FINANCEIRO    | DIRETOR                 | 4    | 27.907,91     | 11.611,31     | 973,82        | 6.976,98       |
+| RH            | COMPRADOR               | 2    | 13.802,09     | 11.654,24     | 2.147,85      | 6.901,05       |
+| COMPRAS       | ANALISTA DE SUPORTE     | 3    | 20.603,04     | 11.784,64     | 2.638,87      | 6.867,68       |
+| TI            | GERENTE                 | 6    | 40.372,87     | 10.528,71     | 1.437,16      | 6.728,81       |
+| FINANCEIRO    | ANALISTA DE SUPORTE     | 3    | 19.684,69     | 9.544,60      | 1.219,90      | 6.561,56       |
+| RH            | ANALISTA DE SISTEMAS    | 3    | 19.501,17     | 10.677,54     | 3.737,60      | 6.500,39       |
+| FINANCEIRO    | SECRETARIA              | 2    | 11.862,95     | 5.939,68      | 5.923,27      | 5.931,48       |
+| FINANCEIRO    | COMPRADOR               | 3    | 17.251,44     | 7.755,83      | 2.679,69      | 5.750,48       |
+| CONTABILIDADE | DIRETOR                 | 5    | 28.329,17     | 8.822,03      | 1.923,06      | 5.665,83       |
+| CONTABILIDADE | ENGENHEIRO              | 2    | 11.199,84     | 7.317,53      | 3.882,31      | 5.599,92       |
+| RH            | ANALISTA DE SUPORTE     | 4    | 22.106,79     | 10.511,13     | 2.558,55      | 5.526,70       |
+| TI            | ANALISTA DE SUPORTE     | 3    | 16.440,72     | 8.545,60      | 1.200,00      | 5.480,24       |
+| COMPRAS       | ENGENHEIRO              | 2    | 10.109,05     | 5.158,99      | 4.950,06      | 5.054,52       |
+
+
+

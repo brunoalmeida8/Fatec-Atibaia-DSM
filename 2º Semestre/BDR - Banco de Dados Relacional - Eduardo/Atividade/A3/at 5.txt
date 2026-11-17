@@ -1,0 +1,46 @@
+at 5
+
+O departamento de Recursos Humanos decidiu conceder um reajuste salarial de 10% aos funcionários que atendam simultaneamente às seguintes condições:
+- Pertencer ao departamento de TI, identificado pelo código 4000;
+- Possuir situação ATIVO;
+- Receber salário inferior a R$ 5.000,00;
+- Não possuir nenhum registro de ocorrência na tabela HISTORICO.
+
+Desenvolva uma instrução SQL que atualize os registros desses funcionários, realizando as seguintes alterações:
+
+1. Atualizar salario, aplicando um reajuste de 10% sobre o salário atual.
+2. Atualizar o valor da descrição da apresentação, acrescentando a informação `REAJUSTE SALARIAL DE 10%`.
+
+
+-- at 5
+SELECT F.id_funcionario,
+    F.nm_funcionario,
+    D.ds_departamento,
+    S.ds_status,
+    F.vl_salario,
+    F.ds_apresentacao
+    FROM funcionarios AS F
+    JOIN departamentos AS D
+        ON F.id_departamento = D.id_departamento
+    JOIN status AS S
+        ON F.id_Status = S.id_Status
+    WHERE D.id_departamento = '4000'
+    AND S.ds_status = 'ATIVO'
+    AND F.vl_salario < 5000
+    AND NOT EXISTS (SELECT 1 FROM historico AS H
+        WHERE F.id_funcionario = H.id_funcionario);
+
+
+-- at 5
+UPDATE funcionarios AS F
+    JOIN departamentos AS D
+        ON F.id_departamento = D.id_departamento
+    JOIN status AS S
+        ON F.id_Status = S.id_Status
+       SET vl_salario = vl_salario * 1.10, ds_apresentacao = 'REAJUSTE SALARIAL DE 10%'
+    WHERE D.id_departamento = '4000'
+    AND S.ds_status = 'ATIVO'
+    AND F.vl_salario < 5000
+    AND NOT EXISTS (SELECT 1 FROM historico AS H
+        WHERE F.id_funcionario = H.id_funcionario);
+

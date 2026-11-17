@@ -1,0 +1,11 @@
+at 2:
+
+SELECT d.ds_departamento Departamento,
+		COUNT(*) Quantidade,
+        AVG(f.vl_salario) Media
+       FROM funcionarios f
+       JOIN departamentos d
+       ON f.id_departamento = d.id_departamento
+       GROUP BY D.ds_departamento
+       HAVING AVG (vl_salario) >= 6000
+       ORDER BY media DESC;
