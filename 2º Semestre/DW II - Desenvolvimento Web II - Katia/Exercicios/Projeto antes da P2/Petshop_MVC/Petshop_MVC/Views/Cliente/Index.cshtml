@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Cliente>
+@{
+    ViewData["Title"] = "Home Cliente";
+}
+<link rel="stylesheet" href="~/css/cliente.css" />
+
+<div class="text-center">
+    <h1 class="display-4">Cadastro de Clientes</h1>
+    <p><a asp-action="Create">Cadastrar Cliente</a></p>
+    <table>
+        <thead>
+            <th>@Html.DisplayNameFor(model => model.Nome)</th>
+            <th>@Html.DisplayNameFor(model => model.Cpf)</th>
+            <th>@Html.DisplayNameFor(model => model.Telefone)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            <thead>Operações</thead>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Cpf)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Telefone)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ClienteId">Editar</a>
+                     </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@item.ClienteId">Excluir</a>
+                    </td>
+                </tr>
+         }
+        </tbody>
+    </table>
+</div>

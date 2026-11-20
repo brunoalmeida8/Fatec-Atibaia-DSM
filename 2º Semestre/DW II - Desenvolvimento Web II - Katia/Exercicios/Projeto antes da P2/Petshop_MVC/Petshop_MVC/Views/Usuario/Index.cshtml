@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Usuario>//troca o <Cliente> para <Usuario>
+@{
+    ViewData["Title"] = "Home Usuario";
+}
+<link rel="stylesheet" href="~/css/cliente.css" />
+
+<div class="text-center">
+    <h1 class="display-4">Cadastro de Usuarios</h1>
+    <p><a asp-action="Create">Cadastrar Usuario</a></p>
+    <table>
+        <thead>
+            <th>@Html.DisplayNameFor(model => model.Nome)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            <th>@Html.DisplayNameFor(model => model.Senha)</th>
+            <thead>Operações</thead>
+        </thead>
+        <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Senha)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.UsuarioId">Editar</a>
+                     </td>
+                    <td>
+                        <a asp-action="Delete" asp-route-id="@item.UsuarioId">Excluir</a>
+                    </td>
+                </tr>
+         }
+        </tbody>
+    </table>
+</div>

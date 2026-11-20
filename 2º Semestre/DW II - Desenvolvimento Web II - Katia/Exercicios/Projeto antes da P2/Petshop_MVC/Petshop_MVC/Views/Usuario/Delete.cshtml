@@ -1,0 +1,17 @@
+﻿@model Usuario
+@{
+    ViewData["Title"] = "Home Usuario";
+}
+<link rel="stylesheet" href="~/css/cliente.css" />
+
+<div class="text-center">
+    <h1 class="display-4">Exclusão de Cliente</h1>
+    <div>        
+            <p>@Model.Nome</p>
+        
+    </div>
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="@Model.UsuarioId" />
+        <button type="submit">Excluir</button>
+    </form>
+</div>
