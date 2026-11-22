@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/19ExContaCorrenteEPoupanca/19ExContaCorrenteEPoupanca.iml" filepath="$PROJECT_DIR$/19ExContaCorrenteEPoupanca/19ExContaCorrenteEPoupanca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex10PedidoDaLanchonete/Ex10PedidoDaLanchonete.iml" filepath="$PROJECT_DIR$/Ex10PedidoDaLanchonete/Ex10PedidoDaLanchonete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex11ContadorDeVisitantes/Ex11ContadorDeVisitantes.iml" filepath="$PROJECT_DIR$/Ex11ContadorDeVisitantes/Ex11ContadorDeVisitantes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex12ConversorDeTemperatura/Ex12ConversorDeTemperatura.iml" filepath="$PROJECT_DIR$/Ex12ConversorDeTemperatura/Ex12ConversorDeTemperatura.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex13SenhasDeAtendimento/Ex13SenhasDeAtendimento.iml" filepath="$PROJECT_DIR$/Ex13SenhasDeAtendimento/Ex13SenhasDeAtendimento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex14RelatorioDaTurma/Ex14RelatorioDaTurma.iml" filepath="$PROJECT_DIR$/Ex14RelatorioDaTurma/Ex14RelatorioDaTurma.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex15CarrinhoDeCompras/Ex15CarrinhoDeCompras.iml" filepath="$PROJECT_DIR$/Ex15CarrinhoDeCompras/Ex15CarrinhoDeCompras.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex16AgendaDeContatos/Ex16AgendaDeContatos.iml" filepath="$PROJECT_DIR$/Ex16AgendaDeContatos/Ex16AgendaDeContatos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex17ControleDeDespesasComMenu/Ex17ControleDeDespesasComMenu.iml" filepath="$PROJECT_DIR$/Ex17ControleDeDespesasComMenu/Ex17ControleDeDespesasComMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex18CatalogoDeMidias/Ex18CatalogoDeMidias.iml" filepath="$PROJECT_DIR$/Ex18CatalogoDeMidias/Ex18CatalogoDeMidias.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex20Imobiliaria/Ex20Imobiliaria.iml" filepath="$PROJECT_DIR$/Ex20Imobiliaria/Ex20Imobiliaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex21LojaDeEletronicos/Ex21LojaDeEletronicos.iml" filepath="$PROJECT_DIR$/Ex21LojaDeEletronicos/Ex21LojaDeEletronicos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex22FormasDePagamento/Ex22FormasDePagamento.iml" filepath="$PROJECT_DIR$/Ex22FormasDePagamento/Ex22FormasDePagamento.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex23Transportadora/Ex23Transportadora.iml" filepath="$PROJECT_DIR$/Ex23Transportadora/Ex23Transportadora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex24BilheteriaDoCinema/Ex24BilheteriaDoCinema.iml" filepath="$PROJECT_DIR$/Ex24BilheteriaDoCinema/Ex24BilheteriaDoCinema.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex25DesafioReservasDeHotel/Ex25DesafioReservasDeHotel.iml" filepath="$PROJECT_DIR$/Ex25DesafioReservasDeHotel/Ex25DesafioReservasDeHotel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex6CadastroDePessoas/Ex6CadastroDePessoas.iml" filepath="$PROJECT_DIR$/Ex6CadastroDePessoas/Ex6CadastroDePessoas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex7RelogioDigital/Ex7RelogioDigital.iml" filepath="$PROJECT_DIR$/Ex7RelogioDigital/Ex7RelogioDigital.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex8ControleDeLeitura/Ex8ControleDeLeitura.iml" filepath="$PROJECT_DIR$/Ex8ControleDeLeitura/Ex8ControleDeLeitura.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ex9PontosNoPlano/Ex9PontosNoPlano.iml" filepath="$PROJECT_DIR$/Ex9PontosNoPlano/Ex9PontosNoPlano.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Lista de Exercícios 02 – Prática de Programação Orientada a Objetos.iml" filepath="$PROJECT_DIR$/.idea/Lista de Exercícios 02 – Prática de Programação Orientada a Objetos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex1LampadaDeCasa/ex1LampadaDeCasa.iml" filepath="$PROJECT_DIR$/ex1LampadaDeCasa/ex1LampadaDeCasa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex2Retangulos/ex2Retangulos.iml" filepath="$PROJECT_DIR$/ex2Retangulos/ex2Retangulos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex3BoletimDoAluno/ex3BoletimDoAluno.iml" filepath="$PROJECT_DIR$/ex3BoletimDoAluno/ex3BoletimDoAluno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex4DescontoEmProduto/ex4DescontoEmProduto.iml" filepath="$PROJECT_DIR$/ex4DescontoEmProduto/ex4DescontoEmProduto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex5ContaBancariaProtegida/ex5ContaBancariaProtegida.iml" filepath="$PROJECT_DIR$/ex5ContaBancariaProtegida/ex5ContaBancariaProtegida.iml" />
+    </modules>
+  </component>
+</project>

@@ -13,9 +13,6 @@ public class Carrinho {
     }
 
     //get e setters
-    public List<ItemCarrinho> getItens() {
-        return itens;
-    }
 
     //metodos
     public void adicionar(ItemCarrinho item) {
