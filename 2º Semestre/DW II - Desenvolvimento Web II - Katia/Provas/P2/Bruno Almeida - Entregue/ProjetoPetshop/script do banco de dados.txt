@@ -1,0 +1,40 @@
+CREATE DATABASE  petshop_mvc;
+USE petshop_mvc;
+CREATE TABLE clientes (
+  clienteId int NOT NULL AUTO_INCREMENT,
+  nome varchar(100) DEFAULT NULL,
+  cpf varchar(14) DEFAULT NULL,
+  telefone varchar(20) DEFAULT NULL,
+  email varchar(100) DEFAULT NULL,
+  PRIMARY KEY (clienteId)
+) ;
+
+CREATE TABLE pets (
+  PetId int NOT NULL AUTO_INCREMENT,
+  nome varchar(200) DEFAULT NULL,
+  especie varchar(100) DEFAULT NULL,
+  raca varchar(50) DEFAULT NULL,
+  dataNascimento date DEFAULT NULL,
+  ClienteId int DEFAULT NULL,
+  PRIMARY KEY (PetId),
+  KEY fk_cliente (ClienteId),
+  CONSTRAINT fk_cliente FOREIGN KEY (ClienteId) REFERENCES clientes (clienteId)
+) ;
+
+CREATE TABLE usuarios (
+  UsuarioId int NOT NULL AUTO_INCREMENT,
+  nome varchar(45) DEFAULT NULL,
+  email varchar(45) DEFAULT NULL,
+  senha varchar(45) DEFAULT NULL,
+  PRIMARY KEY (UsuarioId)
+) ;
+
+CREATE TABLE produto (
+  codigo INT NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(100) DEFAULT NULL,
+  descricao VARCHAR(100) DEFAULT NULL,
+  categoria VARCHAR(100) DEFAULT NULL,
+  preco DECIMAL(10,2) DEFAULT NULL,
+  observacoes VARCHAR(500) DEFAULT NULL,
+  PRIMARY KEY (codigo)
+);

@@ -1,0 +1,69 @@
+﻿@model ProjetoPetshop.Models.DashboardViewModel
+
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2>Dashboard Petshop</h2>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="card bg-primary text-white p-3">
+            <h4>Clientes</h4>
+            <h2>@Model.TotalClientes</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-success text-white p-3">
+            <h4>Pets</h4>
+            <h2>@Model.TotalPets</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-warning text-white p-3">
+            <h4>Atendimentos</h4>
+            <h2>@Model.TotalAtendimentos</h2>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card bg-info text-white p-3">
+            <h4>Vendas</h4>
+            <h2>@Model.TotalVendas</h2>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <h3>Faturamento</h3>
+        <p><strong>Atendimentos:</strong> R$ @Model.FaturamentoAtendimentos</p>
+        <p><strong>Vendas:</strong> R$ @Model.FaturamentoVendas</p>
+        <p><strong>Total:</strong> R$ @(Model.FaturamentoAtendimentos + Model.FaturamentoVendas)</p>
+    </div>
+
+    <div class="col-md-6">
+        <h3>Serviços mais utilizados</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Quantidade</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.ServicosMaisUsados)
+                {
+                    <tr>
+                        <td>@item.Nome</td>
+                        <td>@item.Quantidade</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

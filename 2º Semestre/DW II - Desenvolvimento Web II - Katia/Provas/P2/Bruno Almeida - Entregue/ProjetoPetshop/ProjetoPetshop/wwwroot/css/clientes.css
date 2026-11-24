@@ -1,0 +1,109 @@
+﻿/* ===============================
+   CONTAINER E TÍTULO
+   =============================== */
+
+.clientes-container {
+    margin-top: 30px;
+}
+
+.clientes-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+/* ===============================
+   BOTÃO NOVO CLIENTE
+   =============================== */
+
+.btn-novo-cliente {
+    padding: 8px 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* ===============================
+   TABELA DE CLIENTES
+   =============================== */
+
+.table-clientes {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+    .table-clientes thead {
+        background-color: #0d6efd;
+        color: #ffffff;
+    }
+
+        .table-clientes thead th {
+            text-align: center;
+            font-weight: 600;
+            vertical-align: middle;
+        }
+
+    .table-clientes tbody td {
+        vertical-align: middle;
+    }
+
+    .table-clientes tbody tr {
+        transition: background-color 0.2s ease;
+    }
+
+        .table-clientes tbody tr:hover {
+            background-color: #f1f5ff;
+        }
+
+/* ===============================
+   COLUNA DE AÇÕES
+   =============================== */
+
+.cliente-acoes {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}
+
+    .cliente-acoes a {
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: #ffffff;
+    }
+
+/* Botões individuais */
+.btn-editar {
+    background-color: #198754;
+}
+
+.btn-detalhes {
+    background-color: #0dcaf0;
+}
+
+.btn-excluir {
+    background-color: #dc3545;
+}
+
+.cliente-acoes a:hover {
+    opacity: 0.85;
+}
+
+/* ===============================
+   RESPONSIVIDADE
+   =============================== */
+
+@media (max-width: 768px) {
+    .clientes-title {
+        text-align: center;
+    }
+
+    .cliente-acoes {
+        flex-direction: column;
+    }
+}

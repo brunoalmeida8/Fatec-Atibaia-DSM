@@ -1,0 +1,237 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\views\\produtos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\views\\produtos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\views\\produtos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\controllers\\produtoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\views\\usuarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\views\\produtos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\views\\produtos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\views\\produtos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\views\\produtos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\views\\pets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\views\\pets\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|c:\\github\\fatec-atibaia-dsm\\2\u00BA semestre\\dw ii - desenvolvimento web ii - katia\\provas\\p2\\bruno almeida - arrumando ia\\projetopetshop\\projetopetshop\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9F04E85-FE7A-4A13-8A1A-208B22CDA192}|ProjetoPetshop\\ProjetoPetshop.csproj|solutionrelative:projetopetshop\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Usuarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Views\\Usuarios\\Index.cshtml",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Usuarios\\Index.cshtml",
+              "RelativeToolTip": "ProjetoPetshop\\Views\\Usuarios\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-20T11:30:23.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ProjetoPetshop\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-20T11:36:53.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Produtos\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Views\\Produtos\\Index.cshtml",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Produtos\\Index.cshtml",
+              "RelativeToolTip": "ProjetoPetshop\\Views\\Produtos\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwC8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T22:23:32.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Models\\Produto.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Models\\Produto.cs",
+              "RelativeToolTip": "ProjetoPetshop\\Models\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T22:08:28.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Produtos\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Views\\Produtos\\Delete.cshtml",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Produtos\\Delete.cshtml",
+              "RelativeToolTip": "ProjetoPetshop\\Views\\Produtos\\Delete.cshtml",
+              "ViewState": "AgIAACMAAAAAAAAAAAAuwDQAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T22:32:02.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "ProjetoPetshop\\Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAswHYAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T11:30:09.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProdutosController.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Controllers\\ProdutosController.cs",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Controllers\\ProdutosController.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Controllers\\ProdutosController.cs",
+              "RelativeToolTip": "ProjetoPetshop\\Controllers\\ProdutosController.cs",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAmwA8BAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-23T22:12:53.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\appsettings.json",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\appsettings.json",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\appsettings.json",
+              "RelativeToolTip": "ProjetoPetshop\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-11-23T22:49:59.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Produtos\\Create.cshtml",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Views\\Produtos\\Create.cshtml",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Produtos\\Create.cshtml",
+              "RelativeToolTip": "ProjetoPetshop\\Views\\Produtos\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T22:29:55.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Produtos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Views\\Produtos\\Edit.cshtml",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Produtos\\Edit.cshtml",
+              "RelativeToolTip": "ProjetoPetshop\\Views\\Produtos\\Edit.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-23T22:31:50.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Pets\\Index.cshtml",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Views\\Pets\\Index.cshtml",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Views\\Pets\\Index.cshtml",
+              "RelativeToolTip": "ProjetoPetshop\\Views\\Pets\\Index.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADMAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-20T11:29:50.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "ProjetoPetshop\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T11:25:14.207Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "ProjetoPetshop\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Github\\Fatec-Atibaia-DSM\\2\u00BA Semestre\\DW II - Desenvolvimento Web II - Katia\\Provas\\P2\\Bruno Almeida - Arrumando IA\\ProjetoPetshop\\ProjetoPetshop\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "ProjetoPetshop\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-20T11:25:00.47Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

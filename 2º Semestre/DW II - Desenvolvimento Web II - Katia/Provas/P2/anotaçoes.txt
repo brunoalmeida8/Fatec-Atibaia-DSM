@@ -1,0 +1,878 @@
+Bora montar o CRUD de **Produto** seguindo o mesmo estilo direto e limpo que você já vem usando no projeto (`Petshop_MVC`).
+
+Repara no teu script SQL que faltou a coluna `nome` na tabela `produto` (e o `preco` como `decimal` sem casas decimais costuma cortar centavos — o ideal no MySQL para dinheiro é `decimal(10,2)`). Vou deixar o SQL alinhado com os campos que você pediu (`codigo`, `nome`, `descricao`, `categoria`, `preco`, `observacoes`).
+
+---
+
+### 1. Model (`Models/Produto.cs`)
+
+```csharp
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Petshop_MVC.Models
+{
+    [Table("produto")]
+    public class Produto
+    {
+        [Key]
+        public int Codigo { get; set; }
+
+        public string? Nome { get; set; }
+
+        public string? Descricao { get; set; }
+
+        public string? Categoria { get; set; }
+
+        [Column(TypeName = "decimal(10,2)")]
+        public decimal? Preco { get; set; }
+
+        public string? Observacoes { get; set; }
+    }
+}
+
+```
+
+---
+
+### 2. Mapeamento no `AppDbContext.cs`
+
+Dentro da classe `AppDbContext` (onde já deve ter `DbSet<Cliente>` e `DbSet<Pet>`), adiciona o `DbSet` de `Produto`:
+
+```csharp
+public DbSet<Produto> Produtos { get; set; }
+
+```
+
+---
+
+### 3. Script SQL da tabela `produto`
+
+```sql
+USE petshop_mvc;
+
+CREATE TABLE produto (
+  codigo INT NOT NULL AUTO_INCREMENT,
+  nome VARCHAR(100) DEFAULT NULL,
+  descricao VARCHAR(100) DEFAULT NULL,
+  categoria VARCHAR(100) DEFAULT NULL,
+  preco DECIMAL(10,2) DEFAULT NULL,
+  observacoes VARCHAR(500) DEFAULT NULL,
+  PRIMARY KEY (codigo)
+);
+
+```
+
+*(Dica: se você já criou a tabela `produto` antes sem a coluna `nome` ou com `decimal` sem casas decimais, ou você roda o `DROP TABLE IF EXISTS produto;` antes de criar de novo, ou cria a migration pelo EF Core depois de ajustar o banco).*
+
+---
+
+### 4. Controller (`Controllers/ProdutoController.cs`)
+
+```csharp
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Petshop_MVC.Data;
+using Petshop_MVC.Models;
+
+namespace Petshop_MVC.Controllers
+{
+    public class ProdutoController : Controller
+    {
+        private readonly AppDbContext _context;
+
+        public ProdutoController(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Produtos.ToListAsync());
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([Bind("Codigo, Nome, Descricao, Categoria, Preco, Observacoes")] Produto prod)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(prod);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            return View(prod);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null) { return NotFound(); }
+
+            var prod = await _context.Produtos.FindAsync(id);
+            if (prod == null) { return NotFound(); }
+
+            return View(prod);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, [Bind("Codigo, Nome, Descricao, Categoria, Preco, Observacoes")] Produto prod)
+        {
+            if (id != prod.Codigo) { return NotFound(); }
+
+            if (ModelState.IsValid)
+            {
+                _context.Update(prod);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+            }
+            return View(prod);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null) { return NotFound(); }
+
+            var prod = await _context.Produtos.FirstOrDefaultAsync(p => p.Codigo == id);
+            if (prod == null) { return NotFound(); }
+
+            return View(prod);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteConfirmed(int? Codigo)
+        {
+            var prod = await _context.Produtos.FindAsync(Codigo);
+            if (prod != null)
+            {
+                _context.Produtos.Remove(prod);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction("Index");
+        }
+    }
+}
+
+```
+
+---
+
+### 5. Views (`Views/Produto/`)
+
+#### `Index.cshtml` (exibindo Código, Nome, Categoria e Preço)
+
+```cshtml
+@model IEnumerable<Produto>
+@{
+    ViewData["Title"] = "Produtos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Produtos</h1>
+    <p><a asp-action="Create">Cadastrar Produto</a></p>
+    <table>
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Codigo)</th>
+                <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                <th>@Html.DisplayNameFor(model => model.Categoria)</th>
+                <th>@Html.DisplayNameFor(model => model.Preco)</th>
+                <th>Operações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Codigo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Categoria)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Preco)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.Codigo">Editar</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Codigo">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+```
+
+#### `Create.cshtml` (todos os atributos preenchíveis)
+
+```cshtml
+@model Produto
+@{
+    ViewData["Title"] = "Cadastrar Produto";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Cadastro de Produto</h1>
+    <div>
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div>
+                <label asp-for="Nome"></label>
+                <input asp-for="Nome" />
+                <span asp-validation-for="Nome"></span>
+            </div>
+            <div>
+                <label asp-for="Descricao"></label>
+                <input asp-for="Descricao" />
+                <span asp-validation-for="Descricao"></span>
+            </div>
+            <div>
+                <label asp-for="Categoria"></label>
+                <input asp-for="Categoria" />
+                <span asp-validation-for="Categoria"></span>
+            </div>
+            <div>
+                <label asp-for="Preco"></label>
+                <input asp-for="Preco" type="number" step="0.01" />
+                <span asp-validation-for="Preco"></span>
+            </div>
+            <div>
+                <label asp-for="Observacoes"></label>
+                <input asp-for="Observacoes" />
+                <span asp-validation-for="Observacoes"></span>
+            </div>
+            <div>
+                <input type="submit" value="Create" />
+            </div>
+        </form>
+    </div>
+</div>
+
+```
+
+#### `Edit.cshtml` (todos os atributos editáveis + `Codigo` oculto)
+
+```cshtml
+@model Produto
+@{
+    ViewData["Title"] = "Editar Produto";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Editar Produto</h1>
+    <div>
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            <input type="hidden" asp-for="Codigo" />
+            <div>
+                <label asp-for="Nome"></label>
+                <input asp-for="Nome" />
+                <span asp-validation-for="Nome"></span>
+            </div>
+            <div>
+                <label asp-for="Descricao"></label>
+                <input asp-for="Descricao" />
+                <span asp-validation-for="Descricao"></span>
+            </div>
+            <div>
+                <label asp-for="Categoria"></label>
+                <input asp-for="Categoria" />
+                <span asp-validation-for="Categoria"></span>
+            </div>
+            <div>
+                <label asp-for="Preco"></label>
+                <input asp-for="Preco" type="number" step="0.01" />
+                <span asp-validation-for="Preco"></span>
+            </div>
+            <div>
+                <label asp-for="Observacoes"></label>
+                <input asp-for="Observacoes" />
+                <span asp-validation-for="Observacoes"></span>
+            </div>
+            <div>
+                <input type="submit" value="Edit" />
+            </div>
+        </form>
+    </div>
+</div>
+
+```
+
+#### `Delete.cshtml`
+
+```cshtml
+@model Produto
+@{
+    ViewData["Title"] = "Excluir Produto";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Exclusão de Produto</h1>
+    <div>
+        <p>@Html.DisplayNameFor(model => model.Nome): @Html.DisplayFor(model => model.Nome)</p>
+        <p>@Html.DisplayNameFor(model => model.Preco): @Html.DisplayFor(model => model.Preco)</p>
+    </div>
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Codigo" />
+        <input type="submit" value="Excluir" />
+    </form>
+</div>
+
+```
+
+---
+
+Quer que eu te mostre como rodar a migration no EF Core para ele gerar/validar o mapeamento com o banco, ou você já vai testar criando direto por aí?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center mb-4">
+    <h1 class="display-4">Sistema de Gestão</h1>
+    <p class="lead">
+        Gerenciamento de clientes, pets, produtos, serviços, vendas e atendimentos
+    </p>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5>Clientes</h5>
+                <p>Cadastro e gerenciamento de clientes</p>
+                <a asp-controller="Clientes" asp-action="Index">Cliente</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5>Pets</h5>
+                <p>Gerencie os pets dos clientes</p>
+                <a asp-controller="Pets" asp-action="Index">Pet</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5>Pets</h5>
+                <p>Gerencie os pets dos clientes</p>
+                <a asp-controller="Usuarios" asp-action="Index">Usuários</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
+using ProjetoPetshop.Data;
+using ProjetoPetshop.Models;
+
+namespace ProjetoPetshop.Controllers
+{
+    public class ProdutosController : Controller
+    {
+        private readonly AppDbContext _context;
+
+        public ProdutosController(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Produtos.ToListAsync());
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+                
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Codigo,Nome,Descricao,Categoria,Preco,Observacoes")] Produto produto)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(produto);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(produto);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+            return View(usuario);
+        }
+
+        
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Codigo,Nome,Descricao,Categoria,Preco,Observacoes")] Produto produto)
+        {
+            if (id != produto.Codigo)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(produto);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!UsuarioExists(produto.Codigo))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(produto);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var usuario = await _context.Produtos
+                .FirstOrDefaultAsync(m => m.Codigo == id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            return View(usuario);
+        }
+
+        
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var produto = await _context.Produtos.FindAsync(id);
+            if (produto != null)
+            {
+                _context.Produtos.Remove(produto);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool UsuarioExists(int id)
+        {
+            return _context.Produtos.Any(e => e.Codigo == id);
+        }
+    }
+}
+
+
+using System.ComponentModel.DataAnnotations;
+
+namespace ProjetoPetshop.Models
+{
+    public class Produto 
+    {
+
+        [Key]
+        public int Codigo { get; set; }
+        public string? Nome { get; set; }
+        public string? Descricao { get; set; }
+        public string? Categoria { get; set; }
+        public string? Preco { get; set; }
+        public string? Observacoes { get; set; }
+    }
+}
+
+
+@* @model ProjetoPetshop.Models.Usuario
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Senha)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Senha)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="UsuarioId" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
+ *@
+@model Produto
+@{
+    ViewData["Title"] = "Excluir Produto";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Exclusão de Produto</h1>
+    <div>
+        <p>@Html.DisplayNameFor(model => model.Nome): @Html.DisplayFor(model => model.Nome)</p>
+        <p>@Html.DisplayNameFor(model => model.Preco): @Html.DisplayFor(model => model.Preco)</p>
+    </div>
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Codigo" />
+        <input type="submit" value="Excluir" />
+    </form>
+</div>
+
+
+
+
+
+using Microsoft.EntityFrameworkCore;
+using ProjetoPetshop.Data;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(
+    builder.Configuration.GetConnectionString("MySqlConnection"),
+    ServerVersion.AutoDetect(builder.Configuration.GetConnectionString(
+        "MySqlConnection"))));
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ainda está igual ao que você mandou antes — **não está 100% certo ainda** e vai dar erro ou bug se você rodar assim.
+
+Olha os pontos que continuam errados nesse código:
+
+1. **No `ProdutosController.cs` (`[HttpGet] Edit`)**:
+Está `var usuario = await _context.Usuarios.FindAsync(id);` e `return View(usuario);`. Tem que buscar em `_context.Produtos` e retornar `View(produto)`.
+2. **No `ProdutosController.cs` (`[HttpPost] Edit` e método auxiliar)**:
+Está chamando `UsuarioExists(produto.Codigo)` e o método se chama `UsuarioExists`. Tem que ser `ProdutoExists`.
+3. **No `ProdutosController.cs` (`[HttpGet] Delete`)**:
+Está `var usuario = await _context.Produtos.FirstOrDefaultAsync(...)` e `return View(usuario);`. Melhor deixar `var produto` e `View(produto)`.
+4. **Na View `Delete.cshtml` (a parte não comentada no final)**:
+O formulário está com `asp-action="DeleteConfirmed"`, mas no `ProdutosController` o `DeleteConfirmed` está com `[ActionName("Delete")]`. Então na view precisa ser `asp-action="Delete"`.
+5. **Na `Home/Index.cshtml**`:
+O terceiro card ainda está com título `<h5>Pets</h5>` e `<p>Gerencie os pets dos clientes</p>` apontando para `Usuarios`.
+
+---
+
+### O que você precisa colar exatamente:
+
+**1. `ProdutosController.cs` corrigido:**
+
+```csharp
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProjetoPetshop.Data;
+using ProjetoPetshop.Models;
+
+namespace ProjetoPetshop.Controllers
+{
+    public class ProdutosController : Controller
+    {
+        private readonly AppDbContext _context;
+
+        public ProdutosController(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Index()
+        {
+            return View(await _context.Produtos.ToListAsync());
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create([Bind("Codigo,Nome,Descricao,Categoria,Preco,Observacoes")] Produto produto)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Add(produto);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(produto);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var produto = await _context.Produtos.FindAsync(id);
+            if (produto == null)
+            {
+                return NotFound();
+            }
+            return View(produto);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Codigo,Nome,Descricao,Categoria,Preco,Observacoes")] Produto produto)
+        {
+            if (id != produto.Codigo)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(produto);
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!ProdutoExists(produto.Codigo))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(produto);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var produto = await _context.Produtos
+                .FirstOrDefaultAsync(m => m.Codigo == id);
+            if (produto == null)
+            {
+                return NotFound();
+            }
+
+            return View(produto);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var produto = await _context.Produtos.FindAsync(id);
+            if (produto != null)
+            {
+                _context.Produtos.Remove(produto);
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool ProdutoExists(int id)
+        {
+            return _context.Produtos.Any(e => e.Codigo == id);
+        }
+    }
+}
+
+```
+
+**2. `Views/Produtos/Delete.cshtml` limpo e alinhado:**
+
+```cshtml
+@model Produto
+@{
+    ViewData["Title"] = "Excluir Produto";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Exclusão de Produto</h1>
+    <div>
+        <p>@Html.DisplayNameFor(model => model.Nome): @Html.DisplayFor(model => model.Nome)</p>
+        <p>@Html.DisplayNameFor(model => model.Preco): @Html.DisplayFor(model => model.Preco)</p>
+    </div>
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Codigo" />
+        <input type="submit" value="Excluir" />
+    </form>
+</div>
+
+```
+
+**3. Terceiro card da `Home/Index.cshtml`:**
+
+```html
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5>Usuários</h5>
+                <p>Gerencie os usuários do sistema</p>
+                <a asp-controller="Usuarios" asp-action="Index">Usuários</a>
+            </div>
+        </div>
+    </div>
+
+```
+
+*(Lembrando também: não esqueça de ter `public DbSet<Produto> Produtos { get; set; }` dentro do seu `AppDbContext` e de conferir se o banco/tabela `produto` já tem a coluna `nome` como você pediu antes).*
+
+Chegou a testar compilar assim ou ainda não rodou?

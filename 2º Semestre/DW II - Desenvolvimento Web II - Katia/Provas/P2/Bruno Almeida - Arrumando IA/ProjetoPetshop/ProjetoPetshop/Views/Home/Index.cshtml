@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="text-center mb-4">
+    <h1 class="display-4">Sistema de Gestão</h1>
+    <p class="lead">
+        Gerenciamento de clientes, pets, produtos, serviços, vendas e atendimentos
+    </p>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5>Clientes</h5>
+                <p>Cadastro e gerenciamento de clientes</p>
+                <a asp-controller="Clientes" asp-action="Index">Cliente</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5>Pets</h5>
+                <p>Gerencie os pets dos clientes</p>
+                <a asp-controller="Pets" asp-action="Index">Pet</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5>Produtos</h5>
+                <p>Cadastro e gerenciamento de produtos</p>
+                <a asp-controller="Produtos" asp-action="Index">Produtos</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body">
+                <h5>Usuários</h5>
+                <p>Gerencie os usuários do sistema</p>
+                <a asp-controller="Usuarios" asp-action="Index">Usuários</a>
+            </div>
+        </div>
+    </div>
+
+</div>
