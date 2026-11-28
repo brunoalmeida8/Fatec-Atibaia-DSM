@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Exercicios de Exemplo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Materia/Exercicios de Exemplo/cadastroAlunos.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Materia/Exercicios de Exemplo/exemplo (3).zip!/" />
+      <root url="jar://$PROJECT_DIR$/Materia/Exercicios de Exemplo/exemplo (2).zip!/" />
+      <root url="jar://$PROJECT_DIR$/Materia/Exercicios de Exemplo/sysFuncionarios.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Materia/Exercicios de Exemplo/exemplo.zip!/" />
+      <root url="jar://$PROJECT_DIR$/Materia/Exercicios de Exemplo/exabstract.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

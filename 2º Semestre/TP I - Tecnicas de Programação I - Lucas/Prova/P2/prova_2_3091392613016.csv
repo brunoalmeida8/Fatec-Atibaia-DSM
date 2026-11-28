@@ -1,0 +1,280 @@
+﻿"avaliacao";"titulo";"integrantes";"ras";"data_envio";"q1";"q2";"q3";"q4__Evento.java";"q4__Ingresso.java";"q4__Inteira.java";"q4__MeiaEntrada.java";"q4__Camarote.java";"q4__Main.java";"q5__Cliente.java";"q5__Entrega.java";"q5__EntregaPadrao.java";"q5__EntregaExpressa.java";"q5__RetiradaNaLoja.java";"q5__Main.java";"dados_completos"
+"prova-2";"P2 - Técnicas de Programação I ";"Bruno de Paula Almeida";"3091392613016";"27/11/2026, 22:38:54";"B";"C";"D";"public class Evento {
+    //atributos
+    private String nome;
+    private double precoBase;
+
+    //Construtor
+    public Evento(String nome, double precoBase) {
+        this.nome = nome;
+        this.precoBase = precoBase;
+    }
+
+    //getters e setters
+    public String getNome() {
+        return nome;
+    }
+    public double getPrecoBase() {
+        return precoBase;
+    }
+
+    //metodos
+}
+";"abstract class Ingresso {
+    //atributos
+    private String comprador;
+    private Evento evento;
+
+    //Construtors
+
+    public Ingresso(String comprador, Evento evento) {
+        this.comprador = comprador;
+        this.evento = evento;
+    }
+
+    //getters e setters
+    public String getComprador() {
+        return comprador;
+    }
+    public Evento getEvento() {
+        return evento;
+    }
+
+    //metodos
+    public abstract double calcularValor();
+
+    public void exibir(){
+        System.out.println(this.comprador + "" | "" + this.evento.getNome() + "" | R$ "" + calcularValor());
+    }
+
+}
+";"public class Inteira extends Ingresso {
+    //atributos
+    //Construtors
+
+    public Inteira(String comprador, Evento evento) {
+        super(comprador, evento);
+    }
+
+
+    //getters e setters
+    //metodos
+
+
+    @Override
+    public double calcularValor() {
+        return getEvento().getPrecoBase();
+    }
+}
+";"public class MeiaEntrada extends Ingresso {
+    //atributos
+    //Construtors
+
+    public MeiaEntrada(String comprador, Evento evento) {
+        super(comprador, evento);
+    }
+
+    //getters e setters
+    //metodos
+
+    @Override
+    public double calcularValor() {
+        return getEvento().getPrecoBase() / 2;
+    }
+}
+";"public class Camarote extends Ingresso {
+    //atributos
+    private double taxaServico;
+
+    //Construtors com sobrecarga
+
+
+    public Camarote(String comprador, Evento evento) {
+        //super(comprador, evento); vc é burro ou oque? não é assim kkkkk
+        //this.taxaServico = 50.0; o mesmo vale aqui, não é assim kk
+        this(comprador, evento, 50.0);
+    }
+
+    public Camarote(String comprador, Evento evento, double taxaServico) {
+        super(comprador, evento);
+        this.taxaServico = taxaServico;
+    }
+
+    //getters e setters
+    //metodos
+
+
+    @Override
+    public double calcularValor() {
+        return (getEvento().getPrecoBase() * 2) + this.taxaServico;
+    }
+}
+";"//TIP To <b>Run</b> code, press <shortcut actionId=""Run""/> or
+// click the <icon src=""AllIcons.Actions.Execute""/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Evento e1 = new Evento(""Festival de Inverno"", 120.0);
+        Ingresso i1 = new Inteira(""Ana"", e1);
+        Ingresso i2 = new MeiaEntrada(""Bruno"", e1);
+        Ingresso i3 = new Camarote(""Carla"", e1);
+        Ingresso i4 = new Camarote(""Diego"", e1, 80.00);
+
+        i1.exibir();
+        i2.exibir();
+        i3.exibir();
+        i4.exibir();
+    }
+}";"public class Cliente {
+    //atributos
+    private String nome;
+    private String cidade;
+
+    //contrutor
+    public Cliente(String nome, String cidade) {
+        this.nome = nome;
+        this.cidade = cidade;
+    }
+
+    //get e setters
+    public String getNome() {
+        return nome;
+    }
+    public String getCidade() {
+        return cidade;
+    }
+
+    //metodos
+}
+";"public abstract class Entrega {
+    //atributos
+    private  String codigo;
+    double pesoKg;
+    Cliente cliente;
+
+    //contrutor
+
+    public Entrega(String codigo, double pesoKg, Cliente cliente) {
+        this.codigo = codigo;
+        this.pesoKg = pesoKg;
+        this.cliente = cliente;
+    }
+
+    //get e setters
+    public String getCodigo() {
+        return codigo;
+    }
+    public double getPesoKg() {
+        return pesoKg;
+    }
+    public Cliente getCliente() {
+        return cliente;
+    }
+
+    //metodos
+    public abstract double calcularFrete();
+    public abstract int getPrazoDias();
+
+    public double calcularTotal(double valorProdutos){
+        return valorProdutos + calcularFrete();
+    }
+    public double calcularTotal(double valorProdutos, double cupom) {
+
+        return calcularTotal(valorProdutos) - cupom;
+    }
+
+    public void exibir(){
+        System.out.println(this.codigo + "" | "" + cliente.getNome() + "" (""
+        + cliente.getCidade() + "") | frete R$ "" + calcularFrete()
+        + "" | prazo "" + getPrazoDias() + "" dia(s)"");
+    }
+
+}
+";"public class EntregaPadrao extends Entrega {
+    //atributos
+    //contrutor
+
+    public EntregaPadrao(String codigo, double pesoKg, Cliente cliente) {
+        super(codigo, pesoKg, cliente);
+    }
+
+    //get e setters
+    //metodos
+
+    @Override
+    public double calcularFrete() {
+        double frete = 0;
+        if (this.pesoKg < 5){
+            frete = 12.00;
+        } else {
+            frete = 12.00 + 3*(pesoKg - 5);
+        }
+        return frete;
+    }
+
+    @Override
+    public int getPrazoDias() {
+        return 5;
+    }
+}
+";"public class EntregaExpressa extends EntregaPadrao {
+    //atributos
+    //contrutor
+
+    public EntregaExpressa(String codigo, double pesoKg, Cliente cliente) {
+        super(codigo, pesoKg, cliente);
+    }
+
+    //get e setters
+    //metodos
+
+    @Override
+    public double calcularFrete() {
+        return super.calcularFrete() * 2;
+    }
+
+    @Override
+    public int getPrazoDias() {
+        return 1;
+    }
+}
+";"public class RetiradaNaLoja extends Entrega {
+    //atributos
+    //contrutor
+
+    public RetiradaNaLoja(String codigo, double pesoKg, Cliente cliente) {
+        super(codigo, pesoKg, cliente);
+    }
+
+    //get e setters
+    //metodos
+
+    @Override
+    public double calcularFrete() {
+        return 0;
+    }
+
+    @Override
+    public int getPrazoDias() {
+        return 2;
+    }
+}
+";"//TIP To <b>Run</b> code, press <shortcut actionId=""Run""/> or
+// click the <icon src=""AllIcons.Actions.Execute""/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        Cliente c1 = new Cliente(""Marina"", ""Bragança Paulista"");
+        Entrega e1 = new EntregaPadrao(""E1"", 3, c1);// eu colocaria espaço ("" E1""), pois a saida esperada esta afastada la, mas nao precisa
+        Entrega e2 = new EntregaPadrao(""E2"", 8, c1);
+        Entrega e3 = new EntregaExpressa(""E3"", 8, c1);
+        Entrega e4 = new RetiradaNaLoja(""E4"", 8, c1);
+
+        e1.exibir();
+        e2.exibir();
+        e3.exibir();
+        e4.exibir();
+
+        System.out.println(""Total "" + e2.getCodigo() + "" (produtos R$ 150.0): R$ "" + e2.calcularTotal(150));
+        System.out.println(""Total "" + e3.getCodigo() + "" (produtos R$ 150.0, cupom R$ 20.0): R$ "" + e3.calcularTotal(150, 20));
+
+    }
+}";"{""avaliacao"":""prova-2"",""versao"":""fb737f4d2670"",""automatico"":false,""integrantes"":[{""nome"":""Bruno de Paula Almeida"",""ra"":""3091392613016""}],""respostas"":{""q4"":{""Evento.java"":""public class Evento {\n    //atributos\n    private String nome;\n    private double precoBase;\n\n    //Construtor\n    public Evento(String nome, double precoBase) {\n        this.nome = nome;\n        this.precoBase = precoBase;\n    }\n\n    //getters e setters\n    public String getNome() {\n        return nome;\n    }\n    public double getPrecoBase() {\n        return precoBase;\n    }\n\n    //metodos\n}\n"",""Ingresso.java"":""abstract class Ingresso {\n    //atributos\n    private String comprador;\n    private Evento evento;\n\n    //Construtors\n\n    public Ingresso(String comprador, Evento evento) {\n        this.comprador = comprador;\n        this.evento = evento;\n    }\n\n    //getters e setters\n    public String getComprador() {\n        return comprador;\n    }\n    public Evento getEvento() {\n        return evento;\n    }\n\n    //metodos\n    public abstract double calcularValor();\n\n    public void exibir(){\n        System.out.println(this.comprador + \"" | \"" + this.evento.getNome() + \"" | R$ \"" + calcularValor());\n    }\n\n}\n"",""Inteira.java"":""public class Inteira extends Ingresso {\n    //atributos\n    //Construtors\n\n    public Inteira(String comprador, Evento evento) {\n        super(comprador, evento);\n    }\n\n\n    //getters e setters\n    //metodos\n\n\n    @Override\n    public double calcularValor() {\n        return getEvento().getPrecoBase();\n    }\n}\n"",""MeiaEntrada.java"":""public class MeiaEntrada extends Ingresso {\n    //atributos\n    //Construtors\n\n    public MeiaEntrada(String comprador, Evento evento) {\n        super(comprador, evento);\n    }\n\n    //getters e setters\n    //metodos\n\n    @Override\n    public double calcularValor() {\n        return getEvento().getPrecoBase() / 2;\n    }\n}\n"",""Camarote.java"":""public class Camarote extends Ingresso {\n    //atributos\n    private double taxaServico;\n\n    //Construtors com sobrecarga\n\n\n    public Camarote(String comprador, Evento evento) {\n        //super(comprador, evento); vc é burro ou oque? não é assim kkkkk\n        //this.taxaServico = 50.0; o mesmo vale aqui, não é assim kk\n        this(comprador, evento, 50.0);\n    }\n\n    public Camarote(String comprador, Evento evento, double taxaServico) {\n        super(comprador, evento);\n        this.taxaServico = taxaServico;\n    }\n\n    //getters e setters\n    //metodos\n\n\n    @Override\n    public double calcularValor() {\n        return (getEvento().getPrecoBase() * 2) + this.taxaServico;\n    }\n}\n"",""Main.java"":""//TIP To <b>Run</b> code, press <shortcut actionId=\""Run\""/> or\n// click the <icon src=\""AllIcons.Actions.Execute\""/> icon in the gutter.\npublic class Main {\n    public static void main(String[] args) {\n        Evento e1 = new Evento(\""Festival de Inverno\"", 120.0);\n        Ingresso i1 = new Inteira(\""Ana\"", e1);\n        Ingresso i2 = new MeiaEntrada(\""Bruno\"", e1);\n        Ingresso i3 = new Camarote(\""Carla\"", e1);\n        Ingresso i4 = new Camarote(\""Diego\"", e1, 80.00);\n\n        i1.exibir();\n        i2.exibir();\n        i3.exibir();\n        i4.exibir();\n    }\n}""},""q5"":{""Cliente.java"":""public class Cliente {\n    //atributos\n    private String nome;\n    private String cidade;\n\n    //contrutor\n    public Cliente(String nome, String cidade) {\n        this.nome = nome;\n        this.cidade = cidade;\n    }\n\n    //get e setters\n    public String getNome() {\n        return nome;\n    }\n    public String getCidade() {\n        return cidade;\n    }\n\n    //metodos\n}\n"",""Entrega.java"":""public abstract class Entrega {\n    //atributos\n    private  String codigo;\n    double pesoKg;\n    Cliente cliente;\n\n    //contrutor\n\n    public Entrega(String codigo, double pesoKg, Cliente cliente) {\n        this.codigo = codigo;\n        this.pesoKg = pesoKg;\n        this.cliente = cliente;\n    }\n\n    //get e setters\n    public String getCodigo() {\n        return codigo;\n    }\n    public double getPesoKg() {\n        return pesoKg;\n    }\n    public Cliente getCliente() {\n        return cliente;\n    }\n\n    //metodos\n    public abstract double calcularFrete();\n    public abstract int getPrazoDias();\n\n    public double calcularTotal(double valorProdutos){\n        return valorProdutos + calcularFrete();\n    }\n    public double calcularTotal(double valorProdutos, double cupom) {\n\n        return calcularTotal(valorProdutos) - cupom;\n    }\n\n    public void exibir(){\n        System.out.println(this.codigo + \"" | \"" + cliente.getNome() + \"" (\""\n        + cliente.getCidade() + \"") | frete R$ \"" + calcularFrete()\n        + \"" | prazo \"" + getPrazoDias() + \"" dia(s)\"");\n    }\n\n}\n"",""EntregaPadrao.java"":""public class EntregaPadrao extends Entrega {\n    //atributos\n    //contrutor\n\n    public EntregaPadrao(String codigo, double pesoKg, Cliente cliente) {\n        super(codigo, pesoKg, cliente);\n    }\n\n    //get e setters\n    //metodos\n\n    @Override\n    public double calcularFrete() {\n        double frete = 0;\n        if (this.pesoKg < 5){\n            frete = 12.00;\n        } else {\n            frete = 12.00 + 3*(pesoKg - 5);\n        }\n        return frete;\n    }\n\n    @Override\n    public int getPrazoDias() {\n        return 5;\n    }\n}\n"",""EntregaExpressa.java"":""public class EntregaExpressa extends EntregaPadrao {\n    //atributos\n    //contrutor\n\n    public EntregaExpressa(String codigo, double pesoKg, Cliente cliente) {\n        super(codigo, pesoKg, cliente);\n    }\n\n    //get e setters\n    //metodos\n\n    @Override\n    public double calcularFrete() {\n        return super.calcularFrete() * 2;\n    }\n\n    @Override\n    public int getPrazoDias() {\n        return 1;\n    }\n}\n"",""RetiradaNaLoja.java"":""public class RetiradaNaLoja extends Entrega {\n    //atributos\n    //contrutor\n\n    public RetiradaNaLoja(String codigo, double pesoKg, Cliente cliente) {\n        super(codigo, pesoKg, cliente);\n    }\n\n    //get e setters\n    //metodos\n\n    @Override\n    public double calcularFrete() {\n        return 0;\n    }\n\n    @Override\n    public int getPrazoDias() {\n        return 2;\n    }\n}\n"",""Main.java"":""//TIP To <b>Run</b> code, press <shortcut actionId=\""Run\""/> or\n// click the <icon src=\""AllIcons.Actions.Execute\""/> icon in the gutter.\npublic class Main {\n    public static void main(String[] args) {\n        Cliente c1 = new Cliente(\""Marina\"", \""Bragança Paulista\"");\n        Entrega e1 = new EntregaPadrao(\""E1\"", 3, c1);// eu colocaria espaço (\"" E1\""), pois a saida esperada esta afastada la, mas nao precisa\n        Entrega e2 = new EntregaPadrao(\""E2\"", 8, c1);\n        Entrega e3 = new EntregaExpressa(\""E3\"", 8, c1);\n        Entrega e4 = new RetiradaNaLoja(\""E4\"", 8, c1);\n\n        e1.exibir();\n        e2.exibir();\n        e3.exibir();\n        e4.exibir();\n\n        System.out.println(\""Total \"" + e2.getCodigo() + \"" (produtos R$ 150.0): R$ \"" + e2.calcularTotal(150));\n        System.out.println(\""Total \"" + e3.getCodigo() + \"" (produtos R$ 150.0, cupom R$ 20.0): R$ \"" + e3.calcularTotal(150, 20));\n\n    }\n}""},""q1"":""B"",""q2"":""C"",""q3"":""D""},""manter_anexos"":{},""retomado_de"":"""",""data_inicio"":""27/11/2026, 19:46:31"",""data_envio"":""27/11/2026, 22:38:54"",""monitoramento"":{""pontos_de_atencao"":""58 saída(s) da página nas questões de múltipla escolha (20 min 8 s fora); ausência longa de 22 min 21 s; janela reduzida 9 vez(es); 23 ação(ões) bloqueada(s)"",""saidas_multipla_escolha"":58,""tempo_fora_multipla_escolha_seg"":1208,""saidas_questoes_abertas"":97,""tempo_fora_questoes_abertas_seg"":7045,""saidas_inicio_da_pagina"":4,""maior_ausencia_seg"":1341,""colagens"":14,""caracteres_colados"":6872,""colagens_logo_apos_voltar"":14,""colagens_origem_editor_codigo"":13,""colagens_origem_pagina_web"":0,""colagens_origem_texto_puro"":1,""colagens_origem_outra"":0,""colagens_bloqueadas"":0,""janela_reduzida"":9,""reaberturas_da_pagina"":0,""tentativas_bloqueadas"":23},""eventos"":[""19:46:31 abriu a avaliação"",""19:47:31 saiu da página (foi para outra janela) na início da página"",""19:47:32 voltou após 1 s fora"",""19:47:44 saiu da página (foi para outra janela) na início da página"",""19:47:51 voltou após 7 s fora"",""19:51:51 bloqueado: menu do botão direito"",""19:51:52 bloqueado: menu do botão direito"",""19:52:36 saiu da página (foi para outra janela) na Questão 1"",""19:52:57 voltou após 21 s fora"",""19:52:58 saiu da página (foi para outra janela) na Questão 1"",""19:53:20 voltou após 22 s fora"",""19:53:21 saiu da página (foi para outra janela) na Questão 1"",""19:53:36 voltou após 14 s fora"",""19:53:37 saiu da página (foi para outra janela) na Questão 1"",""19:53:38 voltou após 1 s fora"",""19:53:39 saiu da página (foi para outra janela) na Questão 1"",""19:53:46 voltou após 7 s fora"",""19:53:47 saiu da página (foi para outra janela) na Questão 1"",""19:53:50 voltou após 3 s fora"",""19:53:53 saiu da página (foi para outra janela) na Questão 1"",""19:53:57 voltou após 4 s fora"",""19:53:58 saiu da página (foi para outra janela) na Questão 1"",""19:54:06 voltou após 8 s fora"",""19:54:08 saiu da página (foi para outra janela) na Questão 1"",""19:54:13 voltou após 4 s fora"",""19:54:14 saiu da página (foi para outra janela) na Questão 1"",""19:54:15 voltou após 1 s fora"",""19:54:22 bloqueado: menu do botão direito"",""19:54:27 bloqueado: imprimir"",""19:54:27 saiu da página (foi para outra janela) na início da página"",""19:54:32 voltou após 4 s fora"",""19:54:32 bloqueado: menu do botão direito"",""19:54:33 bloqueado: menu do botão direito"",""19:54:38 bloqueado: salvar a página"",""19:54:44 saiu da página (foi para outra janela) na Questão 1"",""19:54:44 voltou após 0 s fora"",""19:54:45 saiu da página (foi para outra janela) na Questão 1"",""19:54:48 voltou após 3 s fora"",""19:54:49 saiu da página (foi para outra janela) na Questão 1"",""19:55:00 voltou após 11 s fora"",""19:55:02 saiu da página (foi para outra janela) na Questão 1"",""19:55:02 voltou após 1 s fora"",""19:55:04 saiu da página (foi para outra janela) na Questão 1"",""19:55:09 voltou após 5 s fora"",""19:55:11 saiu da página (foi para outra janela) na Questão 1"",""19:55:22 janela reduzida para 652px de 1280px de largura (tela dividida?)"",""19:55:22 voltou após 12 s fora"",""19:55:24 saiu da página (foi para outra janela) na Questão 1"",""19:56:13 voltou após 49 s fora"",""19:56:16 saiu da página (foi para outra janela) na Questão 1"",""19:56:37 voltou após 21 s fora"",""19:56:42 saiu da página (foi para outra janela) na Questão 1"",""19:56:44 voltou após 3 s fora"",""19:56:49 saiu da página (foi para outra janela) na Questão 1"",""19:56:53 voltou após 5 s fora"",""19:56:55 saiu da página (foi para outra janela) na Questão 1"",""19:56:59 voltou após 4 s fora"",""19:57:00 saiu da página (foi para outra janela) na Questão 1"",""19:57:06 voltou após 6 s fora"",""19:57:07 saiu da página (foi para outra janela) na Questão 1"",""19:57:13 voltou após 6 s fora"",""19:57:16 saiu da página (foi para outra janela) na Questão 1"",""19:57:21 voltou após 5 s fora"",""19:57:22 saiu da página (foi para outra janela) na Questão 1"",""19:57:31 voltou após 9 s fora"",""19:57:34 saiu da página (foi para outra janela) na Questão 1"",""19:57:37 voltou após 3 s fora"",""19:57:39 saiu da página (foi para outra janela) na Questão 1"",""19:57:41 voltou após 2 s fora"",""19:57:43 saiu da página (foi para outra janela) na Questão 1"",""19:57:49 voltou após 6 s fora"",""19:57:50 saiu da página (foi para outra janela) na Questão 1"",""19:59:19 voltou após 1 min 29 s fora"",""19:59:22 saiu da página (foi para outra janela) na Questão 1"",""19:59:28 voltou após 6 s fora"",""19:59:49 saiu da página (foi para outra janela) na Questão 1"",""20:00:01 voltou após 13 s fora"",""20:00:03 saiu da página (trocou de aba ou minimizou) na Questão 1"",""20:00:05 voltou após 2 s fora"",""20:00:21 saiu da página (foi para outra janela) na Questão 1"",""20:00:25 voltou após 4 s fora"",""20:00:27 saiu da página (foi para outra janela) na Questão 1"",""20:00:33 voltou após 6 s fora"",""20:00:35 saiu da página (foi para outra janela) na Questão 1"",""20:00:37 voltou após 2 s fora"",""20:00:39 saiu da página (foi para outra janela) na Questão 1"",""20:00:41 voltou após 2 s fora"",""20:00:43 saiu da página (foi para outra janela) na Questão 1"",""20:00:44 voltou após 1 s fora"",""20:00:47 saiu da página (foi para outra janela) na Questão 1"",""20:00:49 voltou após 2 s fora"",""20:00:50 janela reduzida para 652px de 1280px de largura (tela dividida?)"",""20:01:14 saiu da página (foi para outra janela) na Questão 1"",""20:03:44 voltou após 2 min 30 s fora"",""20:03:47 saiu da página (foi para outra janela) na Questão 1"",""20:04:03 voltou após 16 s fora"",""20:04:09 saiu da página (foi para outra janela) na Questão 1"",""20:04:15 voltou após 6 s fora"",""20:04:35 saiu da página (foi para outra janela) na Questão 1"",""20:05:43 voltou após 1 min 8 s fora"",""20:05:51 saiu da página (foi para outra janela) na Questão 1"",""20:06:20 voltou após 29 s fora"",""20:06:23 saiu da página (foi para outra janela) na Questão 1"",""20:06:30 voltou após 6 s fora"",""20:06:31 saiu da página (foi para outra janela) na Questão 1"",""20:06:48 voltou após 17 s fora"",""20:06:51 saiu da página (foi para outra janela) na Questão 1"",""20:06:53 voltou após 1 s fora"",""20:06:54 saiu da página (foi para outra janela) na Questão 1"",""20:07:15 voltou após 21 s fora"",""20:07:15 saiu da página (foi para outra janela) na Questão 1"",""20:07:25 voltou após 9 s fora"",""20:07:28 saiu da página (foi para outra janela) na Questão 2"",""20:07:34 voltou após 6 s fora"",""20:07:38 saiu da página (foi para outra janela) na Questão 2"",""20:07:44 voltou após 6 s fora"",""20:07:46 saiu da página (foi para outra janela) na Questão 2"",""20:07:47 voltou após 1 s fora"",""20:07:50 saiu da página (foi para outra janela) na Questão 2"",""20:08:00 voltou após 10 s fora"",""20:08:02 saiu da página (foi para outra janela) na Questão 2"",""20:08:07 voltou após 5 s fora"",""20:08:20 saiu da página (foi para outra janela) na Questão 2"",""20:08:21 voltou após 1 s fora"",""20:08:25 saiu da página (foi para outra janela) na Questão 2"",""20:11:02 voltou após 2 min 37 s fora"",""20:11:05 saiu da página (foi para outra janela) na Questão 3"",""20:11:21 voltou após 16 s fora"",""20:11:21 saiu da página (foi para outra janela) na Questão 3"",""20:16:15 voltou após 4 min 54 s fora"",""20:16:21 saiu da página (foi para outra janela) na Questão 3"",""20:16:44 voltou após 22 s fora"",""20:16:59 saiu da página (foi para outra janela) na Questão 4"",""20:17:06 voltou após 7 s fora"",""20:18:59 saiu da página (foi para outra janela) na Questão 4"",""20:19:35 voltou após 37 s fora"",""20:19:36 saiu da página (foi para outra janela) na Questão 4"",""20:19:52 janela reduzida para 652px de 1280px de largura (tela dividida?)"",""20:19:53 voltou após 17 s fora"",""20:19:57 saiu da página (foi para outra janela) na Questão 4"",""20:20:15 voltou após 18 s fora"",""20:20:30 bloqueado: menu do botão direito"",""20:20:34 saiu da página (foi para outra janela) na Questão 4"",""20:20:35 voltou após 1 s fora"",""20:20:44 saiu da página (foi para outra janela) na Questão 4"",""20:43:05 voltou após 22 min 21 s fora"",""20:43:07 saiu da página (foi para outra janela) na Questão 4"",""20:49:54 voltou após 6 min 47 s fora"",""20:49:55 saiu da página (trocou de aba ou minimizou) na Questão 4"",""20:49:59 voltou após 5 s fora"",""20:50:00 saiu da página (trocou de aba ou minimizou) na Questão 4"",""20:55:12 voltou após 5 min 11 s fora"",""20:55:14 saiu da página (foi para outra janela) na Questão 4"",""20:58:26 voltou após 3 min 13 s fora"",""20:58:45 saiu da página (foi para outra janela) na Questão 4"",""20:58:56 voltou após 11 s fora"",""20:58:59 saiu da página (trocou de aba ou minimizou) na Questão 4"",""21:06:00 voltou após 7 min 2 s fora"",""21:06:08 saiu da página (foi para outra janela) na Questão 4"",""21:06:08 voltou após 1 s fora"",""21:06:09 saiu da página (foi para outra janela) na Questão 4"",""21:08:15 voltou após 2 min 6 s fora"",""21:08:24 saiu da página (foi para outra janela) na Questão 4"",""21:08:34 voltou após 10 s fora"",""21:08:35 saiu da página (foi para outra janela) na Questão 4"",""21:13:50 voltou após 5 min 15 s fora"",""21:13:52 saiu da página (foi para outra janela) na Questão 4"",""21:13:57 voltou após 5 s fora"",""21:13:58 colou 417 caracteres em Evento.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""21:14:02 saiu da página (foi para outra janela) na Questão 4"",""21:14:04 voltou após 3 s fora"",""21:14:05 colou 627 caracteres em Ingresso.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""21:14:08 saiu da página (foi para outra janela) na Questão 4"",""21:14:10 voltou após 2 s fora"",""21:14:11 colou 330 caracteres em Inteira.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""21:14:13 saiu da página (foi para outra janela) na Questão 4"",""21:14:15 voltou após 2 s fora"",""21:14:16 colou 338 caracteres em MeiaEntrada.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""21:14:17 saiu da página (foi para outra janela) na Questão 4"",""21:14:22 voltou após 4 s fora"",""21:14:23 colou 718 caracteres em Camarote.java (origem provável: editor de código (IntelliJ)), 2 s depois de voltar à página"",""21:14:26 saiu da página (foi para outra janela) na Questão 4"",""21:14:31 voltou após 5 s fora"",""21:14:31 colou 571 caracteres em Main.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""21:14:48 saiu da página (foi para outra janela) na Questão 5"",""21:15:17 voltou após 29 s fora"",""21:15:18 saiu da página (foi para outra janela) na Questão 5"",""21:15:19 voltou após 2 s fora"",""21:15:22 bloqueado: menu do botão direito"",""21:15:23 saiu da página (foi para outra janela) na Questão 5"",""21:15:41 voltou após 18 s fora"",""21:15:42 saiu da página (foi para outra janela) na Questão 5"",""21:15:50 janela reduzida para 652px de 1280px de largura (tela dividida?)"",""21:15:50 voltou após 8 s fora"",""21:16:00 saiu da página (foi para outra janela) na Questão 5"",""21:16:02 voltou após 3 s fora"",""21:16:02 janela reduzida para 524px de 1280px de largura (tela dividida?)"",""21:16:19 saiu da página (foi para outra janela) na Questão 4"",""21:16:21 voltou após 2 s fora"",""21:16:27 janela reduzida para 959px de 1280px de largura (tela dividida?)"",""21:16:35 saiu da página (foi para outra janela) na Questão 5"",""21:17:09 voltou após 34 s fora"",""21:17:21 saiu da página (foi para outra janela) na Questão 5"",""21:17:31 voltou após 10 s fora"",""21:17:35 saiu da página (foi para outra janela) na Questão 5"",""21:19:01 voltou após 1 min 26 s fora"",""21:19:07 saiu da página (foi para outra janela) na Questão 5"",""21:22:09 voltou após 3 min 2 s fora"",""21:22:10 saiu da página (foi para outra janela) na Questão 5"",""21:24:46 voltou após 2 min 37 s fora"",""21:24:47 saiu da página (foi para outra janela) na Questão 5"",""21:25:38 voltou após 51 s fora"",""21:25:43 saiu da página (trocou de aba ou minimizou) na Questão 5"",""21:25:46 voltou após 4 s fora"",""21:30:43 saiu da página (foi para outra janela) na Questão 5"",""21:30:58 voltou após 15 s fora"",""21:31:01 saiu da página (foi para outra janela) na Questão 5"",""21:34:42 voltou após 3 min 40 s fora"",""21:34:48 janela reduzida para 926px de 1280px de largura (tela dividida?)"",""21:34:49 saiu da página (foi para outra janela) na Questão 5"",""21:34:51 voltou após 2 s fora"",""21:34:56 saiu da página (foi para outra janela) na Questão 5"",""21:35:16 voltou após 20 s fora"",""21:37:04 saiu da página (foi para outra janela) na Questão 5"",""21:37:28 voltou após 24 s fora"",""21:37:34 saiu da página (foi para outra janela) na Questão 5"",""21:38:20 voltou após 45 s fora"",""21:38:28 saiu da página (foi para outra janela) na Questão 5"",""21:38:58 voltou após 30 s fora"",""21:38:59 saiu da página (foi para outra janela) na Questão 5"",""21:42:01 voltou após 3 min 2 s fora"",""21:42:18 saiu da página (foi para outra janela) na Questão 5"",""21:42:34 voltou após 16 s fora"",""21:42:39 saiu da página (foi para outra janela) na Questão 5"",""21:42:40 voltou após 1 s fora"",""21:42:48 saiu da página (foi para outra janela) na Questão 5"",""21:43:18 voltou após 30 s fora"",""21:43:20 saiu da página (foi para outra janela) na Questão 5"",""21:44:00 voltou após 40 s fora"",""21:44:10 saiu da página (foi para outra janela) na Questão 5"",""21:44:14 voltou após 4 s fora"",""21:44:17 saiu da página (foi para outra janela) na Questão 5"",""21:44:29 voltou após 12 s fora"",""21:44:30 saiu da página (foi para outra janela) na Questão 5"",""21:44:41 voltou após 10 s fora"",""21:45:17 saiu da página (foi para outra janela) na Questão 5"",""21:45:29 voltou após 13 s fora"",""21:45:59 saiu da página (foi para outra janela) na Questão 5"",""21:46:27 voltou após 28 s fora"",""21:46:29 saiu da página (foi para outra janela) na Questão 5"",""21:46:39 voltou após 10 s fora"",""21:46:41 saiu da página (foi para outra janela) na Questão 5"",""21:46:43 voltou após 2 s fora"",""21:46:43 saiu da página (foi para outra janela) na Questão 5"",""21:46:55 voltou após 12 s fora"",""21:46:57 saiu da página (foi para outra janela) na Questão 5"",""21:47:05 voltou após 8 s fora"",""21:47:20 saiu da página (foi para outra janela) na Questão 5"",""21:47:37 voltou após 16 s fora"",""21:47:42 saiu da página (foi para outra janela) na Questão 5"",""21:47:49 voltou após 7 s fora"",""21:47:49 saiu da página (foi para outra janela) na Questão 5"",""21:47:52 voltou após 2 s fora"",""21:47:55 saiu da página (foi para outra janela) na Questão 5"",""21:47:59 voltou após 4 s fora"",""21:48:02 saiu da página (foi para outra janela) na Questão 5"",""21:48:31 voltou após 29 s fora"",""21:48:49 saiu da página (foi para outra janela) na Questão 5"",""21:49:13 voltou após 24 s fora"",""21:49:17 saiu da página (foi para outra janela) na Questão 5"",""21:49:21 voltou após 5 s fora"",""21:49:22 saiu da página (foi para outra janela) na Questão 5"",""21:49:38 voltou após 16 s fora"",""21:50:01 saiu da página (foi para outra janela) na Questão 5"",""21:50:16 voltou após 15 s fora"",""21:50:25 saiu da página (foi para outra janela) na Questão 5"",""21:50:30 voltou após 5 s fora"",""21:50:38 saiu da página (foi para outra janela) na Questão 5"",""21:50:57 voltou após 18 s fora"",""21:51:00 saiu da página (foi para outra janela) na Questão 5"",""21:51:15 voltou após 15 s fora"",""21:51:19 saiu da página (foi para outra janela) na Questão 5"",""21:51:25 voltou após 6 s fora"",""21:51:27 saiu da página (foi para outra janela) na Questão 5"",""21:51:29 voltou após 3 s fora"",""21:51:34 saiu da página (foi para outra janela) na Questão 5"",""21:52:06 voltou após 32 s fora"",""21:52:08 saiu da página (foi para outra janela) na Questão 5"",""21:52:25 voltou após 17 s fora"",""21:52:38 bloqueado: menu do botão direito"",""21:52:40 bloqueado: menu do botão direito"",""21:52:40 bloqueado: menu do botão direito"",""21:52:40 bloqueado: menu do botão direito"",""21:52:41 bloqueado: menu do botão direito"",""21:52:41 bloqueado: menu do botão direito"",""21:52:41 bloqueado: menu do botão direito"",""21:52:41 bloqueado: menu do botão direito"",""21:52:41 bloqueado: menu do botão direito"",""21:52:43 bloqueado: menu do botão direito"",""21:52:43 bloqueado: menu do botão direito"",""21:52:43 bloqueado: menu do botão direito"",""21:52:43 bloqueado: menu do botão direito"",""21:52:43 bloqueado: menu do botão direito"",""21:53:35 saiu da página (foi para outra janela) na Questão 5"",""21:53:51 voltou após 16 s fora"",""21:53:56 saiu da página (foi para outra janela) na Questão 5"",""21:54:04 voltou após 8 s fora"",""21:54:09 saiu da página (foi para outra janela) na Questão 5"",""21:54:52 voltou após 43 s fora"",""21:54:53 saiu da página (foi para outra janela) na Questão 5"",""21:54:53 voltou após 0 s fora"",""21:54:55 janela reduzida para 926px de 1280px de largura (tela dividida?)"",""21:54:55 saiu da página (foi para outra janela) na Questão 5"",""21:57:25 voltou após 2 min 30 s fora"",""21:57:27 saiu da página (foi para outra janela) na Questão 5"",""21:57:31 voltou após 3 s fora"",""21:57:41 saiu da página (foi para outra janela) na Questão 5"",""21:59:14 voltou após 1 min 33 s fora"",""21:59:17 saiu da página (foi para outra janela) na Questão 5"",""22:03:09 voltou após 3 min 52 s fora"",""22:04:41 saiu da página (foi para outra janela) na Questão 5"",""22:05:51 voltou após 1 min 10 s fora"",""22:05:55 janela reduzida para 652px de 1280px de largura (tela dividida?)"",""22:06:35 saiu da página (foi para outra janela) na Questão 5"",""22:09:01 voltou após 2 min 26 s fora"",""22:09:08 saiu da página (foi para outra janela) na Questão 5"",""22:09:09 voltou após 1 s fora"",""22:09:15 saiu da página (foi para outra janela) na Questão 5"",""22:09:19 voltou após 4 s fora"",""22:09:22 saiu da página (foi para outra janela) na Questão 5"",""22:22:17 voltou após 12 min 56 s fora"",""22:22:21 saiu da página (foi para outra janela) na Questão 5"",""22:22:38 voltou após 18 s fora"",""22:23:23 saiu da página (foi para outra janela) na Questão 5"",""22:23:43 voltou após 20 s fora"",""22:23:50 saiu da página (foi para outra janela) na Questão 5"",""22:28:48 voltou após 4 min 58 s fora"",""22:29:55 saiu da página (foi para outra janela) na Questão 5"",""22:31:17 voltou após 1 min 22 s fora"",""22:31:25 saiu da página (foi para outra janela) na Questão 5"",""22:36:19 voltou após 4 min 54 s fora"",""22:36:36 saiu da página (foi para outra janela) na Questão 5"",""22:36:38 voltou após 2 s fora"",""22:36:39 colou 21 caracteres em Cliente.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""22:36:41 saiu da página (foi para outra janela) na Questão 5"",""22:36:43 voltou após 2 s fora"",""22:36:45 colou 396 caracteres em Cliente.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""22:36:47 saiu da página (foi para outra janela) na Questão 5"",""22:36:50 voltou após 3 s fora"",""22:36:51 colou 1119 caracteres em Entrega.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""22:36:53 saiu da página (foi para outra janela) na Questão 5"",""22:36:58 voltou após 5 s fora"",""22:36:59 colou 566 caracteres em EntregaPadrao.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""22:37:03 saiu da página (foi para outra janela) na Questão 5"",""22:37:08 voltou após 5 s fora"",""22:37:08 colou 436 caracteres em EntregaExpressa.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""22:37:10 saiu da página (foi para outra janela) na Questão 5"",""22:37:15 voltou após 4 s fora"",""22:37:15 colou 404 caracteres em RetiradaNaLoja.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""22:37:17 saiu da página (foi para outra janela) na Questão 5"",""22:37:22 voltou após 4 s fora"",""22:37:22 colou 916 caracteres em Main.java (origem provável: editor de código (IntelliJ)), 1 s depois de voltar à página"",""22:38:08 saiu da página (trocou de aba ou minimizou) na início da página"",""22:38:27 voltou após 19 s fora"",""22:38:28 colou 13 caracteres em f_ra_0 (origem provável: texto puro), 1 s depois de voltar à página""]}"
